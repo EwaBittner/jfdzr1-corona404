@@ -8,19 +8,38 @@
     background: rgba(51, 51, 51, 0.945);
     display: flex;
     margin: 30px;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .sign-in-img {
 
-    width: 200px;
+    width: 300px;
     height: auto;
 }
 
 .sign-in-form{
-
-    font-family: 'Montserrat', sans-serif;
     color: white;
-
-
+    font-size: 20px;
+    text-align: center;
+    border: 3px solid 5rgba(1, 51, 51, 0.945);
+    width: 400px;
+    border-radius: 12px;
+    margin: 30px ;
 }
+
+input[type=text],select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #333;
+    border-radius: 8px;
+  }
+
+  input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #333;
+    border-radius: 8px;
+  }

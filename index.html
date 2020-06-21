@@ -75,11 +75,26 @@ rel='stylesheet' type='text/css'>
         <img src="./images/mail.png" alt="mai-gray">
       </div>
       <div class="sign-in-form">
-        <h3>Zapisz się ju teraz</h3>
-        <p>Nie przegap premiery Naszego produktu!</p>
-        <form>
-          <label for="email">Enter your email</label>
-          <input type="email" id="email" name="email" />
+        <h3>Zapisz się juz teraz!</h3>
+        <form class="form-container">
+          <label for="first-name">Imię</label>
+          <input type="text" id="first-name" name="first-name" placeholder="Imię..">
+      
+          <label for="last-name">Nazwisko</label>
+          <input type="text" id="last-name" name="last-name" placeholder="Nazwisko..">
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="E-Mail">
+      
+          <label for="country">Kraj</label>
+          <select id="country" name="country">
+            <option value="polska">Polska</option>
+            <option value="china">Chiny</option>
+            <option value="usa">USA</option>
+          </select>
+        
+          <input type="submit" value="Wyślij">
+
         </form>
       </div>  
     </div>
