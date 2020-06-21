@@ -12,12 +12,14 @@ html {
     background-color: #333;
     padding: 20px 10px;
     width: 100%;
-    overflow: hidden;
+    height: auto;
+    overflow: visible;
+    position: fixed;
 }
 
 .container {
     max-width: 1500px;
-    height: 40px;
+    height: 10%;
     margin: 0 auto;
 }
 
@@ -52,6 +54,10 @@ li > a {
     margin-right: 20px;
 }
 
+#Menu {
+    display: none;
+}
+
 .Hero h2 {
     color: #f2f2f2;
 }
@@ -68,4 +74,40 @@ footer {
 
 footer a p {
     display: inline;
+}
+
+@media (max-width: 730px) {
+    .menu li {
+        width: 100%;
+        justify-content: center;
+        max-height: 80px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 729px) {
+    #Menu {
+        display: block;
+    }
+
+    .menu > li{
+        max-height: 10%;
+        justify-content: right;
+        transform: translateY(10%);
+    }
+
+    .menu > li > a:hover {
+        transform: translateY(100%);
+        display: flex;
+        flex-direction: column;
+        transition: 0.5s;
+    }
+}
+
+
+
+@media (max-width: 1012px){
+    .Hero h2{
+        display: none;
+    }
 }
