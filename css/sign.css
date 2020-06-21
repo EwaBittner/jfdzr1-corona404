@@ -12,7 +12,7 @@
 
 .sign-in-container-img {
 
-    width: 250px;
+    max-width: 250px;
     height: auto;
     margin-left: 60px;
  
@@ -23,43 +23,42 @@
     height: auto;
 }
 .sign-in-form{
-    color: #f2f2f2;;
+    color: #f2f2f2;
     font-size: 20px;
     text-align: center;
-    border: 3px solid 5rgba(1, 51, 51, 0.945);
-    width: 300px;
-    border-radius: 12px;
+    border: none;
+    min-width: 300px;
+    max-width: 300px;
     margin: 30px 150px 30px 30px;
 }
 
-
-input[type=text],select{
+ input[type=email], input[type=text]{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
-    border: 1px solid #333;
-    border-radius: 8px;
+    border:none;
+    border-bottom: 1px white solid;
+    background: none;
+    text-align: center;
+    outline: none;
+    color: #f2f2f2;
   }
 
-  input[type=email] {
+  .textarea {
+    background: none;
+    text-align: center;
+    color: #f2f2f2;;
     width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    border: 1px solid #333;
-    border-radius: 8px;
+    border: 1px solid #f2f2f2;
+    margin-top: 15px;
+    
   }
-
-  .form-container > label {
-
-    font-size: 14px;
+  
+  input[type=submit]{
+    background:none;
+    width: 50%;
+    height: 40px;
+    color:#f2f2f2;
+    border-radius: 7px;
   }
-
-  input[type=submit] {
-    width: 40%;
-    height: 50px;
-    margin: 20px 0;
-    border: 1px solid #333;
-    border-radius: 8px;
-    background-color: #f2f2f2;
-
-  }
+ 
