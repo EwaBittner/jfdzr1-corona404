@@ -5,31 +5,33 @@
 
 .sign-in-container{
     display: flex;
-    margin: 30px;
     flex-wrap: wrap;
     align-items: center;
-}
-
-.sign-in-img{
-
-    width:100%;
+    width: 100%;
 }
 
 .sign-in-container-img {
 
     width: 250px;
     height: auto;
+    margin-left: 60px;
+ 
 }
+.sign-in-img{
 
+    width:100%;
+    height: auto;
+}
 .sign-in-form{
-    color: white;
+    color: #f2f2f2;;
     font-size: 20px;
     text-align: center;
     border: 3px solid 5rgba(1, 51, 51, 0.945);
-    width: 400px;
+    width: 300px;
     border-radius: 12px;
     margin: 30px ;
 }
+
 
 input[type=text],select{
     width: 100%;
@@ -45,4 +47,19 @@ input[type=text],select{
     margin: 8px 0;
     border: 1px solid #333;
     border-radius: 8px;
+  }
+
+  .form-container > label {
+
+    font-size: 14px;
+  }
+
+  input[type=submit] {
+    width: 40%;
+    height: 50px;
+    margin: 20px 0;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+
   }
