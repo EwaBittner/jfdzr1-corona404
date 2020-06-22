@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="./css/productinfo.css">
   <link rel="stylesheet" href="./css/aboutus.css">
+  <link rel="stylesheet" href="./css/sign.css">
+
   <title>Market404</title>
 </head>
 
@@ -117,13 +119,25 @@
     <h2>Ble ble</h2>
   </section>
 
-  <section id="Sign-In">
+  <section id="Sign-In" class="sign-in-section">
     <!-- Zapisz się na premierę -->
-    <h3>Zapisz się</h3>
-    <form>
-      <label for="email">Enter your email</label>
-      <input type="email" id="email" name="email" />
-    </form>
+    <div class="sign-in-container">
+      <div class="sign-in-container-img">
+        <img src="./images/mail.png" alt="mai-gray" class="sign-in-img">
+      </div>
+      <div class="sign-in-form">
+        <h3>Zapisz się juz teraz!</h3>
+        <form class="form-container">
+          <input type="text" id="first-name" name="first-name" placeholder="Imię..">
+          <input type="text" id="last-name" name="last-name" placeholder="Nazwisko..">
+          <input type="email" id="email" name="email" placeholder="E-Mail">
+          <textarea class="textarea" name="textarea" rows="4" cols="50" placeholder="Zostaw wiadomość"></textarea>
+      
+          
+          <input type="submit" value="Wyślij">
+        </form>
+      </div>  
+    </div>
   </section>
 
   <footer>
