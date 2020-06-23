@@ -57,9 +57,12 @@
     padding: 15px;
     background-color: #f0f0f0;
     border-radius: 5px;
-    box-shadow: 7px 10px 17px -8px rgba(122,122,122,0.88);
+    transition: all .5s ease-in-out;
 }
 
+.aboutus__box:hover{
+    box-shadow: 7px 10px 17px -8px rgba(122,122,122,0.88);
+}
 .aboutus__img{
     display: block;
     max-width: 250px;
@@ -84,3 +87,10 @@
     padding: 10px;
     font-size: 25px;
 }
+
+.aboutus__icon:hover{
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+

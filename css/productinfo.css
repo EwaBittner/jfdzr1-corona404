@@ -34,9 +34,10 @@
     width: 50%;
     padding-top: 12%;
     font-size: 60px;
-    background-color: rgba(51, 51, 51, 0.945);
+    background-color: rgb(56, 56, 56);
     border-radius: 100%;
     color: rgb(255, 255, 255);
+    transition: all .7s ease-in-out;
 }
 
 .product-info__icon--white{
@@ -47,7 +48,6 @@
 .product-info__icon:hover{
     background-color: #fff;
     color: rgba(51, 51, 51, 0.945);
-    transition: all .5s ease-in-out;
 }
 
 .product-info__icon--white:hover{
@@ -142,5 +142,11 @@
         width: 150px;
         height: 150px;
         padding-top: 42px;
+    }
+}
+
+@media (min-width: 1350px){
+    .product-info__span{
+        display: block;
     }
 }
