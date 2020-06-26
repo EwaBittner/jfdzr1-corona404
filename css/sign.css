@@ -7,15 +7,15 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content:flex-end
     width: 100%;
     padding: 40px;
 }
 
 .sign-in-container-img {
 
-    max-width: 300px;
-    height: auto;
-    margin-left: 110px;
+    max-width: 240px;
+    margin-left: 90px;
  
 }
 .sign-in-img{
@@ -28,9 +28,9 @@
     font-size: 20px;
     text-align: center;
     border: none;
-    min-width: 450px;
-    max-width: 450px;
-    margin: 30px 130px 30px 30px;
+    min-width: 350px;
+    max-width: 400px;
+    margin: 30px 230px 30px 30px;
 }
 
  input[type=email], input[type=text]{
@@ -57,9 +57,18 @@
   
   input[type=submit]{
     background:none;
-    width: 70%;
+    width: 60%;
     height: 40px;
     color:#f2f2f2;
     border-radius: 7px;
   }
- 
+
+  input[type=submit]:hover{
+  transform: scale(1.05);
+  }
+
+  .sign-agree {
+
+    font-size: 10px;
+    margin-top: 50px;
+  }
