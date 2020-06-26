@@ -14,18 +14,16 @@
 .sign-in-container-img {
 
     max-width: 220px;
- 
 }
 .sign-in-img{
 
     width:100%;
-    height: auto;
+
 }
 .sign-in-form{
     color: #f2f2f2;
     font-size: 20px;
     text-align: center;
-    min-width: 350px;
     max-width: 400px;
 }
 
@@ -79,4 +77,12 @@
     color:#00fff5;
 
   
+  }
+
+  @media (max-width:767px){
+
+  .sign-in-container-img {
+
+    max-width:70px;
+}
   }
