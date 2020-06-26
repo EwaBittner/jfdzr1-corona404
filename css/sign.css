@@ -38,7 +38,7 @@
     background: none;
     text-align: center;
     outline: none;
-    color: #f2f2f2;
+    color: #00fff5;
   }
 
   .textarea {
@@ -60,12 +60,23 @@
     margin-top: 10px;
   }
 
-  input[type=submit]:hover{
+  input[type=submit]:hover,.textarea:hover{
   transform: scale(1.05);
+  color:#00fff5;
+  border: 3px solid #00fff5;
   }
 
   .sign-agree {
 
     font-size: 10px;
     margin-top: 20px;
+  }
+
+  input[type=email]:hover, input[type=text]:hover{
+
+    border-bottom:3px solid #00fff5;
+    transform: scale(1.05);
+    color:#00fff5;
+
+  
   }
