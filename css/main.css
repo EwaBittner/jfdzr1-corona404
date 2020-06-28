@@ -54,7 +54,7 @@ li>a {
     margin-right: 20px;
 }
 
-#Menu {
+.nav-trigger {
     display: none;
 }
 
@@ -246,15 +246,33 @@ footer a p {
 }
 
 @media (max-width: 729px) {
-    #Menu {
-        display: block;
+    .menu {
+        height: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-content: center;
+        padding: 10px;
+        box-sizing: border-box;
+        transform: translateY(100%);
     }
 
-    .menu > li{
+    .nav-trigger {
+        border: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menu {
+        display: flex;
+        bo
+    }
+
+    /* .menu > li{
         max-height: 10%;
         justify-content: right;
         transform: translateY(10%);
-    }
+    } */
 
     .menu > li > a:hover {
         transform: translateY(100%);
