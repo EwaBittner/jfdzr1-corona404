@@ -13,7 +13,7 @@ html {
     padding: 20px 10px;
     width: 100%;
     height: auto;
-    overflow: visible;
+    z-index: 1;
     position: fixed;
 }
 
@@ -266,12 +266,6 @@ footer a p {
     .menu {
         display: flex;
     }
-
-    /* .menu > li{
-        max-height: 10%;
-        justify-content: right;
-        transform: translateY(10%);
-    } */
 
     .menu > li > a:hover {
         transform: translateY(100%);
