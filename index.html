@@ -4,11 +4,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
-  <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' 
-rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+  <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800'
+    rel='stylesheet' type='text/css'>
+
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="./css/productinfo.css">
+  <link rel="stylesheet" href="./css/aboutus.css">
+  <link rel="stylesheet" href="./css/sign.css">
+
   <title>Market404</title>
 </head>
 
@@ -18,8 +23,11 @@ rel='stylesheet' type='text/css'>
     <div class="container">
       <img src="Market404" alt="Ikona wozka" />
       <h2>Postaw na polską jakość</h2>
+<<<<<<< HEAD
 
       <button class="nav-trigger">Menu</button>
+=======
+>>>>>>> ebc6f45dc2a0bbf32ba6b1dd8fe1ed20ed675547
       <nav class="menu">
         <ul>
           <li><a href="#Product-Info">Produkt</a></li>
@@ -30,37 +38,96 @@ rel='stylesheet' type='text/css'>
       </nav>
     </div>
   </header>
+  <section class="section-about">
+    <div class="bg">
+      <div class="about-container">
+        <div class="about-hero-content">
+          <h1>Postaw na polską jakość</h1>
+          <p>Naszą misją jest zapewenienie Wam dostępu do Polskich produktów, najwyższej jakości, oraz promowanie
+            Polskich
+            wytwórców oraz producentów.</p>
+          <button class="about-hero-action"><a href="#Sign-In">Zapisz się</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="product-info">
     <!-- identyfikacja wizualna produktu, spis funkcji -->
-    
+
     <div class="product-info__container">
       <div class="product-info__box">
         <i class="fas fa-apple-alt product-info__icon"></i>
-        <p class="product-info__paragraph">Polish Regional Products</p>
+        <p class="product-info__paragraph">Polskie regionalne produkty</p>
       </div>
 
       <div class="product-info__box">
         <i class="fas fa-seedling product-info__icon"></i>
-        <p class="product-info__paragraph">Always fresh and healthy</p>
+        <p class="product-info__paragraph">Zawsze świeżo i <span class="product-info__span"></span> zdrowo</p>
       </div>
 
       <div class="product-info__box">
         <i class="fas fa-hand-holding-usd product-info__icon product-info__icon--white"></i>
-        <p class="product-info__paragraph">Best Prices on market</p>
+        <p class="product-info__paragraph">Najlepsze ceny na <span class="product-info__span"></span> rynku</p>
       </div>
 
       <div class="product-info__box">
         <i class="fas fa-truck product-info__icon"></i>
-        <p class="product-info__paragraph">Free Devilery in Poland</p>
+        <p class="product-info__paragraph">Darmowa dostawa od 200zł</p>
       </div>
     </div>
 
   </section>
 
-  <section id="About-Us">
-    <!-- Info o zespole -->
-    <h1>Produkt x</h1>
+  <section class="aboutus">
+    <h1 class="aboutus__header">NASZ TEAM</h1>
+    <div class="aboutus__container">
+      <div class="aboutus__card">
+        <div class="aboutus__box">
+          <img src="./images/tomek.jpeg" alt="Tomek Makarewicz" class="aboutus__img">
+          <h2 class="aboutus__name">Tomek Makarewicz</h2>
+          <a class="aboutus__link" href="#" target="_blank"><i class="fas fa-envelope aboutus__icon"></i></a>
+          <a class="aboutus__link" href="https://github.com/tomasz-makarewicz" target="_blank"><i class="fab fa-github aboutus__icon"></i></a>
+          <a class="aboutus__link" href="https://pl.linkedin.com/in/tomasz-makarewicz-a278a8133" target="_blank"><i class="fab fa-linkedin aboutus__icon"></i></a>
+        </div>
+      </div>
+      <div class="aboutus__card">
+        <div class="aboutus__box">
+          <img src="./images/kuba.jpeg" alt="Jakub Rejmann" class="aboutus__img">
+          <h2 class="aboutus__name">Jakub Rejmann</h2>
+          <a class="aboutus__link" href="#" target="_blank"><i class="fas fa-envelope aboutus__icon"></i></a>
+          <a class="aboutus__link" href="https://github.com/reymanov" target="_blank"><i class="fab fa-github aboutus__icon"></i></a>
+          <a class="aboutus__link" href="https://www.linkedin.com/in/jakub-rejmann-8b49221a8/" target="_blank"><i class="fab fa-linkedin aboutus__icon"></i></a>
+        </div>
+      </div>
+      <div class="aboutus__card">
+        <div class="aboutus__box">
+          <img src="./images/ewa.jpg" alt="Ewa Bittner" class="aboutus__img">
+          <h2 class="aboutus__name">Ewa Bittner</h2>
+          <a class="aboutus__link" href="#" target="_blank"><i class="fas fa-envelope aboutus__icon"></i></a>
+          <a class="aboutus__link" href="https://github.com/EwaBittner" target="_blank"><i class="fab fa-github aboutus__icon"></i></a>
+          <a class="aboutus__link" href="https://www.linkedin.com/in/ewa-bittner-a0b644b7/" target="_blank"><i class="fab fa-linkedin aboutus__icon"></i></a>
+        </div>
+      </div>
+      <div class="aboutus__card">
+        <div class="aboutus__box">
+          <img src="./images/mateusz.jpg" alt="Mateusz Adamczyk" class="aboutus__img">
+          <h2 class="aboutus__name">Mateusz Adamczyk</h2>
+          <a class="aboutus__link" href="#" target="_blank"><i class="fas fa-envelope aboutus__icon"></i></a>
+          <a class="aboutus__link" href="https://github.com/mateuszad" target="_blank"><i class="fab fa-github aboutus__icon"></i></a>
+          <a class="aboutus__link" href="http://www.linkedin.com/in/mateusz-adamczyk-12a709186" target="_blank"><i class="fab fa-linkedin aboutus__icon"></i></a>
+        </div>
+      </div>
+      <div class="aboutus__card">
+        <div class="aboutus__box">
+          <img src="./images/maciej.jpeg" alt="Maciej Pilarczyk" class="aboutus__img">
+          <h2 class="aboutus__name">Maciej Pilarczyk</h2>
+          <a class="aboutus__link" href="#" target="_blank"><i class="fas fa-envelope aboutus__icon"></i></a>
+          <a class="aboutus__link" href="https://github.com/maciej-pilarczyk" target="_blank"><i class="fab fa-github aboutus__icon"></i></a>
+          <a class="aboutus__link" href="#" target="_blank"><i class="fab fa-linkedin aboutus__icon"></i></a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="Additional-Info">
@@ -68,13 +135,26 @@ rel='stylesheet' type='text/css'>
     <h2>Ble ble</h2>
   </section>
 
-  <section id="Sign-In">
+  <section id="Sign-In" class="sign-in-section">
     <!-- Zapisz się na premierę -->
-    <h3>Zapisz się</h3>
-    <form>
-      <label for="email">Enter your email</label>
-      <input type="email" id="email" name="email" />
-    </form>
+    <div class="sign-in-container">
+      <div class="sign-in-container-img">
+        <img src="./images/mail.png" alt="mai-gray" class="sign-in-img">
+      </div>
+      <div class="sign-in-form">
+        <h3>Zapisz się już teraz!</h3>
+        <form class="form-container">
+          <input type="text" id="first-name" name="first-name" placeholder="Imię..">
+          <input type="text" id="last-name" name="last-name" placeholder="Nazwisko..">
+          <input type="email" id="email" name="email" placeholder="E-Mail">
+          <textarea class="textarea" name="textarea" rows="4" cols="50" placeholder="Zostaw wiadomość"></textarea>
+          <input type="submit" value="Wyślij">
+          <p class="sign-agree">Wyrażam zgodę na przesłanie wiadomości z informacją o premierzę przez Corona404 team.
+            Dane nie będą przetwarzane w innym celu, aniżeli zgodnym z powyzszą informacja.
+          </p>
+        </form>
+      </div>  
+    </div>
   </section>
 
   <footer>

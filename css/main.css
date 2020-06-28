@@ -41,7 +41,7 @@ ul li {
     display: inline-block;
 }
 
-li > a {
+li>a {
     display: block;
     float: right;
     width: auto;
@@ -61,6 +61,166 @@ li > a {
 .Hero h2 {
     color: #f2f2f2;
 }
+
+.section-about {
+    height: 800px;
+    display: flex;
+    align-items: stretch;
+    position: relative;
+    background-image: url(../images/market_1920x1248.jpg);
+    background-size: cover;
+    background-position: top;
+    color: rgb(36, 33, 33);
+}
+
+.section-about .bg {
+    width: 100%;
+    height: 800px;
+    background-color: rgba(51, 51, 51, 0.2);
+
+}
+
+.about-container {
+    position: absolute;
+    top: 15%;
+    left: 69%;
+}
+
+.about-hero-content {
+    max-width: 250px;
+    text-align: center;
+}
+
+.about-hero-content>h1 {
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about-hero-content>p {
+    margin: 0 auto;
+    font-size: 18px;
+    color: white;
+    line-height: 27px;
+    text-align: center;
+
+}
+
+.about-hero-action {
+    height: 55px;
+    padding: 0;
+    margin-top: 20px;
+    width: 150px;
+    border: none;
+    background: red;
+    transition: 0.3s;
+
+}
+
+.about-hero-action:hover {
+    background-color: rgba(255, 0, 0, 0.8);
+}
+
+.about-hero-action a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    height: 55px;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .section-about {
+        height: 600px;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../images/market_640x425.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .section-about .bg {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(51, 51, 51, 0.2);
+
+    }
+
+    .about-container {
+        /* justify-content: center;
+        align-items: center; */
+        position: absolute;
+        width: 100%;
+        top: 35%;
+        left: 0;
+        padding: 0 20px;
+    }
+
+    .about-hero-content {
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .about-hero-content>h1 {
+        font-size: 25px;
+
+    }
+
+    .about-hero-content>p {
+
+        font-size: 16px;
+    }
+
+    .about-hero-action {
+        height: 50px;
+        width: 150px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1280px) {
+    .section-about {
+        height: 600px;
+        background-image: url(../images/market_1280x850.jpg);
+
+    }
+
+    .section-about .bg {
+        height: 600px;
+        background-color: rgba(51, 51, 51, 0.2);
+
+    }
+
+    .about-container {
+        position: absolute;
+        width: 100%;
+        top: 25%;
+        left: 0;
+        padding: 0 20px;
+    }
+
+    .about-hero-content>h1 {
+        font-size: 40px;
+        padding-bottom: 20px;
+
+    }
+
+    .about-hero-content>p {
+        font-size: 18px;
+    }
+
+}
+
 
 footer {
     background-color: #333;
