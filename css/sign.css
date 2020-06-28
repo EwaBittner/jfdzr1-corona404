@@ -1,0 +1,88 @@
+.sign-in-section {
+
+    background: rgba(51, 51, 51, 0.945);
+}
+
+.sign-in-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+}
+
+.sign-in-container-img {
+
+    max-width: 220px;
+}
+.sign-in-img{
+
+    width:100%;
+
+}
+.sign-in-form{
+    color: #f2f2f2;
+    font-size: 20px;
+    text-align: center;
+    max-width: 400px;
+}
+
+ input[type=email], input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border:none;
+    border-bottom: 1px white solid;
+    background: none;
+    text-align: center;
+    outline: none;
+    color: #00fff5;
+  }
+
+  .textarea {
+    background: none;
+    text-align: center;
+    color: #f2f2f2;;
+    width: 100%;
+    border: 1px solid #f2f2f2;
+    margin-top: 15px;
+    
+  }
+  
+  input[type=submit]{
+    background:none;
+    width: 60%;
+    height: 40px;
+    color:#f2f2f2;
+    border-radius: 7px;
+    margin-top: 10px;
+  }
+
+  input[type=submit]:hover,.textarea:hover{
+  transform: scale(1.05);
+  color:#00fff5;
+  border: 3px solid #00fff5;
+  }
+
+  .sign-agree {
+
+    font-size: 10px;
+    margin-top: 20px;
+  }
+
+  input[type=email]:hover, input[type=text]:hover{
+
+    border-bottom:3px solid #00fff5;
+    transform: scale(1.05);
+    color:#00fff5;
+
+  
+  }
+
+  @media (max-width:767px){
+
+  .sign-in-container-img {
+
+    max-width:70px;
+}
+  }
