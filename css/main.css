@@ -12,12 +12,14 @@ html {
     background-color: #333;
     padding: 20px 10px;
     width: 100%;
-    overflow: hidden;
+    height: auto;
+    overflow: visible;
+    position: fixed;
 }
 
 .container {
     max-width: 1500px;
-    height: 40px;
+    height: 10%;
     margin: 0 auto;
 }
 
@@ -50,6 +52,10 @@ li>a {
     border-bottom: 3px solid transparent;
     color: #f2f2f2;
     margin-right: 20px;
+}
+
+.nav-trigger {
+    display: none;
 }
 
 .Hero h2 {
@@ -230,6 +236,7 @@ footer a p {
     display: inline;
 }
 
+
 #myBtn {
     display: none;
     position: fixed;
@@ -249,3 +256,57 @@ footer a p {
   #myBtn:hover {
     background-color: #555;
   }
+
+@media (max-width: 730px) {
+    .menu li {
+        width: 100%;
+        justify-content: center;
+        max-height: 80px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 729px) {
+    .menu {
+        height: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-content: center;
+        padding: 10px;
+        box-sizing: border-box;
+        transform: translateY(100%);
+    }
+
+    .nav-trigger {
+        border: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    /* .menu > li{
+        max-height: 10%;
+        justify-content: right;
+        transform: translateY(10%);
+    } */
+
+    .menu > li > a:hover {
+        transform: translateY(100%);
+        display: flex;
+        flex-direction: column;
+        transition: 0.5s;
+    }
+}
+
+
+
+@media (max-width: 1012px){
+    .Hero h2{
+        display: none;
+    }
+}
+
