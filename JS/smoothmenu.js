@@ -10,5 +10,3 @@ menu.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-
-// Test
