@@ -7,6 +7,7 @@
     text-align: center;
     font-family:"Roboto" sans-serif;
     margin-bottom: 70px;
+    background-color: rgba(161,217,255,1);
 }
 
 .extra-header {
@@ -17,7 +18,7 @@
     font-weight: 600;
     margin: 20px auto 80px;
     padding-top: 50px;
-    color: black;
+    color: #fff;
     letter-spacing: 2px;
 
 }
@@ -67,21 +68,22 @@
     height: 100%; 
     font-family: 'Yellowtail', cursive;
     border-radius: 9px;
-    box-shadow: 10px 10px 10px -5px rgba(0,0,0,0.75);
+    box-shadow: 15px 15px 15px -5px rgba(0,0,0,0.75);
     backface-visibility: hidden;
   }
   
 
   .extra-card-front {
-    background: linear-gradient(180deg, rgba(230,255,255,1) 10%, rgba(161,217,255,1) 50%, rgba(255,255,255,1) 100%);  
+    background: linear-gradient(180deg, #333 10%, rgba(161,217,255,1) 50%, rgba(255,255,255,1) 100%);  
   }
   
 
   .extra-card-back {
-    background: white;
     color: black;
     transform: rotateY(180deg);
     text-align: center;
+    background: linear-gradient(180deg, #333 10%, rgba(161,217,255,1) 50%, rgba(255,255,255,1) 100%);  
+
   }
   .extra-card-back p{
     text-align: center;
