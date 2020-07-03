@@ -4,8 +4,6 @@
     padding: 0;
     width: 100%;
     min-height: 70vh;
-    background: url(../images/wave\ 2.svg) no-repeat;
-    background-size: cover;
     text-align: center;
     font-family:"Roboto" sans-serif;
     margin-bottom: 70px;
@@ -19,7 +17,7 @@
     font-weight: 600;
     margin: 20px auto 80px;
     padding-top: 50px;
-    color: #fff;
+    color: black;
     letter-spacing: 2px;
 
 }
@@ -43,8 +41,9 @@
 }
 
 .extra-card {
-    width: 400px;
-    height: 400px;
+    width: 250px;
+    height: 300px;
+    margin-top: 20px;
   }
 
   .extra-card-inner {
@@ -66,14 +65,15 @@
     position: absolute;
     width: 100%;
     height: 100%; 
-    border-radius:20px;
     font-family: 'Yellowtail', cursive;
+    border-radius: 9px;
+    box-shadow: 10px 10px 10px -5px rgba(0,0,0,0.75);
+    backface-visibility: hidden;
   }
   
 
   .extra-card-front {
-    background: linear-gradient(180deg, rgba(162,217,255,1) 10%, rgba(255,255,255,1) 87%);
-  
+    background: linear-gradient(180deg, rgba(230,255,255,1) 10%, rgba(161,217,255,1) 50%, rgba(255,255,255,1) 100%);  
   }
   
 
@@ -81,19 +81,15 @@
     background: white;
     color: black;
     transform: rotateY(180deg);
-  }
-
-  .extra-card-front h2 {
-      text-align: center;
-      padding-top: 50px ;
-  }
-
-  .extra-card-front {
-
     text-align: center;
   }
-
   .extra-card-back p{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 50%;
+    font-size: 32px;
+  }
+
+  .extra-icon {
+    font-size: 60px;
+    margin-top: 50%;
   }
