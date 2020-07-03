@@ -67,14 +67,13 @@
     height: 100%; 
     font-family: 'Yellowtail', cursive;
     border: 1px solid rgb(175,222,255,1);
-    border-radius: 9px;
     box-shadow: 10px 10px 10px -5px rgba(0,0,0,0.75);
     backface-visibility: hidden;
   }
   
 
   .extra-card-front {
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(175,222,255,1) 50%, rgba(255,255,255,1) 100%);  
+    background: linear-gradient(180deg, rgba(230,255,255,1) 10%, rgba(161,217,255,1) 50%, rgba(255,255,255,1) 100%);  
   }
   
 
