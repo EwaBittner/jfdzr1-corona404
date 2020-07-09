@@ -54,7 +54,7 @@ li>a {
     margin-right: 20px;
 }
 
-.nav-trigger {
+#nav-trigger {
     display: none;
 }
 
@@ -183,7 +183,7 @@ li>a {
     }
 }
 
-@media (min-width: 601px) and (max-width: 1280px) {
+@media (min-width: 600px) and (max-width: 1280px) {
     .section-about {
         height: 600px;
         background-image: url(../images/market_1280x850.jpg);
@@ -193,7 +193,6 @@ li>a {
     .section-about .bg {
         height: 600px;
         background-color: rgba(51, 51, 51, 0.2);
-
     }
 
     .about-container {
@@ -207,7 +206,6 @@ li>a {
     .about-hero-content>h1 {
         font-size: 40px;
         padding-bottom: 20px;
-
     }
 
     .about-hero-content>p {
@@ -232,64 +230,35 @@ footer a p {
 }
 
 
-#myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    font-size: 36px;
-    border: none;
-    outline: none;
-    background-color: rgba(95, 95, 95, 0.74);
-    color: white;
-    cursor: pointer;
-    padding: 12px 25px;
-    border-radius: 20%;
-  }
-  
-  #myBtn:hover {
-    background-color: #555;
-  }
-
-@media (max-width: 730px) {
-    .menu li {
-        width: 100%;
-        justify-content: center;
-        max-height: 80px;
-        overflow: hidden;
-    }
-}
-
-@media (max-width: 729px) {
+@media (max-width: 760px) {
     .menu {
         height: 20px;
         width: 100%;
         display: flex;
         justify-content: flex-end;
-        align-content: center;
+        align-content: stretch;
         padding: 10px;
         box-sizing: border-box;
-        transform: translateY(100%);
     }
 
-    button.nav-trigger {
+    #nav-trigger {
         border: 0;
         display: flex;
         justify-content: flex-end;
-        color: #262626;
-        text-decoration: none;
+        color: #fff;
         display: block;
         border-top: 3px solid transparent;
         padding-top: 5px;
         transition: border-top-color 0.2s;
-        margin-right: 35px;
-        font-size: 16px;
+        margin-right: 10%;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        height: 100%;
+        background: #333;
     }
 
-    .Hero .container .nav-trigger a:hover {
-        border-top-color: #ff6033;
-    }
 
     .menu {
         display: flex;
@@ -299,7 +268,6 @@ footer a p {
     }
 
     .menu > li > a:hover {
-        transform: translateY(100%);
         display: flex;
         flex-direction: column;
         transition: 0.5s;
@@ -309,21 +277,51 @@ footer a p {
         display: flex;
         box-sizing: border-box;
         position: absolute;
-        flex-wrap: wrap;
+        flex-shrink: 1;
+        top: 71px;
         right: 0;
-        height: 200px;
+        height: 320px;
         width: 200px;
-        background-color: #262626;
-        justify-content: stretch;
+        background-color: #333;
+        justify-content: center;
         transform: translateX(100%);
         
     }
 
-    .site-menutrigger:focus ~ .site-menu, .site-menu:hover {
+    .site-menu ul {
+        padding: 0;
+        list-style-type: none;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .site-menu li {
+        margin-top: 20px;
+        color: #fff;
+        flex-basis: 100%;
+        display: flex;
+    }
+
+    .site-menu a {
+        display: flex;
+        padding: 10px;
+        box-sizing: border-box;
+        text-decoration: none;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    #nav-trigger:focus ~ .site-menu, .site-menu:hover {
         transform: translateX(0);
         transition: 0.3s transform ease-in-out;
     }
 
+    .h2 {
+        flex-shrink: 2;
+    }
 }
 
 
