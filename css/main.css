@@ -11,6 +11,7 @@ html {
 .Hero {
     background-color: #333;
     padding: 20px 8px;
+    top: 0;
     width: 100%;
     height: auto;
     z-index: 1;
@@ -105,7 +106,6 @@ li>a {
     color: white;
     line-height: 27px;
     text-align: center;
-
 }
 
 .about-hero-action {
@@ -232,24 +232,24 @@ footer a p {
 
 @media (max-width: 760px) {
     .menu {
-        height: 20px;
         width: 100%;
         display: flex;
         justify-content: flex-end;
         align-content: stretch;
         padding: 10px;
         box-sizing: border-box;
+        top: 0;
     }
 
     #nav-trigger {
-        border: 0;
+        box-sizing: border-box;
+        border: none;
         display: flex;
         justify-content: flex-end;
         color: #fff;
         display: block;
         border-top: 3px solid transparent;
         padding-top: 5px;
-        transition: border-top-color 0.2s;
         margin-right: 10%;
         text-transform: uppercase;
         font-weight: 300;
@@ -259,18 +259,10 @@ footer a p {
         background: #333;
     }
 
-
-    .menu {
-        display: flex;
-        box-sizing: border-box;
-        position: absolute;
-        top: 20px;
-    }
-
-    .menu > li > a:hover {
-        display: flex;
-        flex-direction: column;
-        transition: 0.5s;
+    #nav-trigger:hover {
+        border-bottom: 3px solid;
+        border-bottom-color: rgb(230, 45, 45);
+        transition: border-bottom-color 0.5s;
     }
 
     .site-menu {
@@ -319,13 +311,10 @@ footer a p {
         transition: 0.3s transform ease-in-out;
     }
 
-    .h2 {
-        flex-shrink: 2;
-    }
 }
 
 
-@media (max-width: 1012px){
+@media (max-width: 1025px){
     .Hero h2 {
         display: none;
     }
