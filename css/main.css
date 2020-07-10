@@ -94,30 +94,6 @@ li>a {
     color: white;
 }
 
-@media (max-width:440px) {
-    .carousel-caption h1 {
-
-        font-size: 1.3em;
-    }
-
-    .carousel-caption p {
-        font-size: 0.7em;
-    }
-}
-
-@media (min-width:441px) and (max-width:640px) {
-
-
-    .carousel-caption h1 {
-
-        font-size: 2em;
-    }
-
-    .carousel-caption p {
-        font-size: 1em;
-    }
-
-}
 
 
 footer {
