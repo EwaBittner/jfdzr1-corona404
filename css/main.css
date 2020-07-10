@@ -225,8 +225,12 @@ footer {
     bottom: 0;
 }
 
-footer a p {
+footer i p {
     display: inline;
+}
+
+footer i {
+    padding-right: 10px;
 }
 
 
@@ -236,27 +240,26 @@ footer a p {
         display: flex;
         justify-content: flex-end;
         align-content: stretch;
-        padding: 10px;
         box-sizing: border-box;
         top: 0;
     }
 
     #nav-trigger {
         box-sizing: border-box;
-        border: none;
+        border-style: none;
         display: flex;
         justify-content: flex-end;
         color: #fff;
-        display: block;
-        border-top: 3px solid transparent;
-        padding-top: 5px;
+        padding: 10px 10px 5px 10px;
         margin-right: 10%;
+        border-bottom: 3px solid transparent;
         text-transform: uppercase;
-        font-weight: 300;
+        font-weight: 400;
         font-family: 'Raleway', sans-serif;
         font-size: 20px;
         height: 100%;
         background: #333;
+        outline: none;
     }
 
     #nav-trigger:hover {
@@ -269,7 +272,6 @@ footer a p {
         display: flex;
         box-sizing: border-box;
         position: absolute;
-        flex-shrink: 1;
         top: 71px;
         right: 0;
         height: 320px;
@@ -277,11 +279,10 @@ footer a p {
         background-color: #333;
         justify-content: center;
         transform: translateX(100%);
-        
     }
 
     .site-menu ul {
-        padding: 0;
+        padding: 20px;
         list-style-type: none;
         margin: 0;
         display: flex;
@@ -290,7 +291,7 @@ footer a p {
     }
 
     .site-menu li {
-        margin-top: 20px;
+        margin-top: 15px;
         color: #fff;
         flex-basis: 100%;
         display: flex;
