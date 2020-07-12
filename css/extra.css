@@ -101,3 +101,14 @@
     font-size: 70px;
     margin-top: 50%;
   }
+  @media (max-width:767px){
+
+    .extra-header {
+      font-size: 2.5rem;
+  }
+
+  .extra-header::after{
+
+    width: 220px;
+
+    }
