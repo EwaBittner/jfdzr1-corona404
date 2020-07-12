@@ -18,6 +18,7 @@
     padding-top: 50px;
     color: #fff;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 .aboutus__header::after{
@@ -91,6 +92,16 @@
 .aboutus__icon:hover{
     background-color: #fff;
     border-radius: 20px;
+}
+
+@media (max-width: 768px){
+    .aboutus__header{
+    font-size : 2.5em;
+    }
+
+    .aboutus__header::after{
+        transform: translateX(-5px) translateY(15px) skewX(-60deg);
+    }
 }
 
 
