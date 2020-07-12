@@ -33,6 +33,7 @@
     height: 8px;
     background-color: rgb(216, 69, 69);
     transform: translateX(35px) translateY(15px) skewX(-60deg);
+    -webkit-transform: translateX(35px) translateY(15px) skewX(-60deg);
 }
 
 .extra-container{
@@ -53,11 +54,13 @@
     height: 100%;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
   }
   
 
   .extra-card:hover .extra-card-inner {
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
 ;
   }
   
@@ -70,6 +73,7 @@
     border-radius: 9px;
     box-shadow: 15px 15px 15px -5px rgba(0,0,0,0.75);
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
   }
   
 
@@ -81,6 +85,7 @@
   .extra-card-back {
     color: black;
     transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
     text-align: center;
     background: linear-gradient(180deg, #333 10%, rgba(161,217,255,1) 50%, rgba(255,255,255,1) 100%);  
 
