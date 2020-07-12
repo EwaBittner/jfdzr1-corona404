@@ -31,6 +31,14 @@ html {
     align-items: center;
 }
 
+#logo-corona {
+    width: 70px;
+    height: auto;
+    padding: 0;
+    margin-left: 0 5%;
+    background: #fff;
+}
+
 nav a:hover {
     border-bottom: 3px solid;
     border-bottom-color: rgb(230, 45, 45);
