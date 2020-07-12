@@ -6,13 +6,13 @@
     background: url(../images/wave\ 2.svg) no-repeat;
     background-size: cover;
     text-align: center;
-    font-family:"Roboto" sans-serif;
+    font-family:"Monterrat" sans-serif;
 }
 
 .aboutus__header{
     display: inline-block;
     font-size: 4rem;
-    font-family: "Roboto";
+    font-family: 'Montserrat';
     font-weight: 600;
     margin: 20px auto 80px;
     padding-top: 50px;
@@ -27,7 +27,7 @@
     width: 280px;
     height: 8px;
     background-color: rgb(216, 69, 69);
-    transform: translateX(35px) translateY(15px) skewX(-60deg);
+    transform: translateX(58px) translateY(15px) skewX(-60deg);
 }
 
 .aboutus__container{
