@@ -8,7 +8,7 @@
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
-    padding: 40px;
+    padding: 60px;
 }
 
 .sign-in-container-img {
@@ -49,6 +49,7 @@
     border: 1px solid #f2f2f2;
     margin-top: 15px;
     height: 75px;
+    resize: none;
     
   }
   
