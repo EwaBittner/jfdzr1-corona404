@@ -43,8 +43,8 @@
 }
 
 .extra-card {
-    width: 250px;
-    height: 300px;
+    width: 200px;
+    height: 250px;
     margin-top: 20px;
   }
 
@@ -53,6 +53,7 @@
     width: 100%;
     height: 100%;
     transition: transform 0.8s;
+    -webkit-transition: transform 0.8;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
   }
@@ -69,7 +70,7 @@
     position: absolute;
     width: 100%;
     height: 100%; 
-    font-family: 'Yellowtail', cursive;
+    font-family: Raleway, sans-serif;
     border-radius: 9px;
     box-shadow: 15px 15px 15px -5px rgba(0,0,0,0.75);
     backface-visibility: hidden;
@@ -93,10 +94,10 @@
   .extra-card-back p{
     text-align: center;
     margin-top: 50%;
-    font-size: 32px;
+    font-size: 25px;
   }
 
   .extra-icon {
-    font-size: 60px;
+    font-size: 70px;
     margin-top: 50%;
   }
