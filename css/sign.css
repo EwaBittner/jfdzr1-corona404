@@ -25,6 +25,7 @@
     font-size: 20px;
     text-align: center;
     max-width: 400px;
+    max-height: 350px;
 }
 
  input[type=email], input[type=text]{
@@ -36,7 +37,8 @@
     background: none;
     text-align: center;
     outline: none;
-    color: #00fff5;
+    color: #fff;
+    height: 30px;
   }
 
   .textarea {
@@ -46,6 +48,7 @@
     width: 100%;
     border: 1px solid #f2f2f2;
     margin-top: 15px;
+    height: 75px;
     
   }
   
@@ -60,8 +63,8 @@
 
   input[type=submit]:hover,.textarea:hover{
   transform: scale(1.05);
-  color:#00fff5;
-  border: 3px solid #00fff5;
+  color:#fff;
+  border: 3px solid #fff;
   }
 
   .sign-agree {
@@ -72,9 +75,9 @@
 
   input[type=email]:hover, input[type=text]:hover{
 
-    border-bottom:3px solid #00fff5;
+    border-bottom:3px solid #fff;
     transform: scale(1.05);
-    color:#00fff5;
+    color:#fff;
 
   
   }
