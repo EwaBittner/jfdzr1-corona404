@@ -70,9 +70,11 @@ li>a {
 
 }
 
+
+
 .carousel-caption h1,
 .carousel-caption p {
-    font-family: 'Bree Serif', serif;
+    font-family: Montserrat, serif;
 }
 
 .about-hero-action {
@@ -83,6 +85,7 @@ li>a {
     border: none;
     background: red;
     transition: 0.3s;
+    margin: 0 auto;
 
 }
 
@@ -131,11 +134,11 @@ footer a p {
     cursor: pointer;
     padding: 12px 25px;
     border-radius: 20%;
-  }
-  
-  #myBtn:hover {
+}
+
+#myBtn:hover {
     background-color: #555;
-  }
+}
 
 @media (max-width: 730px) {
     .menu li {
@@ -174,7 +177,7 @@ footer a p {
         transform: translateY(10%);
     } */
 
-    .menu > li > a:hover {
+    .menu>li>a:hover {
         transform: translateY(100%);
         display: flex;
         flex-direction: column;
@@ -184,9 +187,8 @@ footer a p {
 
 
 
-@media (max-width: 1012px){
-    .Hero h2{
+@media (max-width: 1012px) {
+    .Hero h2 {
         display: none;
     }
 }
-
