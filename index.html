@@ -8,24 +8,34 @@
     integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
   <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800'
     rel='stylesheet' type='text/css'>
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+
+  <link rel="icon" href="images/Logo_corona.png">
+  
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="./css/productinfo.css">
   <link rel="stylesheet" href="./css/aboutus.css">
   <link rel="stylesheet" href="./css/sign.css">
+  <link rel="stylesheet" href="./css/extra.css">
 
   <title>Market404</title>
 </head>
 
 <body>
+  <button onclick="topFunction()" id="myBtn" title="Powrót do góry"><i class="fas fa-angle-double-up"></i></button>
+
   <!-- sekcja HERO -->
   <header class="Hero">
     <div class="container">
       <img src="Market404" alt="Ikona wozka" />
       <h2>Postaw na polską jakość</h2>
-      <nav class="menu">
+
+      <button class="nav-trigger">Menu</button>
+      <nav class="menu" id="menu">
         <ul>
           <li><a href="#Product-Info">Produkt</a></li>
           <li><a href="#About-Us">O nas</a></li>
@@ -89,7 +99,7 @@
 
   </section>
 
-  <section class="product-info">
+  <section class="product-info" id="Product-Info">
     <!-- identyfikacja wizualna produktu, spis funkcji -->
 
     <div class="product-info__container">
@@ -116,62 +126,151 @@
 
   </section>
 
-  <section class="aboutus">
+  <section class="aboutus" id="About-Us">
     <h1 class="aboutus__header">NASZ TEAM</h1>
     <div class="aboutus__container">
       <div class="aboutus__card">
         <div class="aboutus__box">
-          <img src="https://via.placeholder.com/300x300" alt="Tomek Makarewicz" class="aboutus__img">
+          <img src="./images/tomek.jpeg" alt="Tomek Makarewicz" class="aboutus__img">
           <h2 class="aboutus__name">Tomek Makarewicz</h2>
           <a class="aboutus__link" href="#" target="_blank"><i class="fas fa-envelope aboutus__icon"></i></a>
-          <a class="aboutus__link" href="#" target="_blank"><i class="fab fa-github aboutus__icon"></i></a>
-          <a class="aboutus__link" href="#" target="_blank"><i class="fab fa-linkedin aboutus__icon"></i></a>
+          <a class="aboutus__link" href="https://github.com/tomasz-makarewicz" target="_blank"><i
+              class="fab fa-github aboutus__icon"></i></a>
+          <a class="aboutus__link" href="https://pl.linkedin.com/in/tomasz-makarewicz-a278a8133" target="_blank"><i
+              class="fab fa-linkedin aboutus__icon"></i></a>
         </div>
       </div>
       <div class="aboutus__card">
         <div class="aboutus__box">
-          <img
-            src="https://images.unsplash.com/photo-1578176603894-57973e38890f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
-            alt="Jakub Rejmann" class="aboutus__img">
+          <img src="./images/kuba.jpeg" alt="Jakub Rejmann" class="aboutus__img">
           <h2 class="aboutus__name">Jakub Rejmann</h2>
           <a class="aboutus__link" href="#" target="_blank"><i class="fas fa-envelope aboutus__icon"></i></a>
-          <a class="aboutus__link" href="#" target="_blank"><i class="fab fa-github aboutus__icon"></i></a>
-          <a class="aboutus__link" href="#" target="_blank"><i class="fab fa-linkedin aboutus__icon"></i></a>
+          <a class="aboutus__link" href="https://github.com/reymanov" target="_blank"><i
+              class="fab fa-github aboutus__icon"></i></a>
+          <a class="aboutus__link" href="https://www.linkedin.com/in/jakub-rejmann-8b49221a8/" target="_blank"><i
+              class="fab fa-linkedin aboutus__icon"></i></a>
         </div>
       </div>
       <div class="aboutus__card">
         <div class="aboutus__box">
-          <img src="https://via.placeholder.com/300x300" alt="Ewa Bittner" class="aboutus__img">
+          <img src="./images/ewa.jpg" alt="Ewa Bittner" class="aboutus__img">
           <h2 class="aboutus__name">Ewa Bittner</h2>
           <a class="aboutus__link" href="#" target="_blank"><i class="fas fa-envelope aboutus__icon"></i></a>
-          <a class="aboutus__link" href="#" target="_blank"><i class="fab fa-github aboutus__icon"></i></a>
-          <a class="aboutus__link" href="#" target="_blank"><i class="fab fa-linkedin aboutus__icon"></i></a>
+          <a class="aboutus__link" href="https://github.com/EwaBittner" target="_blank"><i
+              class="fab fa-github aboutus__icon"></i></a>
+          <a class="aboutus__link" href="https://www.linkedin.com/in/ewa-bittner-a0b644b7/" target="_blank"><i
+              class="fab fa-linkedin aboutus__icon"></i></a>
         </div>
       </div>
       <div class="aboutus__card">
         <div class="aboutus__box">
-          <img src="https://via.placeholder.com/300x300" alt="Mateusz Adamczyk" class="aboutus__img">
+          <img src="./images/mateusz.jpg" alt="Mateusz Adamczyk" class="aboutus__img">
           <h2 class="aboutus__name">Mateusz Adamczyk</h2>
           <a class="aboutus__link" href="#" target="_blank"><i class="fas fa-envelope aboutus__icon"></i></a>
-          <a class="aboutus__link" href="#" target="_blank"><i class="fab fa-github aboutus__icon"></i></a>
-          <a class="aboutus__link" href="#" target="_blank"><i class="fab fa-linkedin aboutus__icon"></i></a>
+          <a class="aboutus__link" href="https://github.com/mateuszad" target="_blank"><i
+              class="fab fa-github aboutus__icon"></i></a>
+          <a class="aboutus__link" href="http://www.linkedin.com/in/mateusz-adamczyk-12a709186" target="_blank"><i
+              class="fab fa-linkedin aboutus__icon"></i></a>
         </div>
       </div>
       <div class="aboutus__card">
         <div class="aboutus__box">
-          <img src="https://via.placeholder.com/300x300" alt="Maciej Pilarczyk" class="aboutus__img">
+          <img src="./images/maciej.jpeg" alt="Maciej Pilarczyk" class="aboutus__img">
           <h2 class="aboutus__name">Maciej Pilarczyk</h2>
           <a class="aboutus__link" href="#" target="_blank"><i class="fas fa-envelope aboutus__icon"></i></a>
-          <a class="aboutus__link" href="#" target="_blank"><i class="fab fa-github aboutus__icon"></i></a>
+          <a class="aboutus__link" href="https://github.com/maciej-pilarczyk" target="_blank"><i
+              class="fab fa-github aboutus__icon"></i></a>
           <a class="aboutus__link" href="#" target="_blank"><i class="fab fa-linkedin aboutus__icon"></i></a>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="Additional-Info">
+  <section id="Additional-Info" class="extra-section">
     <!-- Dodatkowe informacje o produkcje -->
-    <h2>Ble ble</h2>
+    <h1 class="extra-header">DODATKOWO</h1>
+    <div class="extra-container">
+      <div class="extra-card">
+          <div class="extra-card-inner">
+          <div class="extra-card-front">
+            <i class="fas fa-search-plus extra-icon"></i>
+          </div>
+            <div class="extra-card-back">
+              <p>Najszybsze wyszukiwanie</p>
+            </div>
+          </div>
+        </div>
+        <div class="extra-card">
+          <div class="extra-card-inner">
+          <div class="extra-card-front">
+            <i class="fas fa-thumbs-up extra-icon"></i>
+          </div>
+            <div class="extra-card-back">
+              <p>Najlepsza jakość</p>
+            </div>
+          </div>
+        </div>
+        <div class="extra-card">
+          <div class="extra-card-inner">
+          <div class="extra-card-front">
+            <i class="fas fa-expand-alt extra-icon"></i>
+          </div>
+            <div class="extra-card-back">
+              <p>Największy zasięg dostaw</p>
+            </div>
+          </div>
+        </div>
+        <div class="extra-card">
+          <div class="extra-card-inner">
+          <div class="extra-card-front">
+            <i class="fas fa-globe-europe extra-icon"></i></div>
+            <div class="extra-card-back">
+              <p>Największa baza producentów</p>
+            </div>
+          </div>
+        </div>
+        <div class="extra-card">
+          <div class="extra-card-inner">
+          <div class="extra-card-front">
+            <i class="fas fa-tags extra-icon"></i>
+          </div>
+            <div class="extra-card-back">
+              <p>Rabat na pierwsze zakupy</p>
+            </div>
+          </div>
+        </div>
+        <div class="extra-card">
+          <div class="extra-card-inner">
+          <div class="extra-card-front">
+            <i class="fas fa-truck extra-icon"></i>
+          </div>
+            <div class="extra-card-back">
+              <p>Wysyłka w 24h</p>
+            </div>
+          </div>
+        </div>
+        <div class="extra-card">
+          <div class="extra-card-inner">
+          <div class="extra-card-front">
+            <i class="fas fa-head-side-mask extra-icon"></i>
+          </div>
+            <div class="extra-card-back">
+              <p>Bezkontaktowa dostawa</p>
+            </div>
+          </div>
+        </div>
+        <div class="extra-card">
+          <div class="extra-card-inner">
+          <div class="extra-card-front">
+            <i class="fas fa-undo-alt extra-icon"></i>
+          </div>
+            <div class="extra-card-back">
+              <p>Darmowe zwroty</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
   </section>
 
   <section id="Sign-In" class="sign-in-section">
@@ -206,6 +305,7 @@
       <a href="YouTube">1</a>
     </div>
   </footer>
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
   </script>
@@ -215,6 +315,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
   </script>
+  
+  <script src="./JS/button.js"></script>
+  <script src="./JS/smoothmenu.js"></script>
 
 </body>
 

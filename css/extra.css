@@ -1,0 +1,102 @@
+.extra-section {
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 70vh;
+    text-align: center;
+    font-family:"Roboto" sans-serif;
+    margin-bottom: 70px;
+    background-color: rgba(161,217,255,1);
+}
+
+.extra-header {
+
+    display: inline-block;
+    font-size: 4rem;
+    font-family: "Roboto";
+    font-weight: 600;
+    margin: 20px auto 80px;
+    padding-top: 50px;
+    color: #fff;
+    letter-spacing: 2px;
+
+}
+
+
+.extra-header::after{
+
+    content: "";
+    display: block;
+    position: absolute;
+    width: 380px;
+    height: 8px;
+    background-color: rgb(216, 69, 69);
+    transform: translateX(35px) translateY(15px) skewX(-60deg);
+    -webkit-transform: translateX(35px) translateY(15px) skewX(-60deg);
+}
+
+.extra-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.extra-card {
+    width: 250px;
+    height: 300px;
+    margin-top: 20px;
+  }
+
+  .extra-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+  }
+  
+
+  .extra-card:hover .extra-card-inner {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+;
+  }
+  
+
+  .extra-card-front, .extra-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    font-family: 'Yellowtail', cursive;
+    border-radius: 9px;
+    box-shadow: 15px 15px 15px -5px rgba(0,0,0,0.75);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+  
+
+  .extra-card-front {
+    background: linear-gradient(180deg, #333 10%, rgba(161,217,255,1) 50%, rgba(255,255,255,1) 100%);  
+  }
+  
+
+  .extra-card-back {
+    color: black;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    text-align: center;
+    background: linear-gradient(180deg, #333 10%, rgba(161,217,255,1) 50%, rgba(255,255,255,1) 100%);  
+
+  }
+  .extra-card-back p{
+    text-align: center;
+    margin-top: 50%;
+    font-size: 32px;
+  }
+
+  .extra-icon {
+    font-size: 60px;
+    margin-top: 50%;
+  }
