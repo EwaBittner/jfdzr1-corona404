@@ -5,7 +5,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-family: Raleway, sans-serif;
+    font-family: Montserrat, sans-serif;
 }
 
 .Hero {
@@ -60,7 +60,7 @@ li>a {
     text-decoration: none;
     border-bottom: 3px solid transparent;
     color: #f2f2f2;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 #nav-trigger {
@@ -69,6 +69,7 @@ li>a {
 
 .Hero h2 {
     color: #f2f2f2;
+    flex-shrink: 2;
 }
 
 .section-about {
@@ -193,7 +194,6 @@ li>a {
     .section-about {
         height: 600px;
         background-image: url(../images/market_1280x850.jpg);
-
     }
 
     .section-about .bg {
@@ -258,7 +258,6 @@ footer i {
         border-bottom: 3px solid transparent;
         text-transform: uppercase;
         font-weight: 400;
-        font-family: 'Raleway', sans-serif;
         font-size: 20px;
         height: 100%;
         background: #333;
@@ -281,6 +280,10 @@ footer i {
         width: 200px;
         background-color: #333;
         justify-content: center;
+        -ms-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -o-transform: translateX(100%);
         transform: translateX(100%);
     }
 
@@ -311,6 +314,10 @@ footer i {
     }
 
     #nav-trigger:hover ~ .site-menu, .site-menu:hover {
+        -ms-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -o-transform: translateX(0);
         transform: translateX(0);
         transition: 0.3s transform ease-in-out;
     }
