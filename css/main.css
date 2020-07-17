@@ -61,51 +61,19 @@ li>a {
     color: #f2f2f2;
 }
 
-.section-about {
-    height: 800px;
-    display: flex;
-    align-items: stretch;
-    position: relative;
-    background-image: url(../images/market_1920x1248.jpg);
-    background-size: cover;
-    background-position: top;
-    color: rgb(36, 33, 33);
-}
 
-.section-about .bg {
-    width: 100%;
-    height: 800px;
-    background-color: rgba(51, 51, 51, 0.2);
+
+
+.carousel-caption {
+    background: rgba(2, 2, 2, 0.4);
 
 }
 
-.about-container {
-    position: absolute;
-    top: 15%;
-    left: 69%;
-}
 
-.about-hero-content {
-    max-width: 250px;
-    text-align: center;
-}
 
-.about-hero-content>h1 {
-    font-size: 45px;
-    font-weight: 700;
-    color: white;
-    margin: 0 auto;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.about-hero-content>p {
-    margin: 0 auto;
-    font-size: 18px;
-    color: white;
-    line-height: 27px;
-    text-align: center;
-
+.carousel-caption h1,
+.carousel-caption p {
+    font-family: Montserrat, serif;
 }
 
 .about-hero-action {
@@ -116,6 +84,7 @@ li>a {
     border: none;
     background: red;
     transition: 0.3s;
+    margin: 0 auto;
 
 }
 
@@ -133,92 +102,6 @@ li>a {
     color: white;
 }
 
-@media (max-width: 600px) {
-    .section-about {
-        height: 600px;
-        width: 100vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-image: url(../images/market_640x425.jpg);
-        background-size: cover;
-        background-position: center;
-    }
-
-    .section-about .bg {
-        display: flex;
-        position: relative;
-        align-items: center;
-        justify-content: flex-start;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(51, 51, 51, 0.2);
-
-    }
-
-    .about-container {
-        /* justify-content: center;
-        align-items: center; */
-        position: absolute;
-        width: 100%;
-        top: 35%;
-        left: 0;
-        padding: 0 20px;
-    }
-
-    .about-hero-content {
-        max-width: 300px;
-        text-align: center;
-    }
-
-    .about-hero-content>h1 {
-        font-size: 25px;
-
-    }
-
-    .about-hero-content>p {
-
-        font-size: 16px;
-    }
-
-    .about-hero-action {
-        height: 50px;
-        width: 150px;
-    }
-}
-
-@media (min-width: 601px) and (max-width: 1280px) {
-    .section-about {
-        height: 600px;
-        background-image: url(../images/market_1280x850.jpg);
-
-    }
-
-    .section-about .bg {
-        height: 600px;
-        background-color: rgba(51, 51, 51, 0.2);
-
-    }
-
-    .about-container {
-        position: absolute;
-        width: 100%;
-        top: 25%;
-        left: 0;
-        padding: 0 20px;
-    }
-
-    .about-hero-content>h1 {
-        font-size: 40px;
-        padding-bottom: 20px;
-
-    }
-
-    .about-hero-content>p {
-        font-size: 18px;
-    }
-
-}
 
 
 footer {
@@ -250,11 +133,11 @@ footer a p {
     cursor: pointer;
     padding: 12px 25px;
     border-radius: 20%;
-  }
-  
-  #myBtn:hover {
+}
+
+#myBtn:hover {
     background-color: #555;
-  }
+}
 
 @media (max-width: 730px) {
     .menu li {
@@ -293,7 +176,7 @@ footer a p {
         transform: translateY(10%);
     } */
 
-    .menu > li > a:hover {
+    .menu>li>a:hover {
         transform: translateY(100%);
         display: flex;
         flex-direction: column;
@@ -303,9 +186,8 @@ footer a p {
 
 
 
-@media (max-width: 1012px){
-    .Hero h2{
+@media (max-width: 1012px) {
+    .Hero h2 {
         display: none;
     }
 }
-
