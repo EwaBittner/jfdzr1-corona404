@@ -5,7 +5,7 @@
     width: 100%;
     min-height: 70vh;
     text-align: center;
-    font-family:"Roboto" sans-serif;
+    font-family:"Montserrat" sans-serif;
     margin-bottom: 70px;
     background-color: rgba(161,217,255,1);
 }
@@ -14,7 +14,7 @@
 
     display: inline-block;
     font-size: 4rem;
-    font-family: "Roboto";
+    font-family: "Montserrat";
     font-weight: 600;
     margin: 20px auto 80px;
     padding-top: 50px;
@@ -79,7 +79,7 @@
   
 
   .extra-card-front {
-    background: linear-gradient(180deg, #333 10%, rgba(161,217,255,1) 50%, rgba(255,255,255,1) 100%);  
+    background: linear-gradient(180deg, rgba(162,217,255,1) 18%, rgba(255,255,255,1) 100%);
   }
   
 
@@ -88,12 +88,12 @@
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     text-align: center;
-    background: linear-gradient(180deg, #333 10%, rgba(161,217,255,1) 50%, rgba(255,255,255,1) 100%);  
+    background: linear-gradient(354deg, rgba(162,217,255,1) 18%, rgba(255,255,255,1) 100%);
 
   }
   .extra-card-back p{
     text-align: center;
-    margin-top: 50%;
+    margin-top: 20%;
     font-size: 25px;
   }
 
@@ -101,6 +101,30 @@
     font-size: 70px;
     margin-top: 50%;
   }
+
+
+ .extra-btn{
+
+  border-radius: 9px;
+  background: transparent;
+  width: 80%;
+  outline: none;
+  margin-top: 30%;
+  text-transform: capitalize;
+
+
+ } 
+ .extra-btn:hover{
+  border-color: white;
+  box-shadow: 15px 15px 15px -5px rgba(0,0,0,0.75);
+  outline: none;
+ }
+
+ button:focus {
+  outline: none;
+}
+
+
   @media (max-width:767px){
 
     .extra-header {
