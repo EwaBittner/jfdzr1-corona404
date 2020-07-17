@@ -4,15 +4,17 @@
 }
 
 html {
-    font-family: Raleway, sans-serif;
+    scroll-behavior: smooth;
+    font-family: Montserrat, sans-serif;
 }
 
 .Hero {
     background-color: #333;
-    padding: 20px 10px;
+    padding: 20px 8px;
+    top: 0;
     width: 100%;
     height: auto;
-    overflow: visible;
+    z-index: 1;
     position: fixed;
 }
 
@@ -27,6 +29,14 @@ html {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+#logo-corona {
+    width: 70px;
+    height: auto;
+    padding: 0;
+    margin-left: 0 5%;
+    background: #fff;
 }
 
 nav a:hover {
@@ -50,25 +60,36 @@ li>a {
     text-decoration: none;
     border-bottom: 3px solid transparent;
     color: #f2f2f2;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
-.nav-trigger {
+#nav-trigger {
     display: none;
 }
 
 .Hero h2 {
     color: #f2f2f2;
+    flex-shrink: 2;
 }
 
 
 
+.section-about .bg {
+    width: 100%;
+    height: 800px;
+    background-color: rgba(51, 51, 51, 0.2);
+}
 
 .carousel-caption {
     background: rgba(2, 2, 2, 0.4);
-
 }
 
+.about-hero-content>p {
+    margin: 0 auto;
+    font-size: 18px;
+    color: white;
+    line-height: 27px;
+    text-align: center;
 
 
 .carousel-caption h1,
@@ -85,7 +106,6 @@ li>a {
     background: red;
     transition: 0.3s;
     margin: 0 auto;
-
 }
 
 .about-hero-action:hover {
@@ -103,8 +123,85 @@ li>a {
 }
 
 
+@media (max-width: 600px) {
+    .section-about {
+        height: 600px;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../images/market_640x425.jpg);
+        background-size: cover;
+        background-position: center;
+    }
 
-footer {
+    .section-about .bg {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(51, 51, 51, 0.2);
+    }
+
+    .about-container {
+        position: absolute;
+        width: 100%;
+        top: 35%;
+        left: 0;
+        padding: 0 20px;
+    }
+
+    .about-hero-content {
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .about-hero-content>h1 {
+        font-size: 25px;
+    }
+
+    .about-hero-content>p {
+        font-size: 16px;
+    }
+
+    .about-hero-action {
+        height: 50px;
+        width: 150px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1280px) {
+    .section-about {
+        height: 600px;
+        background-image: url(../images/market_1280x850.jpg);
+    }
+
+    .section-about .bg {
+        height: 600px;
+        background-color: rgba(51, 51, 51, 0.2);
+    }
+
+    .about-container {
+        position: absolute;
+        width: 100%;
+        top: 25%;
+        left: 0;
+        padding: 0 20px;
+    }
+
+    .about-hero-content>h1 {
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+
+    .about-hero-content>p {
+        font-size: 18px;
+    }
+}
+
+ footer {
     background-color: #333;
     width: 100%;
     display: flex;
@@ -114,10 +211,12 @@ footer {
     bottom: 0;
 }
 
-footer a p {
+.footer-icon {
     display: inline;
 }
 
+footer i {
+    padding-right: 10px;
 
 #myBtn {
     display: none;
@@ -148,45 +247,99 @@ footer a p {
     }
 }
 
-@media (max-width: 729px) {
+@media (max-width: 760px) {
     .menu {
-        height: 20px;
         width: 100%;
         display: flex;
         justify-content: flex-end;
-        align-content: center;
-        padding: 10px;
+        align-content: stretch;
         box-sizing: border-box;
-        transform: translateY(100%);
+        top: 0;
     }
 
-    .nav-trigger {
-        border: 0;
+    #nav-trigger {
+        box-sizing: border-box;
+        border-style: none;
         display: flex;
         justify-content: flex-end;
+        color: #fff;
+        padding: 10px 10px 5px 10px;
+        margin-right: 10%;
+        border-bottom: 3px solid transparent;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 20px;
+        height: 100%;
+        background: #333;
+        outline: none;
     }
 
-    .menu {
+    #nav-trigger:hover {
+        border-bottom: 3px solid;
+        border-bottom-color: rgb(230, 45, 45);
+        transition: border-bottom-color 0.5s;
+    }
+
+    .site-menu {
         display: flex;
+        box-sizing: border-box;
+        position: absolute;
+        top: 71px;
+        right: 0;
+        height: 320px;
+        width: 200px;
+        background-color: #333;
+        justify-content: center;
+        -ms-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        transform: translateX(100%);
     }
 
-    /* .menu > li{
-        max-height: 10%;
-        justify-content: right;
-        transform: translateY(10%);
-    } */
+    .site-menu ul {
+        padding: 20px;
+        list-style-type: none;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
 
+
+    .site-menu li {
+        margin-top: 15px;
+        color: #fff;
+        flex-basis: 100%;
+  }
+    
     .menu>li>a:hover {
         transform: translateY(100%);
         display: flex;
-        flex-direction: column;
-        transition: 0.5s;
+    }
+
+    .site-menu a {
+        display: flex;
+        padding: 10px;
+        box-sizing: border-box;
+        text-decoration: none;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    #nav-trigger:hover ~ .site-menu, .site-menu:hover {
+        -ms-transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateX(0);
+        transition: 0.3s transform ease-in-out;
     }
 }
 
 
-
-@media (max-width: 1012px) {
+@media (max-width: 1025px){
     .Hero h2 {
         display: none;
     }
