@@ -97,6 +97,7 @@
 @media (max-width: 768px){
     .aboutus__header{
     font-size : 2.5em;
+    transform: translateX(10px);
     }
 
     .aboutus__header::after{
