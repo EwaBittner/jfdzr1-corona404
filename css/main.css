@@ -9,8 +9,8 @@ html {
 }
 
 .Hero {
-    background-color: #333;
-    padding: 20px 8px;
+    background-color: #fff;
+    padding: 15px 8px;
     top: 0;
     width: 100%;
     height: auto;
@@ -31,17 +31,16 @@ html {
     align-items: center;
 }
 
-#logo-corona {
+.logo-corona {
     width: 70px;
     height: auto;
     padding: 0;
-    margin-left: 0 5%;
-    background: #fff;
+    margin-left: 5%;
 }
 
 nav a:hover {
     text-decoration: none;
-    color: #f2f2f2;
+    color: #333;
     border-bottom: 3px solid;
     border-bottom-color: rgb(230, 45, 45);
     transition: border-bottom-color 0.5s;
@@ -65,20 +64,13 @@ li>a {
     font-weight: 400;
     text-decoration: none;
     border-bottom: 3px solid transparent;
-    color: #f2f2f2;
+    color: #333;
     margin-right: 10px;
 }
 
-#nav-trigger {
+.nav-trigger {
     display: none;
 }
-
-.Hero h2 {
-    color: #f2f2f2;
-    flex-shrink: 2;
-}
-
-
 
 .section-about .bg {
     width: 100%;
@@ -208,22 +200,28 @@ li>a {
     }
 }
 
- footer {
-    background-color: #333;
+.footer {
+    background-color: #fff;
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 20px;
-    color: #f2f2f2;
+    padding: 15px;
+    color: #333;
     bottom: 0;
+    align-items: center;
+}
+
+.copyright {
+    align-items: center;
+    padding-top: 10px;
 }
 
 .footer-icon {
     display: inline;
 }
 
-footer i {
-    padding-right: 10px;
+.footer i {
+    padding-right: 15px;
 }
 
 #myBtn {
@@ -265,12 +263,12 @@ footer i {
         top: 0;
     }
 
-    #nav-trigger {
+    .nav-trigger {
         box-sizing: border-box;
         border-style: none;
         display: flex;
         justify-content: flex-end;
-        color: #fff;
+        color: #333;
         padding: 10px 10px 5px 10px;
         margin-right: 10%;
         border-bottom: 3px solid transparent;
@@ -278,11 +276,11 @@ footer i {
         font-weight: 400;
         font-size: 20px;
         height: 100%;
-        background: #333;
+        background: #fff;
         outline: none;
     }
 
-    #nav-trigger:hover {
+    .nav-trigger:hover {
         border-bottom: 3px solid;
         border-bottom-color: rgb(230, 45, 45);
         transition: border-bottom-color 0.5s;
@@ -292,11 +290,12 @@ footer i {
         display: flex;
         box-sizing: border-box;
         position: absolute;
-        top: 71px;
+        top: 65px;
         right: 0;
         height: 320px;
-        width: 200px;
-        background-color: #333;
+        width: 170px;
+        color: #333;
+        background-color: #fff;
         justify-content: center;
         -ms-transform: translateX(100%);
         -webkit-transform: translateX(100%);
@@ -311,7 +310,7 @@ footer i {
         margin: 0;
         display: flex;
         flex-wrap: wrap;
-        align-content: flex-start;
+        align-content: center;
     }
 
 
@@ -336,19 +335,12 @@ footer i {
         width: 100%;
     }
 
-    #nav-trigger:hover ~ .site-menu, .site-menu:hover {
+    .nav-trigger:hover ~ .site-menu, .site-menu:hover {
         -ms-transform: translateX(0);
         -webkit-transform: translateX(0);
         -moz-transform: translateX(0);
         -o-transform: translateX(0);
         transform: translateX(0);
         transition: 0.3s transform ease-in-out;
-    }
-}
-
-
-@media (max-width: 1025px){
-    .Hero h2 {
-        display: none;
     }
 }
