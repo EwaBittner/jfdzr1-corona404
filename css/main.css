@@ -224,13 +224,13 @@ footer i {
     bottom: 20px;
     right: 30px;
     z-index: 99;
-    font-size: 36px;
+    font-size: 28px;
     border: none;
     outline: none;
     background-color: rgba(95, 95, 95, 0.74);
     color: white;
     cursor: pointer;
-    padding: 12px 25px;
+    padding: 6px 20px;
     border-radius: 20%;
 }
 
