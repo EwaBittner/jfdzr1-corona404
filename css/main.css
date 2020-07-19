@@ -129,7 +129,6 @@ li>a {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-image: url(../images/market_640x425.jpg);
         background-size: cover;
         background-position: center;
     }
@@ -174,7 +173,6 @@ li>a {
 @media (min-width: 600px) and (max-width: 1280px) {
     .section-about {
         height: 600px;
-        background-image: url(../images/market_1280x850.jpg);
     }
 
     .section-about .bg {
@@ -236,7 +234,7 @@ li>a {
     background-color: rgba(95, 95, 95, 0.74);
     color: white;
     cursor: pointer;
-    padding: 6px 20px;
+    padding: 0px 18px;
     border-radius: 20%;
 }
 
