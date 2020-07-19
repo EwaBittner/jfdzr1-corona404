@@ -74,9 +74,10 @@
 }
 
 .aboutus__name{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 500;
     margin: 20px auto 20px;
+    font-family: 'Montserrat',sans-serif;
 }
 
 .aboutus__link{
@@ -92,6 +93,7 @@
 .aboutus__icon:hover{
     background-color: #fff;
     border-radius: 20px;
+    color: rgb(42, 42, 42);
 }
 
 @media (max-width: 768px){
