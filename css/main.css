@@ -4,6 +4,8 @@
 }
 
 html {
+    max-width: 100%;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     font-family: Montserrat, sans-serif;
 }

@@ -1,9 +1,8 @@
 .product-info{
     height: 600px;
     width: 100%;
-    margin:240px 0 0 0;
+    margin:240px 0 40px 0;
     padding: 0;
-    background: url(../images/wave.svg), no-repeat;
     background-size: cover;
     font-family: "Montserrat",sans-serif;
 }
@@ -15,7 +14,7 @@
     font-size: 58px;
     font-weight: 500;
     transform: translateY(-150px);
-    color: black;
+    color: rgb(20, 20, 20);
 }
 
 #product-section{
@@ -23,7 +22,7 @@
     position: relative;
     display: block;
     width: 1px;
-    transform: translateY(100px);
+    transform: translateY(-100px);
     
 }
 
@@ -41,7 +40,7 @@
     margin: auto;
     align-content: center;
     text-align: center;
-    transform: translateY(-110px);
+    transform: translateY(-160px);
 }
 
 .product-info__box{
@@ -104,7 +103,7 @@
 
 .product-info__header{
     font-size: 38px;
-    transform: translateY(-200px);
+    transform: translateY(-140px);
 }
 
 .product-info__arrow{
@@ -114,7 +113,7 @@
    
 .product-info__container{
         width: 90%;
-        margin-top: 0px;
+        margin-top: 140px;
 }
 
 .product-info__box{
