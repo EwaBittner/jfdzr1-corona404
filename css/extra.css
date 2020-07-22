@@ -7,45 +7,46 @@
     text-align: center;
     font-family:"Montserrat" sans-serif;
     margin-bottom: 70px;
-    background-color: rgba(161,217,255,1);
 }
 
 .extra-header {
-
-    display: inline-block;
-    font-size: 4rem;
     font-family: "Montserrat";
-    font-weight: 600;
-    margin: 20px auto 80px;
-    padding-top: 50px;
-    color: #fff;
-    letter-spacing: 2px;
-
-}
-
-
-.extra-header::after{
-
-    content: "";
-    display: block;
-    position: absolute;
-    width: 380px;
-    height: 8px;
-    background-color: rgb(216, 69, 69);
-    transform: translateX(35px) translateY(15px) skewX(-60deg);
-    -webkit-transform: translateX(35px) translateY(15px) skewX(-60deg);
+    font-weight: 450;
+    color: black;
+    font-size: 40px;
 }
 
 .extra-container{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
+}
+
+.extra-col-1{
+margin-top: 70px; 
+margin-left: ;
+}
+
+.mobile-phone{
+  width: 80%;
+}
+
+.extra-col-2{
+padding-left: 40px;
+padding-bottom: 50px;
+padding-top: 50px;
+}
+
+.extra-col-3{
+ margin-top: 70px;
+ margin-bottom: 60px;
+ 
 }
 
 .extra-card {
-    width: 200px;
-    height: 250px;
-    margin-top: 20px;
+    width: 350px;
+    height: 150px;
+    margin-top: 50px;
   }
 
   .extra-card-inner {
@@ -56,13 +57,12 @@
     -webkit-transition: transform 0.8;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
   }
-  
 
   .extra-card:hover .extra-card-inner {
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
-;
   }
   
 
@@ -72,14 +72,21 @@
     height: 100%; 
     font-family: Raleway, sans-serif;
     border-radius: 9px;
-    box-shadow: 15px 15px 15px -5px rgba(0,0,0,0.75);
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
   }
   
 
   .extra-card-front {
-    background: linear-gradient(180deg, rgba(162,217,255,1) 18%, rgba(255,255,255,1) 100%);
+    display: flex;
+  
+  }
+
+  .extra-card-front p{
+   margin-top: 20%;
+   font-size: 20px;
+   font-weight: 900;
   }
   
 
@@ -88,51 +95,38 @@
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     text-align: center;
-    background: linear-gradient(354deg, rgba(162,217,255,1) 18%, rgba(255,255,255,1) 100%);
-
   }
   .extra-card-back p{
-    text-align: center;
-    margin-top: 20%;
     font-size: 25px;
+
   }
 
   .extra-icon {
-    font-size: 70px;
-    margin-top: 50%;
+    width: 100px;
+    height: 130px;
   }
 
+  .extra-btn{
+    border: 1px solid indigo;
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    background-color: indigo;
+  }
 
- .extra-btn{
-
-  border-radius: 9px;
-  background: transparent;
-  width: 80%;
-  outline: none;
-  margin-top: 30%;
-  text-transform: capitalize;
-
-
- } 
- .extra-btn:hover{
-  border-color: white;
-  box-shadow: 15px 15px 15px -5px rgba(0,0,0,0.75);
-  outline: none;
- }
-
- button:focus {
-  outline: none;
-}
-
+  .extra-btn:hover {
+    color: white;
+  }
 
   @media (max-width:767px){
 
-    .extra-header {
-      font-size: 2.5rem;
-  }
-
-  .extra-header::after{
-
-    width: 220px;
-
+    .extra-container{
+    flex-wrap: wrap;
     }
+
+    .mobile-phone{
+      width: 50%;
+    }
+  }
