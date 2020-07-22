@@ -9,26 +9,17 @@
     margin-bottom: 70px;
 }
 
-.extra-header h2{
+.extra-header {
     font-family: "Montserrat";
-    font-weight: 200;
+    font-weight: 450;
     color: black;
-    letter-spacing: 5px;
+    font-size: 40px;
 }
-
-.extra-header h1{
-    font-family: "Montserrat";
-    font-weight: 900;
-    color: black;
-    letter-spacing: 2px;
-}
-
 
 .extra-container{
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-  
 }
 
 .extra-col-1{
@@ -41,7 +32,7 @@ margin-left: ;
 }
 
 .extra-col-2{
-padding-left: 110px;
+padding-left: 40px;
 padding-bottom: 50px;
 padding-top: 50px;
 }
