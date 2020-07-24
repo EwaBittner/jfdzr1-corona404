@@ -32,7 +32,7 @@
     font-size: 20px;
     text-align: center;
     max-width: 550px;
-    max-height: 350px;
+    max-height: auto;
     border:1px black solid;
     padding: 30px;
     border-radius: 8px;
@@ -96,9 +96,13 @@
   }
 
   @media (max-width:767px){
+    .Sign-Info{
+      font-size: 35px;
+    }
+    
+    .sign-agree {
 
-  .sign-in-container-img {
-
-    max-width:70px;
+      font-size: 9px;
+      margin-top: 0px;
+    }
 }
-  }
