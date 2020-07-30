@@ -7,6 +7,7 @@
     text-align: center;
     font-family:"Montserrat" sans-serif;
     margin-bottom: 70px;
+    padding-top: 80px;
 }
 
 .extra-header {
@@ -29,6 +30,7 @@ min-width: 20%;
 
 .mobile-phone{
   width: 85%;
+  transform: translateX(-15px);
 }
 
 .extra-col-2{
@@ -118,6 +120,8 @@ min-width: 20%;
 
   .extra-btn:hover {
     color: white;
+    background-color: rgb(88, 0, 151);
+    text-decoration: none;
   }
 
   @media (max-width:767px){
