@@ -3,15 +3,16 @@
     padding: 0;
     width: 100%;
     min-height: 70vh;
+    background-image: url(../images/wavebottom.svg);
     background-size: cover;
     text-align: center;
-    font-family:"Monterrat" sans-serif;
+    font-family:"Montserrat";
+    transform: translateY(1px);
 }
 
 .aboutus__header{
     display: inline-block;
     font-size: 3rem;
-    font-family: 'Montserrat';
     font-weight: 600;
     margin: 20px auto 80px;
     padding-top: 50px;
@@ -45,10 +46,11 @@
     padding: 0 10px 28px 10px;
     filter: grayscale(100%);
     transition: all .5s ease-in-out;
+    transform: scale(0.9);
 }
 
 .aboutus__card:hover{
-    transform: scale(1.1);
+    transform: scale(1);
     filter: grayscale(0%);
 }
 
@@ -56,7 +58,7 @@
     min-height: 400px;
     padding: 15px;
     background-color: #f0f0f0;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: all .5s ease-in-out;
 }
 
@@ -69,7 +71,7 @@
     margin: 0;
     position: relative;
     left: -2px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .aboutus__name{
@@ -98,12 +100,10 @@
 @media (max-width: 768px){
     .aboutus__header{
     font-size : 2.5em;
-    transform: translateX(10px);
     }
 
     .aboutus__header::after{
         transform: translateX(-5px) translateY(15px) skewX(-60deg);
     }
 }
-
 
