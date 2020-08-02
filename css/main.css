@@ -62,8 +62,15 @@ li>a {
     color: #f2f2f2;
 }
 
+.carousel-control-prev-icon {
+    width: 40px;
+    height: 40px;
+}
 
-
+.carousel-control-next-icon {
+    width: 40px;
+    height: 40px;
+}
 
 .carousel-caption {
     background: rgba(2, 2, 2, 0.4);
