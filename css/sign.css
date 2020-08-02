@@ -19,6 +19,10 @@
   
 }
 
+.form-container{
+  position: relative;
+}
+
 .Sign-Info {
   color: white;
   font-size: 50px;
@@ -94,6 +98,21 @@
   .chkbox{
     margin-top: 12px;
     margin-right: 10px;
+  }
+
+
+
+  .play-logo{
+    
+    display: none;
+  }
+
+  .play-logo-on{
+
+    width: 400px;
+    position: absolute;
+    right: 10%;
+    top: 30%;
   }
 
   @media (max-width:767px){

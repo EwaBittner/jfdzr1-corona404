@@ -1,23 +1,16 @@
 
-if (document.cookie === "Approve=Yes"){
-
+const hide = ()=>{
     document.querySelector('.cookie-container').style.display = "none"
 }
-
+if (document.cookie.includes("Approve=Yes")){
+    hide()
+}
 document.querySelector(".acpt-cookie-no").addEventListener("click", function(){
-
-    document.querySelector('.cookie-container').style.display = "none"
-
+   hide()
 }
 );
-
-
 document.querySelector(".acpt-cookie-yes").addEventListener("click", function(){
-
-    document.querySelector('.cookie-container').style.display = "none"
-    document.cookie="Approve=Yes";
-
+    hide()
+    document.cookie="Approve=Yes; max-age=86400";
 }
 );
-
- 
