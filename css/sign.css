@@ -103,16 +103,33 @@
 
 
   .play-logo{
-    
-    display: none;
+    text-align: center;
+    height: 250px;
   }
 
-  .play-logo-on{
+  .play-logo h1 {
+    font-size: 35px;
+  }
 
-    width: 400px;
-    position: absolute;
-    right: 10%;
-    top: 30%;
+  .hidden-link{
+    border:1px solid green;
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: green;
+  }
+
+  .hidden-link:hover{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+  }
+  
+  .last-txt{
+
+    padding-bottom: 15px;
   }
 
   @media (max-width:767px){
@@ -124,5 +141,9 @@
 
       font-size: 9px;
       margin-top: 0px;
+    }
+
+    .play-logo{
+      font-size: 20px;
     }
 }
