@@ -11,6 +11,7 @@ body{
     background-attachment: fixed;
     background-size: cover;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .main{
@@ -127,6 +128,32 @@ body{
     font-weight: 600;
 }
 
+.back-button{
+    display: flex;
+    position: absolute;
+    height: 50px;
+    width: 220px;
+    font-size: 1.2rem;
+    left: 40px;
+    top: 20px;
+    background-color: rgba(255, 255, 255, 0.383);
+    border: none;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+    outline: none;
+    transition: all 0.3s ease-out;
+}
+
+.back-button:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+.button-icon{
+    font-size: 1.8rem;
+    color: #1d1d1d;
+}
 
 @media (max-width: 1410px){
     .instruction__container{
