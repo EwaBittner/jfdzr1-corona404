@@ -19,6 +19,10 @@
   
 }
 
+.form-container{
+  position: relative;
+}
+
 .Sign-Info {
   color: white;
   font-size: 50px;
@@ -96,6 +100,38 @@
     margin-right: 10px;
   }
 
+
+
+  .play-logo{
+    text-align: center;
+    height: 250px;
+  }
+
+  .play-logo h1 {
+    font-size: 35px;
+  }
+
+  .hidden-link{
+    border:1px solid green;
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: green;
+  }
+
+  .hidden-link:hover{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+  }
+  
+  .last-txt{
+
+    padding-bottom: 15px;
+  }
+
   @media (max-width:767px){
     .Sign-Info{
       font-size: 35px;
@@ -105,5 +141,9 @@
 
       font-size: 9px;
       margin-top: 0px;
+    }
+
+    .play-logo{
+      font-size: 20px;
     }
 }
