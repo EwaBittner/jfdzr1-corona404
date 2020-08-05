@@ -61,46 +61,68 @@ li>a {
 .Hero h2 {
     color: #f2f2f2;
 }
-
-.carousel-control-prev-icon {
-    width: 40px;
-    height: 40px;
-}
-
-.carousel-control-next-icon {
-    width: 40px;
-    height: 40px;
-}
-
-.carousel-caption {
-    background: rgba(2, 2, 2, 0.4);
-
-}
-
-
+/* section about */
 
 .carousel-caption h1,
 .carousel-caption p {
-    font-family: Montserrat, serif;
+    font-family: 'Montserrat', serif;
 }
 
-.about-hero-action {
+
+#slide-1,
+#slide-2 {
+    left: 12%;
+    top: 15%;
+    width: 40%;
+    margin:0;
+}
+
+#slide-1 h1,
+#slide-1 p,
+#slide-2 h1,
+#slide-2 p  {
+   text-align: left;
+}
+
+#slide-1 button,
+#slide-2 button  {
+    float: left;
+}
+
+#slide-3 {
+    left: 50%;
+    top: 15%;
+    width: 40%;
+    margin:0;
+}
+
+#slide-3 h1,
+#slide-3 p {
+    text-align: center;
+}
+#slide-3 button {
+    float: center;
+}
+
+.btn  {
     height: 55px;
     padding: 0;
     margin-top: 20px;
     width: 150px;
     border: none;
-    background: red;
+    background: rgb(220, 54, 140);
     transition: 0.3s;
     margin: 0 auto;
+    border-radius: 30px;
+    z-index: 20;
 
 }
 
-.about-hero-action:hover {
-    background-color: rgba(255, 0, 0, 0.8);
+.btn:hover {
+    background-color: rgba(220, 54, 140, 0.8);
 }
 
-.about-hero-action a {
+.btn a {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 300;
@@ -108,9 +130,58 @@ li>a {
     font-size: 20px;
     height: 55px;
     color: white;
+} 
+.store-icons {
+    width: 100%;
+    height: 50%;
+    margin: 0;
+} 
+.store-icons .first,
+.store-icons .second {
+    width: 70%;
+    height: 70%;
+    
+  
+} 
+.store-icons .first {
+    background-image: url(/images/google-play-app\ .png);
+background-size: 100% 100%;
+
 }
 
+.store-icons .second {
+    background-image: url(/images/apple-store-app\ .png);
+background-size: 100% 100%;
+}
+.first a,
+.second a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
 
+.third {
+    width: 40%;
+    height: 40%;
+    background-image: url(/images/qr.code.jpg);
+    background-size: 100% 100%;
+    margin: 0;
+} 
+
+
+@media (max-width: 575px) {
+    .carousel-caption h1 {
+        font-size: 1em;
+    }
+
+    .carousel-caption p {
+        font-size: 0.8em;
+    }
+    
+
+    
+}
 
 footer {
     background-color: #333;
