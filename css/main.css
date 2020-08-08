@@ -131,28 +131,7 @@ li>a {
     height: 55px;
     color: white;
 } 
-/* .store-icons {
-    width: 100%;
-    height: 50%;
-    margin: 0;
-} 
-.store-icons .first,
-.store-icons .second {
-    width: 70%;
-    height: 70%;
-    
-  
-} */
-/* .store-icons .first {
-    background-image: url(/images/google-play-app\ .png);
-background-size: 100% 100%;
 
-}
-
-.store-icons .second {
-    background-image: url(/images/apple-store-app\ .png);
-background-size: 100% 100%;
-} */
 .first a,
 .second a {
     display: inline-block;
@@ -160,14 +139,7 @@ background-size: 100% 100%;
     height: 100%;
     cursor: pointer;
 }
-/* }
-.third {
-    width: 40%;
-    height: 40%;
-    background-image: url(/images/qr.code.jpg);
-    background-size: 100% 100%;
-    margin: 0;
-} */
+
 .first {
     grid-area: google;
     width: 100%;
