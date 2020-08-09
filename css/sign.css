@@ -104,32 +104,39 @@
 
   .play-logo{
     text-align: center;
-    height: 250px;
+    height: 350px;
   }
 
   .play-logo h1 {
-    font-size: 35px;
+    font-size: 45px;
   }
 
   .hidden-link{
-    border:1px solid green;
-    text-decoration: none;
-    color: white;
-    font-size: 35px;
-    padding: 15px;
-    border-radius: 10px;
-    background-color: green;
-  }
+    text-align: center;
+	  margin:5px;
+    font-weight: bold;
+    padding: 20px;
+    background-color: lightgray;
+    text-shadow: -1px -1px black, 1px 1px white;
+    color: gray;
+	  border-radius: 7px;
+    box-shadow: 0 .2em gray; 
+    cursor: pointer;
+    font-size: 45px;
+
+}
 
   .hidden-link:hover{
     text-decoration: none;
-    color: white;
-    font-size: 40px;
+    box-shadow: none;
+	  position: relative;
+    top: .8em;
+    color: gray;
   }
   
   .last-txt{
 
-    padding-bottom: 15px;
+    padding-bottom: 30px;
   }
 
   @media (max-width:767px){
@@ -144,6 +151,19 @@
     }
 
     .play-logo{
-      font-size: 20px;
+      height: 250px;
+    }
+
+    .play-logo h1{
+      font-size: 25px;
+    }
+
+    .hidden-link{
+      font-size: 25px;
+    }
+
+    input[type=checkbox]{
+  
+      width: 200%;
     }
 }

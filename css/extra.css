@@ -10,17 +10,17 @@
     padding-top: 80px;
 }
 
-.extra-header {
+.extra-header{
     font-family: "Montserrat";
     font-weight: 450;
     color: black;
     font-size: 40px;
+    text-align: center;
 }
 
 .extra-container{
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
 }
 
 .extra-col-1{
@@ -29,14 +29,13 @@ min-width: 20%;
 }
 
 .mobile-phone{
-  width: 85%;
-  transform: translateX(-15px);
+  padding-bottom: 30px;
+  padding-left: 40px;
 }
 
 .extra-col-2{
 padding-bottom: 50px;
 padding-top: 50px;
-min-width: 20%;
 }
 
 .extra-col-3{
@@ -116,6 +115,8 @@ min-width: 20%;
     font-weight: 500;
     color: white;
     background-color: indigo;
+    display: block;
+    width: 50%;
   }
 
   .extra-btn:hover {
@@ -127,7 +128,8 @@ min-width: 20%;
   @media (max-width:767px){
 
     .mobile-phone{
-      width: 50%;
+      width: 60%;
+      padding-left: 20px;
     }
 
     .extra-card {
@@ -162,6 +164,10 @@ min-width: 20%;
       .extra-icon {
         width: 80px;
         height: 100px;
+      }
+
+      .extra-btn{
+        width: 70%;
       }
 
 
