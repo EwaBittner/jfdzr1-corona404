@@ -2,7 +2,7 @@ const startingMinutes = 3;
 let time = startingMinutes * 60;
 
 const timer = document.querySelector('.timer');
-const intervalID = setInterval(updateTime,50);
+const intervalID = setInterval(updateTime,1000);
 
 function updateTime() {
     const minutes = Math.floor(time/60);
@@ -31,7 +31,7 @@ timer.addEventListener('click', function addTime(){
     time = time + 15;
 })
 
-addTime()
+ addTime()
 
 // timer.addEventListener('click', function substractTime(){
 //     time = time - 15;
