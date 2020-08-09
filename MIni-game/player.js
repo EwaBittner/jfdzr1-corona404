@@ -1,12 +1,12 @@
 checkPositionLeft = ()=>{
     if(parseInt(document.querySelector(".cart").style.left) <= 0){
-        parseInt(document.querySelector(".cart").style.left) = 10 
+        parseInt(document.querySelector(".cart").style.left) = 0 
     }
 }
 
 checkPositionRight = ()=>{
-    if(parseInt(document.querySelector(".cart").style.left) >= 1205 ){
-        parseInt(document.querySelector(".cart").style.left) = 1205
+    if(parseInt(document.querySelector(".cart").style.left) >= 1170 ){
+        parseInt(document.querySelector(".cart").style.left) = 1170
     }
 }
 
@@ -18,10 +18,12 @@ movePlayer = ()=>{
 if (press == 37) { 
         checkPositionLeft()
         document.querySelector(".cart").style.left = parseInt(document.querySelector(".cart").style.left) - 25 + 'px';
+        document.querySelector(".cart").style.transform = "scaleX(-1)";
         console.log(document.querySelector(".cart").style.left)
     } else if (press == 39) { 
         checkPositionRight()
         document.querySelector(".cart").style.left = parseInt(document.querySelector(".cart").style.left) + 25 + 'px';
+        document.querySelector(".cart").style.transform = "scaleX(1)";
         console.log(document.querySelector(".cart").style.left)
     } 
 }
