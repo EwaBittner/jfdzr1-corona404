@@ -29,6 +29,7 @@ body{
     height: 760px;
     background-color: rgba(87, 87, 87, 0.205);
     align-self: center;
+    position: relative;
 }
 
 .game h1{
