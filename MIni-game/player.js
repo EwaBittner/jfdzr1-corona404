@@ -11,7 +11,7 @@ checkPositionRight = ()=>{
 }
 
 movePlayer = ()=>{
-    let start = document.querySelector(".cart").style.left = 0;
+    let start = document.querySelector(".cart").style.left = 600 + 'px';
     document.body.onkeydown = () =>{
     const press = event.keyCode,
     Left = parseInt(document.querySelector(".cart").style.left);
