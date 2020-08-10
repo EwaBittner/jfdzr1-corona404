@@ -7,7 +7,7 @@
     text-align: center;
     font-family:"Montserrat" sans-serif;
     margin-bottom: 70px;
-    padding-top: 80px;
+    padding-top: 50px;
 }
 
 .extra-header{
@@ -15,12 +15,13 @@
     font-weight: 450;
     color: black;
     font-size: 40px;
-    text-align: center;
+
 }
 
 .extra-container{
     display: flex;
     flex-wrap: wrap;
+    max-width: 90%;
 }
 
 .extra-col-1{
@@ -29,6 +30,7 @@ min-width: 20%;
 }
 
 .mobile-phone{
+  width: 70%;
   padding-bottom: 30px;
   padding-left: 40px;
 }
@@ -86,8 +88,8 @@ padding-top: 50px;
 
   .extra-card-front p{
    margin-top: 20%;
-   font-size: 20px;
-   font-weight: 900;
+   font-size: 18px;
+   font-weight: 600;
   }
   
 
@@ -98,13 +100,13 @@ padding-top: 50px;
     text-align: center;
   }
   .extra-card-back p{
-    font-size: 25px;
+    font-size: 20px;
 
   }
 
   .extra-icon {
-    width: 100px;
-    height: 130px;
+    width: 90px;
+    height: 120px;
   }
 
   .extra-btn{
@@ -116,7 +118,7 @@ padding-top: 50px;
     color: white;
     background-color: indigo;
     display: block;
-    width: 50%;
+    width: 40%;
   }
 
   .extra-btn:hover {
@@ -167,7 +169,14 @@ padding-top: 50px;
       }
 
       .extra-btn{
+        font-size:20px ;
         width: 70%;
+        padding: 10px;
+      }
+
+      .extra-section{
+
+        padding-top: 20px;
       }
 
 

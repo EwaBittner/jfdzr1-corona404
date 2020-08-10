@@ -1,6 +1,6 @@
 checkPositionLeft = ()=>{
     if(parseInt(document.querySelector(".cart").style.left) <= 0){
-        parseInt(document.querySelector(".cart").style.left) = 0 
+        parseInt(document.querySelector(".cart").style.left) = 0  
     }
 }
 
@@ -11,7 +11,7 @@ checkPositionRight = ()=>{
 }
 
 movePlayer = ()=>{
-    let start = document.querySelector(".cart").style.left = 25 + 'px' //Pozycja startowa wózka
+    let start = document.querySelector(".cart").style.left = 0 + 'px' //Pozycja startowa wózka
     document.body.onkeydown = () =>{
     const press = event.keyCode,
     Left = parseInt(document.querySelector(".cart").style.left);

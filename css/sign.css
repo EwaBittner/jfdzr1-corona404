@@ -83,8 +83,7 @@
 
   input[type=email]:hover, input[type=text]:hover{
 
-    border-bottom:3px solid black;
-    transform: scale(1.05);
+    border: 2px solid black;
     color:black;
   }
 
