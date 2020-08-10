@@ -5,7 +5,7 @@
     width: 100%;
     min-height: 70vh;
     text-align: center;
-    font-family:"Montserrat" sans-serif;
+    font-family:"Montserrat";
     margin-bottom: 70px;
     padding-top: 50px;
 }
@@ -73,7 +73,7 @@ padding-top: 50px;
     position: absolute;
     width: 100%;
     height: 100%; 
-    font-family: Raleway, sans-serif;
+    font-family:"Montserrat";
     border-radius: 9px;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
@@ -90,6 +90,7 @@ padding-top: 50px;
    margin-top: 20%;
    font-size: 18px;
    font-weight: 600;
+   font-family:"Montserrat";
   }
   
 
@@ -118,7 +119,7 @@ padding-top: 50px;
     color: white;
     background-color: indigo;
     display: block;
-    width: 40%;
+    width: 50%;
   }
 
   .extra-btn:hover {
@@ -179,5 +180,15 @@ padding-top: 50px;
         padding-top: 20px;
       }
 
+
+  }
+
+
+  @media (min-width:1900px){
+
+.extra-header{
+
+  //*padding-left: 50px;
+}
 
   }
