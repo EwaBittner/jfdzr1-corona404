@@ -15,6 +15,7 @@ body{
 }
 
 .main{
+    position: relative;
     display: flex;
     flex: wrap;
     width: 100vw;
@@ -23,19 +24,27 @@ body{
     text-align: center;
 }
 
+.timer{
+    width: 200px;
+    height: 56px;
+    font-size: 3rem;
+    font-weight: 500;
+    background-color: rgba(46, 46, 46, 0.952);
+    color: #fff;
+    border-radius: 30px;
+    user-select: none;
+    margin-top: 10px;
+}
+
 .game{
+    display: flex;
     width: 1340px;
     margin: -100px 0 0 0;
     height: 760px;
     background-color: rgba(87, 87, 87, 0.205);
     align-self: center;
+    justify-content: center;
     position: relative;
-}
-
-.game h1{
-    margin-top: -8%;
-    font-size: 60px;
-    color: rgb(78, 78, 78);
 }
 
 .main-bottom{
