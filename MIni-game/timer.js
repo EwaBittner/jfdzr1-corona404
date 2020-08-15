@@ -4,14 +4,15 @@ let time = startingMinutes * 60;
 const timer = document.querySelector('.timer');
 const intervalID = setInterval(updateTime,1000);
 
+const endGame = document.querySelector('.end-game');
+
 function updateTime() {
     const minutes = Math.floor(time/60);
     let seconds = time % 60;
    
     if(minutes < 0 && seconds < 0){
         clearInterval(intervalID)
-        alert('Koniec gry!');
-        timer.innerHTML = 'dupa';
+        endGame.style.display = "flex";
     }
     
     seconds = seconds < 10 ? '0' + seconds : seconds

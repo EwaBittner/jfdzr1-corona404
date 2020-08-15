@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -162,6 +163,87 @@ body{
 .button-icon{
     font-size: 1.8rem;
     color: #1d1d1d;
+}
+
+/*======================================================*/
+
+.end-game{
+    display: none;
+    min-width: 70%;
+    min-height: 72%;
+    margin: auto;
+    padding: 0 100px;
+    top: 100px;
+    position: absolute;
+    background-color: rgba(105, 179, 192, 0.904);
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    user-select: none;
+}
+
+.box-left p {
+    color: rgba(173, 216, 230, 0);
+    font-size: 4rem;
+    font-weight: 800;
+    -webkit-text-stroke: 3px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    padding-top: 25px;
+}
+
+.box-right{
+    display: flex;
+    flex-flow: column;
+    /* border: 1px red solid; */
+    justify-content: space-around;
+    width: 40%;
+}
+
+.box-right h1{
+    font-size: 3rem;
+    padding-bottom: 40px;
+}
+
+.box-right .name{
+    font-size: 3.5rem;
+    color: rgba(173, 216, 230, 0);
+    -webkit-text-stroke: 3px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+.box-right p {
+    font-size: 1.6rem;
+    padding-bottom: 20px;
+}
+
+.box-right p span{
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(77, 77, 77);
+}
+
+.box-right h2{
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    padding-top: 50px;
+}
+
+.box-right button {
+    width: 200px;
+    height: 50px;
+    margin: 30px auto 0;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.box-right button:hover{
+    background-color: rgb(218, 218, 218);
+    cursor: pointer;
+    outline: none;
 }
 
 @media (max-width: 1410px){
