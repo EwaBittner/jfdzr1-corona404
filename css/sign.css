@@ -83,8 +83,7 @@
 
   input[type=email]:hover, input[type=text]:hover{
 
-    border-bottom:3px solid black;
-    transform: scale(1.05);
+    border: 2px solid black;
     color:black;
   }
 
@@ -117,12 +116,14 @@
     font-weight: bold;
     padding: 20px;
     background-color: lightgray;
-    text-shadow: -1px -1px black, 1px 1px white;
+    text-shadow: -2px -1px black, 1px 1px white;
     color: gray;
 	  border-radius: 7px;
     box-shadow: 0 .2em gray; 
     cursor: pointer;
-    font-size: 45px;
+    font-size: 50px;
+    border: 1px black ;
+    
 
 }
 
@@ -130,7 +131,7 @@
     text-decoration: none;
     box-shadow: none;
 	  position: relative;
-    top: .8em;
+    top: .2em;
     color: gray;
   }
   
