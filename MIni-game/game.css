@@ -238,10 +238,12 @@ body{
     border-radius: 50px;
     font-size: 1.4rem;
     font-weight: 500;
+    background-color: rgb(231, 231, 231);
+    transition: all .5s;
 }
 
 .box-right button:hover{
-    background-color: rgb(218, 218, 218);
+    background-color: #fff;
     cursor: pointer;
     outline: none;
 }
