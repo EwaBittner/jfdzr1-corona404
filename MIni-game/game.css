@@ -141,10 +141,10 @@ body{
 .back-button{
     display: flex;
     position: absolute;
-    height: 50px;
+    height: 40px;
     width: 220px;
     font-size: 1.2rem;
-    left: 40px;
+    left: 20px;
     top: 20px;
     background-color: rgba(255, 255, 255, 0.383);
     border: none;

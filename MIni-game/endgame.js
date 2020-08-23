@@ -5,3 +5,4 @@ const name = document.getElementById('name');
 name.innerText = userName;
 /* ---- */
 
+const codeButton = document.getElementById('getCode');
