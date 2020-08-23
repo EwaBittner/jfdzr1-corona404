@@ -11,12 +11,28 @@
     <title>Mini-game</title>
 </head>
 <body>
+    
     <main class="main">
         <button class="back-button" onclick="window.location.href='/index.html'"><i class="fas fa-arrow-circle-left button-icon"></i> Powrót do strony</button>
         <section class="game">
             <p class="timer">3:00</p>
             <div class="player"><img class="cart" src="./cart.png"></div>
         </section>
+        <div class="end-game">
+            <div class="box-left">
+             <img src="./Game Images/crown.png" alt="crown" class="crown-img">
+             <p>KONIEC GRY</p>
+            </div>
+    
+            <div class="box-right">
+                <h1>Gratulacje <span class="name" id="name"></span><br> Ukończyłeś grę</h1>
+                <p>Z wynikiem : <span class="score">215 pkt</span></p>
+                <p>Uzyskujesz rabat : <span class="discount">10%</span></p>
+    
+                <h2>Kliknij aby odebrać <br> swój kod rabatowy</h2>
+                <button id="getCode">ODBIERZ KOD</button>
+            </div>
+        </div>
         <h2 class="main-bottom">Sprawdź jak grać<br> <span class="arrows"></span></h2>
     </main>
 
@@ -56,6 +72,7 @@
           </div>
         </div>
     </footer>
+    <script src="./endgame.js"></script>
     <script src="./timer.js"></script>
    <script src="./player.js"></script>
 
