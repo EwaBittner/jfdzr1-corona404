@@ -2,7 +2,7 @@ const startingMinutes = 3;
 let time = startingMinutes * 60;
 
 const timer = document.querySelector('.timer');
-const intervalID = setInterval(updateTime,10);
+const intervalID = setInterval(updateTime,20);
 
 const endGame = document.querySelector('.end-game');
 
