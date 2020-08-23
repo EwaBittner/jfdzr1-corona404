@@ -275,7 +275,7 @@ li>a {
 
     .menu-btn__burger {
         width: 40px;
-        height: 4px;
+        height: 5px;
         background: #fff;
         border-radius: 5px;
         box-shadow: 0 2px 4px rgba(255, 101, 47, .2);
@@ -287,7 +287,7 @@ li>a {
         content: '';
         position: absolute;
         width: 40px;
-        height: 4px;
+        height: 5px;
         background: #fff;
         border-radius: 5px;
         box-shadow: 0 2px 4px rgba(255, 101, 47, .2); 
@@ -332,6 +332,8 @@ li>a {
         -moz-transform: translateX(100%);
         -o-transform: translateX(100%);
         transform: translateX(100%);
+        transition: 0.5s transform ease-in-out;
+
     }
 
     .site-menu ul {
@@ -366,7 +368,7 @@ li>a {
         width: auto;
     }
 
-    .menu-btn:active ~ .site-menu, .site-menu:active {
+    .menu-btn:active ~ .site-menu, .site-menu:hover {
         -ms-transform: translateX(0);
         -webkit-transform: translateX(0);
         -moz-transform: translateX(0);
