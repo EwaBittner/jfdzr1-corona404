@@ -11,13 +11,14 @@ html {
 }
 
 .Hero {
-    background-color: #fff;
+    background-color: #333;
     padding: 15px 8px;
     top: 0;
     width: 100%;
     height: auto;
     z-index: 1000;
     position: fixed;
+    transition: 0.5s;
 }
 
 .container {
@@ -34,7 +35,7 @@ html {
 }
 
 .logo-corona {
-    width: 70px;
+    width: 100px;
     height: auto;
     padding: 0;
     margin-left: 5%;
@@ -42,7 +43,7 @@ html {
 
 nav a:hover {
     text-decoration: none;
-    color: #333;
+    color: #fff;
     border-bottom: 3px solid;
     border-bottom-color: rgb(230, 45, 45);
     transition: border-bottom-color 0.5s;
@@ -55,22 +56,23 @@ nav ul {
 ul li {
     list-style-type: none;
     display: inline-block;
+    margin-right: 20px; 
 }
 
 li>a {
     display: block;
     float: right;
     width: auto;
-    padding: 5px 15px 5px 0px;
+    padding: 5px 10px 0 0;
     font-size: 20px;
     font-weight: 400;
     text-decoration: none;
     border-bottom: 3px solid transparent;
-    color: #333;
+    color: #fff;
     margin-right: 10px;
 }
 
-.nav-trigger {
+.fa-bars {
     display: none;
 }
 
@@ -201,12 +203,12 @@ li>a {
 }
 
 .footer {
-    background-color: #fff;
+    background-color: #333;
     width: 100%;
     display: flex;
     flex-direction: row;
     padding: 15px;
-    color: #333;
+    color: #fff;
     bottom: 0;
     align-items: center;
 }
@@ -258,44 +260,34 @@ li>a {
         width: 100%;
         display: flex;
         justify-content: flex-end;
-        align-content: stretch;
         box-sizing: border-box;
         top: 0;
     }
 
-    .nav-trigger {
+    .fa-bars {
         box-sizing: border-box;
-        border-style: none;
         display: flex;
-        justify-content: flex-end;
-        color: #333;
-        padding: 10px 10px 5px 10px;
-        margin-right: 10%;
-        border-bottom: 3px solid transparent;
-        text-transform: uppercase;
-        font-weight: 400;
-        font-size: 20px;
-        height: 100%;
-        background: #fff;
-        outline: none;
+        justify-content: center;
+        display: flex-end;
+        color: #fff;
+        z-index: 5;
+        margin-right: 15%;
     }
 
-    .nav-trigger:hover {
-        border-bottom: 3px solid;
-        border-bottom-color: rgb(230, 45, 45);
-        transition: border-bottom-color 0.5s;
+    .fa-bars:hover {
+        color: rgb(230, 45, 45);
+        transition: color 0.5s;
     }
 
     .site-menu {
         display: flex;
         box-sizing: border-box;
         position: absolute;
-        top: 65px;
         right: 0;
-        height: 320px;
-        width: 170px;
-        color: #333;
-        background-color: #fff;
+        height: 100vh;
+        width: 200px;
+        color: #fff;
+        background-color: #333;
         justify-content: center;
         -ms-transform: translateX(100%);
         -webkit-transform: translateX(100%);
@@ -307,16 +299,17 @@ li>a {
     .site-menu ul {
         padding: 20px;
         list-style-type: none;
-        margin: 0;
+        margin: 10px 20px;
         display: flex;
         flex-wrap: wrap;
         align-content: center;
+        justify-content: flex-end;
     }
 
-
     .site-menu li {
-        margin-top: 15px;
-        color: #fff;
+        margin: 10px;
+        padding: 10px 5px 0 0;
+        color: #333;
         flex-basis: 100%;
   }
     
@@ -327,15 +320,15 @@ li>a {
 
     .site-menu a {
         display: flex;
-        padding: 10px;
+        padding: 10px 10px 0 0;
         box-sizing: border-box;
         text-decoration: none;
-        align-items: center;
+        float: left;
         height: 100%;
-        width: 100%;
+        width: auto;
     }
 
-    .nav-trigger:hover ~ .site-menu, .site-menu:hover {
+    .fa-bars:hover ~ .site-menu, .site-menu:hover {
         -ms-transform: translateX(0);
         -webkit-transform: translateX(0);
         -moz-transform: translateX(0);
