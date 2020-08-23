@@ -39,9 +39,9 @@ body{
 
 .game{
     display: flex;
-    width: 1340px;
-    margin: -100px 0 0 0;
-    height: 760px;
+    width: 70%;
+    height: 70%;
+    margin: 0 0 100px 0;
     background-color: rgba(87, 87, 87, 0.205);
     align-self: center;
     justify-content: center;
@@ -52,7 +52,7 @@ body{
     position: absolute;
     display: block;
     align-self: flex-end;
-    margin-bottom: 12vh;
+    margin-bottom: 8vh;
     font-size: 2.6rem;
     font-weight: 500;
     padding: 10px;
@@ -169,19 +169,21 @@ body{
 
 .end-game{
     display: none;
-    min-width: 70%;
-    min-height: 72%;
-    margin: auto;
-    padding: 0 100px;
-    top: 100px;
+    width: 60%;
+    height: 60%;
+    margin: 8% auto;
     position: absolute;
-    background-color: rgba(105, 179, 192, 0.904);
+    background-color: rgb(105, 179, 192);
     color: white;
     justify-content: space-around;
     align-items: center;
     text-align: center;
     border-radius: 20px;
     user-select: none;
+}
+
+.box-left{
+    width: 50%;
 }
 
 .box-left p {
@@ -193,17 +195,21 @@ body{
     padding-top: 25px;
 }
 
+.crown-img{
+    width: 50%;
+}
+
 .box-right{
     display: flex;
     flex-flow: column;
-    /* border: 1px red solid; */
+    width: 50%;
+    height: 70%;
     justify-content: space-around;
-    width: 40%;
 }
 
 .box-right h1{
     font-size: 3rem;
-    padding-bottom: 40px;
+    padding-bottom: 5%;
 }
 
 .box-right .name{
@@ -215,7 +221,7 @@ body{
 
 .box-right p {
     font-size: 1.6rem;
-    padding-bottom: 20px;
+    padding-bottom: 2%;
 }
 
 .box-right p span{
@@ -227,13 +233,13 @@ body{
 .box-right h2{
     font-size: 1.6rem;
     letter-spacing: 1px;
-    padding-top: 50px;
+    padding-top: 5%;
 }
 
 .box-right button {
     width: 200px;
     height: 50px;
-    margin: 30px auto 0;
+    margin: 5% auto 0;
     border: none;
     border-radius: 50px;
     font-size: 1.4rem;
@@ -252,6 +258,10 @@ body{
     .instruction__container{
         width: 70vw;
         height: 60vh;     
+    }
+
+    .end-game{
+        margin-top: 150px;
     }
 }
 
