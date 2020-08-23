@@ -19,6 +19,10 @@
   
 }
 
+.form-container{
+  position: relative;
+}
+
 .Sign-Info {
   color: white;
   font-size: 50px;
@@ -79,8 +83,7 @@
 
   input[type=email]:hover, input[type=text]:hover{
 
-    border-bottom:3px solid black;
-    transform: scale(1.05);
+    border: 2px solid black;
     color:black;
   }
 
@@ -96,6 +99,47 @@
     margin-right: 10px;
   }
 
+
+
+  .play-logo{
+    text-align: center;
+    height: 350px;
+  }
+
+  .play-logo h1 {
+    font-size: 45px;
+  }
+
+  .hidden-link{
+    text-align: center;
+	  margin:5px;
+    font-weight: bold;
+    padding: 20px;
+    background-color: lightgray;
+    text-shadow: -2px -1px black, 1px 1px white;
+    color: gray;
+	  border-radius: 7px;
+    box-shadow: 0 .2em gray; 
+    cursor: pointer;
+    font-size: 50px;
+    border: 1px black ;
+    
+
+}
+
+  .hidden-link:hover{
+    text-decoration: none;
+    box-shadow: none;
+	  position: relative;
+    top: .2em;
+    color: gray;
+  }
+  
+  .last-txt{
+
+    padding-bottom: 30px;
+  }
+
   @media (max-width:767px){
     .Sign-Info{
       font-size: 35px;
@@ -105,5 +149,22 @@
 
       font-size: 9px;
       margin-top: 0px;
+    }
+
+    .play-logo{
+      height: 250px;
+    }
+
+    .play-logo h1{
+      font-size: 25px;
+    }
+
+    .hidden-link{
+      font-size: 25px;
+    }
+
+    input[type=checkbox]{
+  
+      width: 200%;
     }
 }
