@@ -5,47 +5,51 @@
     width: 100%;
     min-height: 70vh;
     text-align: center;
-    font-family:"Montserrat" sans-serif;
+    font-family:"Montserrat";
     margin-bottom: 70px;
-    background-color: rgba(161,217,255,1);
-}
-
-.extra-header {
-
-    display: inline-block;
-    font-size: 4rem;
-    font-family: "Montserrat";
-    font-weight: 600;
-    margin: 20px auto 80px;
     padding-top: 50px;
-    color: #fff;
-    letter-spacing: 2px;
-
 }
 
+.extra-header{
+    font-family: "Montserrat";
+    font-weight: 450;
+    color: black;
+    font-size: 40px;
 
-.extra-header::after{
-
-    content: "";
-    display: block;
-    position: absolute;
-    width: 380px;
-    height: 8px;
-    background-color: rgb(216, 69, 69);
-    transform: translateX(35px) translateY(15px) skewX(-60deg);
-    -webkit-transform: translateX(35px) translateY(15px) skewX(-60deg);
 }
 
 .extra-container{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    max-width: 90%;
+}
+
+.extra-col-1{
+margin-top: 70px; 
+min-width: 20%;
+}
+
+.mobile-phone{
+  width: 70%;
+  padding-bottom: 30px;
+  padding-left: 40px;
+}
+
+.extra-col-2{
+padding-bottom: 50px;
+padding-top: 50px;
+}
+
+.extra-col-3{
+ margin-top: 70px;
+ margin-bottom: 60px;
+ min-width: 15%;
 }
 
 .extra-card {
-    width: 200px;
-    height: 250px;
-    margin-top: 20px;
+    width: 280px;
+    height: 150px;
+    margin-top: 50px;
   }
 
   .extra-card-inner {
@@ -56,13 +60,12 @@
     -webkit-transition: transform 0.8;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
   }
-  
 
   .extra-card:hover .extra-card-inner {
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
-;
   }
   
 
@@ -70,16 +73,24 @@
     position: absolute;
     width: 100%;
     height: 100%; 
-    font-family: Raleway, sans-serif;
+    font-family:"Montserrat";
     border-radius: 9px;
-    box-shadow: 15px 15px 15px -5px rgba(0,0,0,0.75);
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
   }
   
 
   .extra-card-front {
-    background: linear-gradient(180deg, rgba(162,217,255,1) 18%, rgba(255,255,255,1) 100%);
+    display: flex;
+  
+  }
+
+  .extra-card-front p{
+   margin-top: 20%;
+   font-size: 18px;
+   font-weight: 600;
+   font-family:"Montserrat";
   }
   
 
@@ -88,51 +99,96 @@
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     text-align: center;
-    background: linear-gradient(354deg, rgba(162,217,255,1) 18%, rgba(255,255,255,1) 100%);
-
   }
   .extra-card-back p{
-    text-align: center;
-    margin-top: 20%;
-    font-size: 25px;
+    font-size: 20px;
+
   }
 
   .extra-icon {
-    font-size: 70px;
-    margin-top: 50%;
+    width: 90px;
+    height: 120px;
   }
 
+  .extra-btn{
+    border: 1px solid indigo;
+    border-radius: 30px;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    background-color: indigo;
+    display: block;
+    width: 50%;
+  }
 
- .extra-btn{
-
-  border-radius: 9px;
-  background: transparent;
-  width: 80%;
-  outline: none;
-  margin-top: 30%;
-  text-transform: capitalize;
-
-
- } 
- .extra-btn:hover{
-  border-color: white;
-  box-shadow: 15px 15px 15px -5px rgba(0,0,0,0.75);
-  outline: none;
- }
-
- button:focus {
-  outline: none;
-}
-
+  .extra-btn:hover {
+    color: white;
+    background-color: rgb(88, 0, 151);
+    text-decoration: none;
+  }
 
   @media (max-width:767px){
 
-    .extra-header {
-      font-size: 2.5rem;
+    .mobile-phone{
+      width: 60%;
+      padding-left: 20px;
+    }
+
+    .extra-card {
+      width: 150px;
+      height: 100px;
+      margin-top: 50px;
+    }
+
+    .extra-card-front p{
+      margin-top: 20%;
+      font-size: 15px;
+      font-weight: 900;
+     }
+     .extra-col-2{
+      padding-top: 80px;
+      min-width: 30%;
+      }
+
+      .extra-col-3{
+        margin-bottom: 80px;
+        min-width: 20%;
+        margin-top: -60px;
+       }
+
+       .extra-card-back p{
+        width: 100%;
+        height: auto;
+        font-size: 15px;
+    
+      }
+
+      .extra-icon {
+        width: 80px;
+        height: 100px;
+      }
+
+      .extra-btn{
+        font-size:20px ;
+        width: 70%;
+        padding: 10px;
+      }
+
+      .extra-section{
+
+        padding-top: 20px;
+      }
+
+
   }
 
-  .extra-header::after{
 
-    width: 220px;
+  @media (min-width:1900px){
 
-    }
+.extra-header{
+
+  //*padding-left: 50px;
+}
+
+  }
