@@ -2,9 +2,10 @@ const startingMinutes = 3;
 let time = startingMinutes * 60;
 
 const timer = document.querySelector('.timer');
-const intervalID = setInterval(updateTime,1000);
+const intervalID = setInterval(updateTime,10);
 
 const endGame = document.querySelector('.end-game');
+const gameSection = document.querySelector('.game');
 
 function updateTime() {
     const minutes = Math.floor(time/60);
@@ -13,6 +14,7 @@ function updateTime() {
     if(minutes < 0 && seconds < 0){
         clearInterval(intervalID)
         endGame.style.display = "flex";
+        // gameSection.style.display = "none";
     }
     
     seconds = seconds < 10 ? '0' + seconds : seconds

@@ -6,3 +6,8 @@ name.innerText = userName;
 /* ---- */
 
 const codeButton = document.getElementById('getCode');
+
+codeButton.addEventListener('click', (()=> {
+    codeButton.innerText = "CORONA404";
+}));
+
