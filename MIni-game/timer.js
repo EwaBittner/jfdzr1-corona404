@@ -1,3 +1,4 @@
+function timer(){
 const startingMinutes = 3;
 let time = startingMinutes * 60;
 
@@ -37,3 +38,4 @@ timer.addEventListener('click', function addTime(){
 // timer.addEventListener('click', function substractTime(){
 //     time = time - 15;
 // })
+}
