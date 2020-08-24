@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./game.css">
+    <link rel="stylesheet" href="./player.css">
+    <title>Mini-game</title>
+</head>
+<body>
+    
+    <main class="main">
+        <button class="back-button" onclick="window.location.href='/index.html'"><i class="fas fa-arrow-circle-left button-icon"></i> Powrót do strony</button>
+        <section class="game">
+            <p class="timer">3:00</p>
+            <div class="player"><img class="cart" src="./cart.png"></div>
+        </section>
+        <div class="end-game">
+            <div class="box-left">
+             <img src="./Game Images/crown.png" alt="crown" class="crown-img">
+             <p>KONIEC GRY</p>
+            </div>
+    
+            <div class="box-right">
+                <h1>Gratulacje <span class="name" id="name"></span><br> Ukończyłeś grę</h1>
+                <p>Z wynikiem : <span class="score">215 pkt</span></p>
+                <p>Uzyskujesz rabat : <span class="discount">10%</span></p>
+    
+                <h2>Kliknij aby odebrać <br> swój kod rabatowy</h2>
+                <button id="getCode">ODBIERZ KOD</button>
+            </div>
+        </div>
+        <h2 class="main-bottom">Sprawdź jak grać<br> <span class="arrows"></span></h2>
+    </main>
+
+    <section class="instruction">
+        <div class="instruction__container">
+            <div class="instruction__box">
+                <h3 class="box-title"><i class="fas fa-arrows-alt-h icon-arrows"></i></h3>
+                <p class="box-expl">Poruszanie</p>
+                <p class="box-text">Aby się poruszać używaj strzałek w lewo i w prawo</p>
+            </div>
+            <div class="instruction__box">
+                <h3 class="box-title"><i class="fas fa-trophy icon-trophy"></i></h3>
+                <p class="box-expl">Punkty</p>
+                <p class="box-text">Aby zdobyć punkty zbieraj do koszyka produkty z Polski</p>
+            </div>
+            <div class="instruction__box">
+                <h3 class="box-title"><i class="fas fa-skull-crossbones icon-skull"></i></h3>
+                <p class="box-expl">Pułapki</p>
+                <p class="box-text">Uważaj na spadające pułapki i przeszkody</p>
+            </div>
+            <div class="instruction__box">
+                <h3 class="box-title"><i class="far fa-laugh-beam icon-happy"></i></h3>
+                <p class="box-expl">Nagroda</p>
+                <p class="box-text">Uzyskaj jak najlepszy wynik żeby otrzymać rabat na zakupy</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="copyright">&copy; Made by <span>Corona404</span> team</p>
+
+          <div class="media-box">
+            <i class="fab fa-youtube footer-icon"></i>
+            <i class="fab fa-facebook footer-icon"></i>
+            <i class="fab fa-github footer-icon"></i>
+          </div>
+        </div>
+    </footer>
+    <script src="./endgame.js"></script>
+    <script src="./timer.js"></script>
+   <script src="./player.js"></script>
+
+</body>
+</html>

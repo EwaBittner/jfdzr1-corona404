@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ontouchmove>
 
 <head>
   <meta charset="UTF-8" />
@@ -14,32 +14,40 @@
   <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
 
 
-  <link rel="icon" href="images/Logo_corona.png">
+  <link rel="icon" href="./images/logo-corona.png">
+  <script src="https://unpkg.com/scrollreveal"></script>
 
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/productinfo.css">
   <link rel="stylesheet" href="./css/aboutus.css">
   <link rel="stylesheet" href="./css/sign.css">
   <link rel="stylesheet" href="./css/extra.css">
+  <link rel="stylesheet" href="./css/ciacho.css">
 
   <title>Market404</title>
 </head>
 
 <body>
+  <div class="cookie-container">
+    <p>	Ta strona internetowa używa plików cookies (tzw. ciasteczek) w celach funkcjonalnych. Dzięki nim możemy indywidualnie dostosować stronę do Twoich potrzeb. 
+      Możesz zaakceptować pliki cookies klikając przycisk "Akceptuję". Jeżeli nie zgadzasz się kliknij "Nie Akceptuję". W przypadku braku zgody poniższy komunikat będzie ponownie się pojawiał.</p>
+    <button class="acpt-cookie acpt-cookie-yes">Akceptuję</button>
+    <button class="acpt-cookie acpt-cookie-no">Nie Akceptuję</button>
+  </div>
+  <script src="./JS/cookies.js"></script>
   <button onclick="topFunction()" id="myBtn" title="Powrót do góry"><i class="fas fa-angle-double-up"></i></button>
 
   <!-- sekcja HERO -->
-  <header class="Hero">
+  <header class="Hero" id="Hero">
     <div class="container">
-      <img src="Market404" alt="Ikona wozka" />
-      <h2>Postaw na polską jakość</h2>
+      <img class="logo-corona" src="./images/logo-corona.png" alt="logo Corona404" />
 
-      <button class="nav-trigger">Menu</button>
-      <nav class="menu" id="menu">
+      <i class="fas fa-bars fa-2x"></i>
+      <nav class="menu site-menu">
         <ul>
-          <li><a href="#Product-Info">Produkt</a></li>
+          <li><a href="#product-section">Produkt</a></li>
+          <li><a href="#Additional-Info">Dodatkowo</a></li>
           <li><a href="#About-Us">O nas</a></li>
-          <li><a href="#Additional-Info">Dodatkowe informacje</a></li>
           <li><a href="#Sign-In">Zapisz się</a></li>
         </ul>
       </nav>
@@ -114,16 +122,16 @@
 
   <section class="product-info" id="Product-Info">
     <!-- identyfikacja wizualna produktu, spis funkcji -->
-
+    <h1 class="product-info__header" ><i id="product-section"></i>Nasz sklep oferuje<br><i class="fas fa-angle-double-down product-info__arrow"></i></h1>
     <div class="product-info__container">
       <div class="product-info__box">
         <i class="fas fa-apple-alt product-info__icon"></i>
-        <p class="product-info__paragraph">Polskie regionalne produkty</p>
+        <p class="product-info__paragraph">Produkty polskiego<br>pochodzenia</p>
       </div>
 
-      <div class="product-info__box">
-        <i class="fas fa-seedling product-info__icon"></i>
-        <p class="product-info__paragraph">Zawsze świeżo i <span class="product-info__span"></span> zdrowo</p>
+      <div class="product-info__box"> 
+        <i class="fas fa-tshirt product-info__icon product-info__icon-plant"></i>
+        <p class="product-info__paragraph">Najwyższa jakość<span class="product-info__span"></span> produktów</p>
       </div>
 
       <div class="product-info__box">
@@ -136,9 +144,83 @@
         <p class="product-info__paragraph">Darmowa dostawa od 200zł</p>
       </div>
     </div>
-
   </section>
-
+  <section id="Additional-Info" class="extra-section">
+    <!-- Dodatkowe informacje o produkcje -->
+    <h2 class="extra-header">Produkty najlepszej jakości</h2>
+    <h1>W JEDNYM MIEJSCU</h1>
+    <div class="extra-container">
+      <div class="extra-col-1">
+      <div class="extra-card">
+        <div class="extra-card-inner">
+          <div class="extra-card-front">
+            <img src="./images/Quality icon.png" class="extra-icon"><p>Najlepsza jakość</p>
+          </div>
+          <div class="extra-card-back">
+            <p>Sprawdzeni producenci i wyselekcjonowane produkty, poddane rygorystycznym testom. </p>
+          </div>
+        </div>
+      </div>
+      <div class="extra-card">
+        <div class="extra-card-inner">
+          <div class="extra-card-front">
+            <img src="./images/delivery icon.png" class="extra-icon"><p>Dostawa w 24h</p>
+          </div>
+          <div class="extra-card-back">
+            <p>Wszystkie zamówienia, złożone do godziny 14:00 realizujemy w ciągu 24h.</p>
+          </div>
+        </div>
+      </div>
+      <div class="extra-card">
+        <div class="extra-card-inner">
+          <div class="extra-card-front">
+            <img src="./images/promotion icon.png" class="extra-icon"><p>Rabat na pierwsze<br>zakupy</p>
+          </div>
+          <div class="extra-card-back">
+            <p>Oferujemy rabat w zależności od wyników gry. Zapisz się i sprawdź!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="extra-col-2">
+      <img src="./images/mobile phone.png" class="mobile-phone">
+      <a href="#Sign-In" class="extra-btn">Zapisz się już teraz!</a>
+    </div>
+    <div class="extra-col-3">
+      <div class="extra-card">
+        <div class="extra-card-inner">
+          <div class="extra-card-front">
+            <img src="./images/search icon.png" class="extra-icon"><p>Najszybsze wyszukiwanie</p>
+          </div>
+          <div class="extra-card-back">
+            <p>Silnik dostosowany by przedstawiać najtrafniejsze rezultaty w najkrótszym czasie.</p>
+          </div>
+        </div>
+      </div>
+      <div class="extra-card">
+        <div class="extra-card-inner">
+          <div class="extra-card-front">
+            <img src="./images/return icon.png" class="extra-icon"><p>Darmowe zwroty</p>
+          </div>
+          <div class="extra-card-back">
+            <p>W ciągu 14 dni masz prawo zwrócić towar, a my pokryjemy wysyłkę!</p>
+          </div>
+        </div>
+      </div>
+      <div class="extra-card">
+        <div class="extra-card-inner">
+          <div class="extra-card-front">
+            <img src="./images/protect mask icon.png" class="extra-icon"><p>Bezkontaktowa dostawa</p>
+          </div>
+          <div class="extra-card-back">
+            <p>Idąc naprzeciw oczekiwaniom oferujemy bezkontaktową dostawę.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  </section>
   <section class="aboutus" id="About-Us">
     <h1 class="aboutus__header">NASZ TEAM</h1>
     <div class="aboutus__container">
@@ -146,7 +228,7 @@
         <div class="aboutus__box">
           <img src="./images/tomek.jpeg" alt="Tomek Makarewicz" class="aboutus__img">
           <h2 class="aboutus__name">Tomek Makarewicz</h2>
-          <a class="aboutus__link" href="#" target="_blank"><i class="fas fa-envelope aboutus__icon"></i></a>
+          <a class="aboutus__link" href="#" target="_blank"><i class="fas fa-home aboutus__icon"></i></a>
           <a class="aboutus__link" href="https://github.com/tomasz-makarewicz" target="_blank"><i
               class="fab fa-github aboutus__icon"></i></a>
           <a class="aboutus__link" href="https://pl.linkedin.com/in/tomasz-makarewicz-a278a8133" target="_blank"><i
@@ -157,7 +239,7 @@
         <div class="aboutus__box">
           <img src="./images/kuba.jpeg" alt="Jakub Rejmann" class="aboutus__img">
           <h2 class="aboutus__name">Jakub Rejmann</h2>
-          <a class="aboutus__link" href="#" target="_blank"><i class="fas fa-envelope aboutus__icon"></i></a>
+          <a class="aboutus__link" href="#" target="_blank"><i class="fas fa-home aboutus__icon"></i></a>
           <a class="aboutus__link" href="https://github.com/reymanov" target="_blank"><i
               class="fab fa-github aboutus__icon"></i></a>
           <a class="aboutus__link" href="https://www.linkedin.com/in/jakub-rejmann-8b49221a8/" target="_blank"><i
@@ -168,7 +250,7 @@
         <div class="aboutus__box">
           <img src="./images/ewa.jpg" alt="Ewa Bittner" class="aboutus__img">
           <h2 class="aboutus__name">Ewa Bittner</h2>
-          <a class="aboutus__link" href="#" target="_blank"><i class="fas fa-envelope aboutus__icon"></i></a>
+          <a class="aboutus__link" href="#" target="_blank"><i class="fas fa-home aboutus__icon"></i></a>
           <a class="aboutus__link" href="https://github.com/EwaBittner" target="_blank"><i
               class="fab fa-github aboutus__icon"></i></a>
           <a class="aboutus__link" href="https://www.linkedin.com/in/ewa-bittner-a0b644b7/" target="_blank"><i
@@ -179,7 +261,7 @@
         <div class="aboutus__box">
           <img src="./images/mateusz.jpg" alt="Mateusz Adamczyk" class="aboutus__img">
           <h2 class="aboutus__name">Mateusz Adamczyk</h2>
-          <a class="aboutus__link" href="#" target="_blank"><i class="fas fa-envelope aboutus__icon"></i></a>
+          <a class="aboutus__link" href="#" target="_blank"><i class="fas fa-home aboutus__icon"></i></a>
           <a class="aboutus__link" href="https://github.com/mateuszad" target="_blank"><i
               class="fab fa-github aboutus__icon"></i></a>
           <a class="aboutus__link" href="http://www.linkedin.com/in/mateusz-adamczyk-12a709186" target="_blank"><i
@@ -190,7 +272,7 @@
         <div class="aboutus__box">
           <img src="./images/maciej.jpeg" alt="Maciej Pilarczyk" class="aboutus__img">
           <h2 class="aboutus__name">Maciej Pilarczyk</h2>
-          <a class="aboutus__link" href="#" target="_blank"><i class="fas fa-envelope aboutus__icon"></i></a>
+          <a class="aboutus__link" href="#" target="_blank"><i class="fas fa-home aboutus__icon"></i></a>
           <a class="aboutus__link" href="https://github.com/maciej-pilarczyk" target="_blank"><i
               class="fab fa-github aboutus__icon"></i></a>
           <a class="aboutus__link" href="#" target="_blank"><i class="fab fa-linkedin aboutus__icon"></i></a>
@@ -198,124 +280,44 @@
       </div>
     </div>
   </section>
-
-  <section id="Additional-Info" class="extra-section">
-    <!-- Dodatkowe informacje o produkcje -->
-    <h1 class="extra-header">DODATKOWO</h1>
-    <div class="extra-container">
-      <div class="extra-card">
-        <div class="extra-card-inner">
-          <div class="extra-card-front">
-            <i class="fas fa-search-plus extra-icon"></i>
-          </div>
-          <div class="extra-card-back">
-            <p>Najszybsze wyszukiwanie</p>
-          </div>
-        </div>
-      </div>
-      <div class="extra-card">
-        <div class="extra-card-inner">
-          <div class="extra-card-front">
-            <i class="fas fa-thumbs-up extra-icon"></i>
-          </div>
-          <div class="extra-card-back">
-            <p>Najlepsza jakość</p>
-          </div>
-        </div>
-      </div>
-      <div class="extra-card">
-        <div class="extra-card-inner">
-          <div class="extra-card-front">
-            <i class="fas fa-expand-alt extra-icon"></i>
-          </div>
-          <div class="extra-card-back">
-            <p>Największy zasięg dostaw</p>
-          </div>
-        </div>
-      </div>
-      <div class="extra-card">
-        <div class="extra-card-inner">
-          <div class="extra-card-front">
-            <i class="fas fa-globe-europe extra-icon"></i></div>
-          <div class="extra-card-back">
-            <p>Największa baza producentów</p>
-          </div>
-        </div>
-      </div>
-      <div class="extra-card">
-        <div class="extra-card-inner">
-          <div class="extra-card-front">
-            <i class="fas fa-tags extra-icon"></i>
-          </div>
-          <div class="extra-card-back">
-            <p>Rabat na pierwsze zakupy</p>
-          </div>
-        </div>
-      </div>
-      <div class="extra-card">
-        <div class="extra-card-inner">
-          <div class="extra-card-front">
-            <i class="fas fa-truck extra-icon"></i>
-          </div>
-          <div class="extra-card-back">
-            <p>Wysyłka w 24h</p>
-          </div>
-        </div>
-      </div>
-      <div class="extra-card">
-        <div class="extra-card-inner">
-          <div class="extra-card-front">
-            <i class="fas fa-head-side-mask extra-icon"></i>
-          </div>
-          <div class="extra-card-back">
-            <p>Bezkontaktowa dostawa</p>
-          </div>
-        </div>
-      </div>
-      <div class="extra-card">
-        <div class="extra-card-inner">
-          <div class="extra-card-front">
-            <i class="fas fa-undo-alt extra-icon"></i>
-          </div>
-          <div class="extra-card-back">
-            <p>Darmowe zwroty</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
   <section id="Sign-In" class="sign-in-section">
     <!-- Zapisz się na premierę -->
     <div class="sign-in-container">
-      <div class="sign-in-container-img">
-        <img src="./images/mail.png" alt="mai-gray" class="sign-in-img">
+      <div class="sign-in-container-txt">
+        <h1 class="Sign-Info"> ZAPISZ SIĘ</h1>
+        <h1 class="Sign-Info Sign-Color">DO DARMOWEGO</h1>
+        <h1 class="Sign-Info"> NEWSLETTERA</h1>
+        <p>Z myślą o Was przygotowaliśmy coś niezwykłego: <br><b>Zagraj w grę i sam wywalcz wysokość rabatu.</b> </p>
       </div>
       <div class="sign-in-form">
-        <h3>Zapisz się już teraz!</h3>
         <form class="form-container">
-          <input type="text" id="first-name" name="first-name" placeholder="Imię..">
-          <input type="text" id="last-name" name="last-name" placeholder="Nazwisko..">
-          <input type="email" id="email" name="email" placeholder="E-Mail">
-          <textarea class="textarea" name="textarea" rows="4" cols="50" placeholder="Zostaw wiadomość"></textarea>
-          <input type="submit" value="Wyślij">
-          <p class="sign-agree">Wyrażam zgodę na przesłanie wiadomości z informacją o premierzę przez Corona404 team.
-            Dane nie będą przetwarzane w innym celu, aniżeli zgodnym z powyzszą informacja.
-          </p>
+          <input class="sign-name" type="text" id="first-name" name="first-name" placeholder="Imię.." required>
+          <input class="sign-mail" type="email" id="email" name="email" placeholder="E-Mail" required>
+          <div class="check">
+          <input class="sign-check" type="checkbox" required name="terms" class="chkbox">
+          <p class="sign-agree">Wyrażam zgodę, na zapis do newslettera, a tym samym na przesyłanie mi informacji o najnowszych wpisach na blogu, a także informacji marketingowych dotyczących produktów promocji i 
+            usług dostępnych na stronie <b>www.corona404.pl </b>Jestem śwadomy/a, że w każdej chwili mogę wypisać się z tego newslettera.</p></div>
+          <input class="send-btn" type="submit" value="Zapisz się" id="submitButton">
+          
         </form>
       </div>
     </div>
+    <div class="play-logo" style="display: none;">
+      <h1 class="Sign-Info"> Dziękujemy</h1>
+        <h1 class="Sign-Info Sign-Color">Teraz Zagraj</h1>
+        <h1 class="Sign-Info last-txt"> I wygraj rabat</h1>
+    <a class="hidden-link" href="./MIni-game/game.html">PLAY GAME</a>
+  </div>
   </section>
 
-  <footer>
+  <footer class="footer">
     <div>
-      <p>&copy; Made by Corona404 team</p>
+      <p class="copyright">&copy; Made by Corona404 team</p>
     </div>
     <div>
-      <a href="Twitter">1</a>
-      <a href="Facebook">1</a>
-      <a href="YouTube">1</a>
+      <i class="fab fa-youtube footer-icon"></i>
+      <i class="fab fa-facebook footer-icon"></i>
+      <i class="fab fa-github footer-icon"></i>
     </div>
   </footer>
 
@@ -332,9 +334,11 @@
 
 
   <script src="./JS/button.js"></script>
+  <script src="./JS/photos.js"></script>
   <script src="./JS/smoothmenu.js"></script>
+  <script src="./JS/signIn.js"></script>
+  <script src="./JS/formname.js"></script>
   
 
-</body>
 
 </html>

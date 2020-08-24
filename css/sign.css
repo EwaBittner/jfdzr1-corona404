@@ -1,6 +1,7 @@
 .sign-in-section {
-
-    background: rgba(51, 51, 51, 0.945);
+    font-family:"Montserrat";
+    background-color: #97d5f0;
+    padding-top: 30px;
 }
 
 .sign-in-container{
@@ -8,84 +9,162 @@
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
-    padding: 40px;
+    padding: 60px;
+  
 }
 
-.sign-in-container-img {
+.sign-in-container-txt {
 
-    max-width: 220px;
+    max-width: 550px;
+  
 }
-.sign-in-img{
 
-    width:100%;
-
+.form-container{
+  position: relative;
 }
+
+.Sign-Info {
+  color: white;
+  font-size: 50px;
+}
+
+.Sign-Color {
+  color: indigo;
+}
+
+
 .sign-in-form{
-    color: #f2f2f2;
     font-size: 20px;
     text-align: center;
-    max-width: 400px;
-    max-height: 350px;
+    max-width: 550px;
+    max-height: auto;
+    border:1px black solid;
+    padding: 30px;
+    border-radius: 8px;
+    background-color: white;
+
 }
 
  input[type=email], input[type=text]{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
-    border:none;
-    border-bottom: 1px white solid;
+    border:1px black solid;
+    border-radius: 5px;
     background: none;
-    text-align: center;
+    text-align: left;
     outline: none;
-    color: #fff;
     height: 30px;
   }
 
-  .textarea {
-    background: none;
-    text-align: center;
-    color: #f2f2f2;;
-    width: 100%;
-    border: 1px solid #f2f2f2;
-    margin-top: 15px;
-    height: 75px;
-    
-  }
+
   
   input[type=submit]{
-    background:none;
-    width: 60%;
+    background:indigo;
+    width: 100%;
     height: 40px;
-    color:#f2f2f2;
     border-radius: 7px;
     margin-top: 10px;
+    color: white;
+    font-weight: 700;
   }
 
-  input[type=submit]:hover,.textarea:hover{
+  input[type=submit]:hover{
   transform: scale(1.05);
-  color:#fff;
-  border: 3px solid #fff;
+  border: 3px solid black;
+  outline: none;
   }
 
   .sign-agree {
 
-    font-size: 10px;
-    margin-top: 20px;
+    font-size: 12px;
+    margin-top: 10px;
   }
 
   input[type=email]:hover, input[type=text]:hover{
 
-    border-bottom:3px solid #fff;
-    transform: scale(1.05);
-    color:#fff;
+    border: 2px solid black;
+    color:black;
+  }
 
+  .check{
+    display: flex;
+    align-items:flex-start;
+    text-align: left;
+    margin: 10px;;
+  }
+
+  .chkbox{
+    margin-top: 12px;
+    margin-right: 10px;
+  }
+
+
+
+  .play-logo{
+    text-align: center;
+    height: 350px;
+  }
+
+  .play-logo h1 {
+    font-size: 45px;
+  }
+
+  .hidden-link{
+    text-align: center;
+	  margin:5px;
+    font-weight: bold;
+    padding: 20px;
+    background-color: lightgray;
+    text-shadow: -2px -1px black, 1px 1px white;
+    color: gray;
+	  border-radius: 7px;
+    box-shadow: 0 .2em gray; 
+    cursor: pointer;
+    font-size: 50px;
+    border: 1px black ;
+    
+
+}
+
+  .hidden-link:hover{
+    text-decoration: none;
+    box-shadow: none;
+	  position: relative;
+    top: .2em;
+    color: gray;
+  }
   
+  .last-txt{
+
+    padding-bottom: 30px;
   }
 
   @media (max-width:767px){
+    .Sign-Info{
+      font-size: 35px;
+    }
+    
+    .sign-agree {
 
-  .sign-in-container-img {
+      font-size: 9px;
+      margin-top: 0px;
+    }
 
-    max-width:70px;
+    .play-logo{
+      height: 250px;
+    }
+
+    .play-logo h1{
+      font-size: 25px;
+    }
+
+    .hidden-link{
+      font-size: 25px;
+    }
+
+    input[type=checkbox]{
+  
+      width: 200%;
+    }
 }
-  }
