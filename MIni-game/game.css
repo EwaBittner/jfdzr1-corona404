@@ -173,7 +173,7 @@ body{
     position: absolute;
     width: 200px;
     height: 100px;
-    top:30%;
+    top:40%;
     border: 1px solid white;
     border-radius: 10px;
 }
@@ -190,7 +190,7 @@ body{
 .countdown{
     position: relative;
     font-size: 120px;
-    top: 50%;
+    top: 40%;
     display: none;
 }
 
