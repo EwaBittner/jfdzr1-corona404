@@ -35,6 +35,7 @@ body{
     border-radius: 30px;
     user-select: none;
     margin-top: 10px;
+    display: none;
 }
 
 .game{
@@ -163,6 +164,38 @@ body{
 .button-icon{
     font-size: 1.8rem;
     color: #1d1d1d;
+}
+
+.play-button{
+    font-size: 40px;
+    padding: 16px 42px;
+    background-color: transparent;
+    color: white;
+    position: absolute;
+    width: 30%;
+    min-width: 200px;
+    height: 100px;
+    top:40%;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+.play-button:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 30px -1px ;
+}
+.play-button:active{
+    border: none;
+    outline: none;
+}
+
+.countdown{
+    position: relative;
+    font-size: 150px;
+    top: 40%;
+    display: none;
+    color:white;
+    text-shadow: gray 2px 2px;
 }
 
 /*======================================================*/
