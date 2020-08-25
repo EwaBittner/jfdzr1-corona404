@@ -76,12 +76,23 @@ li>a {
     display: none;
 }
 
-.section-about .bg {
-    width: 100%;
-    height: 800px;
-    background-color: rgba(51, 51, 51, 0.2);
-}
+
+
 /* section about */
+
+.section-about {
+    padding-top: 68px;
+    
+}
+
+#myCarousel {
+    max-height: 700px;
+}
+
+.carousel-item  {
+    background-size: cover;
+    background-position: top;
+}
 
 .carousel-caption h1,
 .carousel-caption p {
@@ -117,7 +128,8 @@ li>a {
 }
 
 #slide-3 h1,
-#slide-3 p {
+#slide-3 p
+#slide-3 .store-icons {
     text-align: center;
 }
 #slide-3 button {
@@ -207,20 +219,24 @@ background-size: 100% 100%;
         margin-top: 20px;
         display: grid;
        grid-gap: 20px;
-        grid-template-columns: 40% 40% ;
-        grid-template-rows: 30px 30px;
+        grid-template-columns: 70px 70px ;
+        grid-template-rows: auto;
         grid-template-areas: 
-    "google google"
-    "apple apple";
+    
+        "google apple";
+    
     }
     .btn  {
-        height: 40px;
-        width: 90px;
-       }
+        height: 24px;
+        width: 70px;
+        
+         }
     .btn a {
-        font-size: 0.8em;
-        height: 30px;
-     }
+        font-size: 0.6em;
+        height: 24px;
+        line-height: 24px;
+       
+        }
     
 }
 @media (min-width: 351px) and (max-width:421px) {
@@ -237,17 +253,20 @@ background-size: 100% 100%;
         margin-top: 20px;
         display: grid;
        grid-gap: 20px;
-        grid-template-columns: 60% 40%;
-        grid-template-rows: 50% 50%;
-        text-align: center;
+       grid-template-columns: 70px 70px ;
+       grid-template-rows: auto;
+       grid-template-areas: 
+   
+       "google apple";
     }
     .btn  {
-        height: 40px;
-        width: 90px;
+        height: 30px;
+        width: 80px;
        }
     .btn a {
-        font-size: 0.9em;
+        font-size: 0.7em;
         height: 30px;
+        line-height: 30px;
      }
 
     
@@ -266,13 +285,15 @@ background-size: 100% 100%;
         margin-top: 20px;
         display: grid;
        grid-gap: 20px;
-        grid-template-columns: 60%  40%;
-        grid-template-rows: 50% 50%;
-        text-align: center;
+       grid-template-columns: 50% 50% ;
+       grid-template-rows: auto;
+       grid-template-areas: 
+   
+       "google apple";
     }
     .btn  {
-        height: 40px;
-        width: 120px;
+        height: 35px;
+        width: 110px;
        }
        .btn a {
         font-size: 1em;
@@ -284,17 +305,17 @@ background-size: 100% 100%;
         padding: 0;
     }
     .carousel-caption h1 {
-        font-size: 1.7em;
+        font-size: 1.5em;
     }
     .carousel-caption p {
-        font-size: 1.2em;
+        font-size: 0.9em;
     }
     .store-icons {
         margin-top: 20px;
         display: grid;
-       grid-gap: 20px;
+       grid-gap: 10px;
         grid-template-columns: 60% 40%;
-        grid-template-rows: 80% 80%;
+        grid-template-rows: 60% 60%;
         text-align: center;
     }
     .btn  {
@@ -312,17 +333,17 @@ background-size: 100% 100%;
         padding: 0;
     }
     .carousel-caption h1 {
-        font-size: 2.5em;
+        font-size: 1.7em;
     }
     .carousel-caption p {
-        font-size: 1.7em;
+        font-size: 1.1em;
     }
     .store-icons {
         margin-top: 20px;
         display: grid;
-       grid-gap: 20px;
+       grid-gap: 10px;
         grid-template-columns: 60% 40%;
-        grid-template-rows: 100% 100%;
+        grid-template-rows: 80% 80%;
         text-align: center;
     }
 }
@@ -340,13 +361,13 @@ background-size: 100% 100%;
         margin-top: 20px;
         display: grid;
        grid-gap: 20px;
-        grid-template-columns: 260px 150px;
-        grid-template-rows: 70px 70px;
+        grid-template-columns: 230px 120px;
+        grid-template-rows: 50px 50px;
         text-align: center;
-        padding-top: 50px;
+        padding-top: 30px;
     }
 } 
-@media (min-width: 1200px)  {
+@media (min-width: 1200px) and (max-width: 1500px)  {
     .carousel-caption{
         padding: 0;
     }
@@ -357,14 +378,24 @@ background-size: 100% 100%;
         font-size: 2em;
     }
     .store-icons {
-        margin-top: 20px;
+        margin: 20px auto 0;
         display: grid;
-       grid-gap: 20px;
+       grid-gap: 10px;
         grid-template-columns: 260px 150px;
         grid-template-rows: 70px 70px;
         text-align: center;
         padding-top: 50px;
     }
+}
+@media (min-width: 1200px) {
+    .store-icons {
+        margin: 50px auto 0;
+        display: grid;
+       grid-gap: 10px;
+        grid-template-columns: 260px 150px;
+        grid-template-rows: 70px 70px;
+        text-align: center;
+        padding-top: 50px;
 }
     
 
@@ -504,4 +535,5 @@ background-size: 100% 100%;
         transform: translateX(0);
         transition: 0.3s transform ease-in-out;
     }
+}
 }
