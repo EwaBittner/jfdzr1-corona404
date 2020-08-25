@@ -191,9 +191,11 @@ body{
 
 .countdown{
     position: relative;
-    font-size: 120px;
+    font-size: 150px;
     top: 40%;
     display: none;
+    color:white;
+    text-shadow: gray 2px 2px;
 }
 
 /*======================================================*/
