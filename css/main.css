@@ -72,6 +72,12 @@ li>a {
     margin-right: 10px;
 }
 
+ul li.active a {
+    border-bottom: 3px solid;
+    border-bottom-color: rgb(230, 45, 45);
+    transition: border-bottom-color 0.5s;
+}
+
 .section-about .bg {
     width: 100%;
     height: 800px;
@@ -252,6 +258,10 @@ li>a {
 }
 
 @media (max-width: 760px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .menu {
         width: 100%;
         display: flex;
@@ -332,7 +342,7 @@ li>a {
         -moz-transform: translateX(100%);
         -o-transform: translateX(100%);
         transform: translateX(100%);
-        transition: 0.5s transform ease-in-out;
+        transition: transform 0.5s ease-in-out;
 
     }
 
@@ -369,11 +379,11 @@ li>a {
     }
 
     .menu-btn:active ~ .site-menu, .site-menu:hover {
-        -ms-transform: translateX(0);
-        -webkit-transform: translateX(0);
-        -moz-transform: translateX(0);
-        -o-transform: translateX(0);
-        transform: translateX(0);
+        -ms-transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -o-transform: translateX(0%);
+        transform: translateX(0%);
         transition: translate(0.5s ease-in-out);
     }
 }
