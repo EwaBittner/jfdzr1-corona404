@@ -76,46 +76,82 @@ li>a {
     display: none;
 }
 
-.section-about .bg {
-    width: 100%;
-    height: 800px;
-    background-color: rgba(51, 51, 51, 0.2);
+
+
+/* section about */
+
+.section-about {
+    padding-top: 68px;
+    
 }
 
-.carousel-caption {
-    background: rgba(2, 2, 2, 0.4);
+.carousel-item  {
+    background-size: cover;
+    background-position: top;
 }
-
-.about-hero-content>p {
-    margin: 0 auto;
-    font-size: 18px;
-    color: white;
-    line-height: 27px;
-    text-align: center;
-}
-
 
 .carousel-caption h1,
 .carousel-caption p {
-    font-family: Montserrat, serif;
+    font-family: 'Montserrat', serif;
 }
 
-.about-hero-action {
+
+#slide-1,
+#slide-2 {
+    left: 12%;
+    top: 15%;
+    width: 40%;
+    margin:0;
+}
+
+#slide-1 h1,
+#slide-1 p,
+#slide-2 h1,
+#slide-2 p  {
+   text-align: left;
+}
+
+#slide-1 button,
+#slide-2 button  {
+    float: left;
+}
+
+#slide-3 {
+  
+    left: 50%;
+    top: 15%;
+    width: 40%;
+    margin:0;
+}
+
+#slide-3 h1,
+#slide-3 p
+#slide-3 .store-icons {
+    text-align: center;
+}
+#slide-3 button {
+    float: center;
+}
+
+.btn  {
     height: 55px;
     padding: 0;
     margin-top: 20px;
     width: 150px;
     border: none;
-    background: red;
+    background: rgb(220, 54, 140);
     transition: 0.3s;
     margin: 0 auto;
+    border-radius: 30px;
+    z-index: 20;
+
 }
 
-.about-hero-action:hover {
-    background-color: rgba(255, 0, 0, 0.8);
+.btn:hover {
+    background-color: rgba(220, 54, 140, 0.8);
 }
 
-.about-hero-action a {
+.btn a {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 300;
@@ -123,84 +159,216 @@ li>a {
     font-size: 20px;
     height: 55px;
     color: white;
+} 
+
+.store-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
 }
 
 
-@media (max-width: 600px) {
-    .section-about {
-        height: 600px;
-        width: 100vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-size: cover;
-        background-position: center;
-    }
 
-    .section-about .bg {
-        display: flex;
-        position: relative;
-        align-items: center;
-        justify-content: flex-start;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(51, 51, 51, 0.2);
-    }
-
-    .about-container {
-        position: absolute;
-        width: 100%;
-        top: 35%;
-        left: 0;
-        padding: 0 20px;
-    }
-
-    .about-hero-content {
-        max-width: 300px;
-        text-align: center;
-    }
-
-    .about-hero-content>h1 {
-        font-size: 25px;
-    }
-
-    .about-hero-content>p {
-        font-size: 16px;
-    }
-
-    .about-hero-action {
-        height: 50px;
-        width: 150px;
-    }
+.first img {
+    width: 50%;
+    padding-top: 20px;
+   
+    
+}
+.second img {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+   
 }
 
-@media (min-width: 600px) and (max-width: 1280px) {
-    .section-about {
-        height: 600px;
+ @media (max-width: 350px) {
+    .carousel-caption{
+        padding: 0;
     }
-
-    .section-about .bg {
-        height: 600px;
-        background-color: rgba(51, 51, 51, 0.2);
+    .carousel-caption h1 {
+        font-size: 0.8em;
     }
-
-    .about-container {
-        position: absolute;
-        width: 100%;
-        top: 25%;
-        left: 0;
-        padding: 0 20px;
+    .carousel-caption p {
+        font-size: 0.5em;
     }
-
-    .about-hero-content>h1 {
-        font-size: 40px;
-        padding-bottom: 20px;
-    }
-
-    .about-hero-content>p {
-        font-size: 18px;
-    }
+    
+    .btn  {
+        height: 24px;
+        width: 70px;
+        
+         }
+    .btn a {
+        font-size: 0.6em;
+        height: 24px;
+        line-height: 24px;
+       
+        }
+        .first img {
+            width: 30%;
+            padding-top: 2px;
+           
+            
+        }
+        .second img {
+            display: none;
+           
+        }
+    
 }
+
+@media (min-width: 351px) and (max-width:421px) {
+    .carousel-caption{
+        padding: 0;
+    }
+    .carousel-caption h1 {
+        font-size: 0.9em;
+    }
+    .carousel-caption p {
+        font-size: 0.6em;
+    }
+    
+    .btn  {
+        height: 30px;
+        width: 80px;
+       }
+    .btn a {
+        font-size: 0.7em;
+        height: 30px;
+        line-height: 30px;
+     }
+     .first img {
+        width: 30%;
+        padding-top: 2px;
+       
+        
+    }
+    .second img {
+        display: none;
+       
+    }
+
+    
+}
+
+@media (min-width: 422px) and (max-width: 576px)  {
+    .carousel-caption{
+        padding: 0;
+    }
+    .carousel-caption h1 {
+        font-size: 1.2em;
+    }
+    .carousel-caption p {
+        font-size: 0.8em;
+    }
+    
+    .btn  {
+        height: 35px;
+        width: 110px;
+       }
+       .btn a {
+        font-size: 1em;
+        height: 40px;
+        } 
+        
+        .first img {
+            width: 40%;
+            padding-top: 2px;
+           
+            
+        }
+        .second img {
+            display: none;
+           
+        }
+}
+
+@media (min-width: 577px) and (max-width: 768px)  {
+    .carousel-caption{
+        padding: 0;
+    }
+    .carousel-caption h1 {
+        font-size: 1.5em;
+    }
+    .carousel-caption p {
+        font-size: 0.9em;
+    }
+    
+    .btn  {
+        height: 40px;
+        width: 120px;
+       }
+    .btn a {
+        font-size: 1em;
+        height: 40px;
+        
+    } 
+}
+
+@media (min-width: 769px) and (max-width: 992px)  {
+    .carousel-caption{
+        padding: 0;
+    }
+    .carousel-caption h1 {
+        font-size: 1.7em;
+    }
+    .carousel-caption p {
+        font-size: 1.1em;
+    }
+  
+       
+    
+}
+
+@media (min-width: 993px) and (max-width: 1199px)  {
+    .carousel-caption{
+        padding: 0;
+    }
+    .carousel-caption h1 {
+        font-size: 2.5em;
+    }
+    .carousel-caption p {
+        font-size: 1.7em;
+    }
+    
+} 
+@media (min-width: 1200px) and (max-width: 1500px)  {
+    .carousel-caption{
+        padding: 0;
+    }
+    .carousel-caption h1 {
+        font-size: 3em;
+    }
+    .carousel-caption p {
+        font-size: 2em;
+    }
+
+    .store-icons {
+        padding-top: 50px;
+      
+    }
+    
+}
+
+@media (min-width: 1501px) {
+    .carousel-caption{
+        padding: 0;
+    }
+    .carousel-caption h1 {
+        font-size: 3em;
+    }
+    .carousel-caption p {
+        font-size: 2em;
+    }
+    .store-icons {
+        padding-top: 140px;
+    }
+    
+} 
+    
+
+
 
 .footer {
     background-color: #333;
@@ -336,4 +504,5 @@ li>a {
         transform: translateX(0);
         transition: 0.3s transform ease-in-out;
     }
+}
 }
