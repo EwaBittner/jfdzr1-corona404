@@ -290,6 +290,7 @@ ul li.active a {
         border-radius: 5px;
         box-shadow: 0 2px 4px rgba(255, 101, 47, .2);
         transition: all .5s ease-in-out;
+        cursor: pointer;
     }
 
     .menu-btn__burger::before,
@@ -342,8 +343,7 @@ ul li.active a {
         -moz-transform: translateX(100%);
         -o-transform: translateX(100%);
         transform: translateX(100%);
-        transition: transform 0.5s ease-in-out;
-
+        transition: transform 0.5s ease-in;
     }
 
     .site-menu ul {
@@ -384,6 +384,22 @@ ul li.active a {
         -moz-transform: translateX(0%);
         -o-transform: translateX(0%);
         transform: translateX(0%);
-        transition: translate(0.5s ease-in-out);
+        transition: transform 0.5s ease-in;
     }
+}
+
+.site-menu-active {
+    transform: translateX(0%);
+}
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #333;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #fff;
 }
