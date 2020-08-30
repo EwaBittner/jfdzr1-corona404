@@ -80,26 +80,27 @@ li>a {
 
 /* section about */
 
-.section-about {
+/* .section-about {
     padding-top: 68px;
     
-}
+} */
 
 .carousel-item  {
-    background-size: cover;
-    background-position: top;
-}
+    padding-top: 68px;
+} 
 
 .carousel-caption h1,
 .carousel-caption p {
     font-family: 'Montserrat', serif;
-}
+  
+} 
+
 
 
 #slide-1,
 #slide-2 {
     left: 12%;
-    top: 15%;
+    top: 40%;
     width: 40%;
     margin:0;
 }
@@ -117,17 +118,19 @@ li>a {
 }
 
 #slide-3 {
-  
+  display: flex;
+  flex-direction: column;
+ align-items: left;
     left: 50%;
-    top: 15%;
+    top: 40%;
     width: 40%;
     margin:0;
 }
 
 #slide-3 h1,
-#slide-3 p
+#slide-3 p,
 #slide-3 .store-icons {
-    text-align: center;
+    text-align: left;
 }
 #slide-3 button {
     float: center;
@@ -155,7 +158,7 @@ li>a {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 300;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     height: 55px;
     color: white;
@@ -294,6 +297,9 @@ li>a {
     .carousel-caption p {
         font-size: 0.9em;
     }
+    #slide-3 {
+        top: 30%;
+    }
     
     .btn  {
         height: 40px;
@@ -316,10 +322,10 @@ li>a {
     .carousel-caption p {
         font-size: 1.1em;
     }
-  
-       
-    
-}
+    #slide-3 {
+        top: 30%;
+    }
+  }
 
 @media (min-width: 993px) and (max-width: 1199px)  {
     .carousel-caption{
@@ -330,6 +336,9 @@ li>a {
     }
     .carousel-caption p {
         font-size: 1.7em;
+    }
+    #slide-3 {
+        top: 30%;
     }
     
 } 
@@ -342,6 +351,9 @@ li>a {
     }
     .carousel-caption p {
         font-size: 2em;
+    }
+    #slide-3 {
+        top: 30%;
     }
 
     .store-icons {
