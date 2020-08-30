@@ -35,8 +35,8 @@ html {
 }
 
 .logo-corona {
-    width: 100px;
-    height: auto;
+    width: auto;
+    height: 50px;
     padding: 0;
     margin-left: 5%;
 }
@@ -275,8 +275,8 @@ ul li.active a {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 30px;
         cursor: pointer;
         transition: all .5s ease-in-out;
         z-index: 200;
@@ -284,7 +284,7 @@ ul li.active a {
     }
 
     .menu-btn__burger {
-        width: 40px;
+        width: 35px;
         height: 5px;
         background: #fff;
         border-radius: 5px;
@@ -297,7 +297,7 @@ ul li.active a {
     .menu-btn__burger::after {
         content: '';
         position: absolute;
-        width: 40px;
+        width: 35px;
         height: 5px;
         background: #fff;
         border-radius: 5px;
@@ -314,17 +314,17 @@ ul li.active a {
     }
 
     /* ANIMATION */
-    .menu-btn.open .menu-btn__burger {
+    .menu-btn.menu-open .menu-btn__burger {
         transform: translateX(-50px);
         background: transparent;
         box-shadow: none;
     }
 
-    .menu-btn.open .menu-btn__burger::before {
+    .menu-btn.menu-open .menu-btn__burger::before {
         transform: rotate(45deg) translate(35px, -35px);
     }
 
-    .menu-btn.open .menu-btn__burger::after {
+    .menu-btn.menu-open .menu-btn__burger::after {
         transform: rotate(-45deg) translate(35px, 35px);
     }
 
@@ -378,7 +378,7 @@ ul li.active a {
         width: auto;
     }
 
-    .menu-btn:active ~ .site-menu, .site-menu:hover {
+    .menu-btn.menu-open ~ .site-menu, .site-menu:hover {
         -ms-transform: translateX(0%);
         -webkit-transform: translateX(0%);
         -moz-transform: translateX(0%);
@@ -386,10 +386,6 @@ ul li.active a {
         transform: translateX(0%);
         transition: transform 0.5s ease-in;
     }
-}
-
-.site-menu-active {
-    transform: translateX(0%);
 }
 
 body::-webkit-scrollbar {
