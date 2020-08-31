@@ -88,6 +88,12 @@
     color: rgb(42, 42, 42);
 }
 
+@media (max-width: 1200px){
+    .aboutus__card{
+        zoom: 0.8;
+    }
+}
+
 @media (max-width: 768px){
     .aboutus__header{
     font-size : 2.5em;
@@ -97,4 +103,18 @@
         transform: translateX(-5px) translateY(15px) skewX(-60deg);
     }
 }
+
+@media (max-width: 500px){
+    .aboutus__card{
+        zoom: 0.6;
+    }
+}
+
+@media (max-width: 360px){
+    .aboutus__card{
+        zoom: 0.5;
+    }
+}
+
+
 
