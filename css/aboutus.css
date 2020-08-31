@@ -11,24 +11,15 @@
 }
 
 .aboutus__header{
+    font-family:"Montserrat";
     display: inline-block;
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 500;
     margin: 20px auto 80px;
     padding-top: 50px;
     color: rgb(24, 24, 24);
     letter-spacing: 2px;
     text-align: center;
-}
-
-.aboutus__header::after{
-    content: "";
-    display: block;
-    position: absolute;
-    width: 280px;
-    height: 6px;
-    background-color: rgb(238, 31, 31);
-    transform: translateX(18px) translateY(15px) skewX(-60deg);
 }
 
 .aboutus__container{
