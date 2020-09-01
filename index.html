@@ -231,22 +231,28 @@
           <div class="pricing__box box-skew">
             <h2 class="box__title">Basic</h2>
             <p class="box__description">Podstawowy pakiet wystawcy w naszym sklepie</p>
-            <p class="box__price">$10</p>
-            <button class="box__button">Wybierz</button>
+            <p class="box__price">$<span class="priceBasic">20</span></p>
+            <button class="box__button" formmethod="post">Wybierz</button>
           </div>
           <div class="pricing__box box--featured"> 
             <span class="box__bestseller">BESTSELLER</span>
             <h2 class="box__title">Pro</h2>
             <p class="box__description">Wszystko czego potrzebujesz. <br> Za rozsądną cenę.</p>
-            <p class="box__price">$45</p>
+            <p class="box__price">$<span class="pricePRO">50</span></p>
             <button class="box__button">Wybierz</button>
           </div>
           <div class="pricing__box box-skew">
             <h2 class="box__title">VIP</h2>
             <p class="box__description">Ok, łapiemy. <br> You’re the boss now.</p>
-            <p class="box__price">$149</p>
+            <p class="box__price">$<span class="priceVIP">90</span></p>
             <button class="box__button">Wybierz</button>
           </div>
+        </div>
+      </form>
+        <div class="slidecontainer">
+          <p class="sliderdays">2</p>
+          <p class="sliderText">Miesiące subskrypcji</p>
+          <input type="range" min="1" max="12" value="2" class="slider" id="myRange">
         </div>
   </section>
 
