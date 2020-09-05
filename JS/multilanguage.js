@@ -54,13 +54,19 @@ var ChangeCookieContainerp1 = document.querySelector(".cokie-container-p");
 var ChangeCookieAcceptY = document.querySelector(".acpt-cookie-yes");
 var ChangeCookieAcceptN= document.querySelector(".acpt-cookie-no");
 
+var ChangePricingHeader = document.querySelector(".pricing__header");
+var ChangePricingParagraph = document.querySelector(".pricing__paragraph");
+var ChangePricingBox1 = document.querySelector(".box__description_p1");
+var ChangePricingBox2 = document.querySelector(".box__description_p2");
+var ChangePricingBox3 = document.querySelector(".box__description_p3");
+var ChangeBoxButton1 = document.querySelector(".box__button1");
+var ChangeBoxButton2 = document.querySelector(".box__button2");
+var ChangeBoxButton3 = document.querySelector(".box__button3");
+var ChangeSliderText = document.querySelector(".sliderText");
+
 
 var polish = document.querySelector(".PL");
 var english = document.querySelector(".ENG");
-
-// var changeCookies = document.querySelector(".cookie-container").innerText;
-// var changeCookiesY = document.querySelector(".acpt-cookie acpt-cookie-yes").innerText;
-// var changeCookiesN = document.querySelector(".acpt-cookie acpt-cookie-no").innerText;
 
 polish.onclick = function()
 {
@@ -120,6 +126,16 @@ polish.onclick = function()
     ChangeCookieContainerp1.innerText = 'Ta strona internetowa używa plików cookies (tzw. ciasteczek) w celach funkcjonalnych. Dzięki nim możemy indywidualnie dostosować stronę do Twoich potrzeb. Możesz zaakceptować pliki cookies klikając przycisk "Akceptuję". Jeżeli nie zgadzasz się kliknij "Nie Akceptuję". W przypadku braku zgody poniższy komunikat będzie ponownie się pojawiał.';
     ChangeCookieAcceptY.innerText = "Akceptuję";
     ChangeCookieAcceptN.innerText = "Nie akceptuję";
+
+    ChangePricingHeader.innerText = "Zacznij sprzedawać w naszym sklepie";
+    ChangePricingParagraph.innerText = "Wybierz miesięczny pakiet wystawcy, który pozwoli Tobie sprzedawać swoje produkty w naszym sklepie.";
+    ChangePricingBox1.innerText = "Podstawowy pakiet wystawcy w naszym sklepie";
+    ChangePricingBox2.innerText = "Wszystko czego potrzebujesz. Za rozsądną cenę.";
+    ChangePricingBox3.innerHTML = "Ok, łapiemy." +"<br>" + "You’re the boss now.";
+    ChangeBoxButton1.innerText = "Wybierz";
+    ChangeBoxButton2.innerText = "Wybierz";
+    ChangeBoxButton3.innerText = "Wybierz";
+    ChangeSliderText.innerText = "Miesiące subskrypcji";
 }
 
 
@@ -180,4 +196,14 @@ english.onclick = function ()
     ChangeCookieContainerp1.innerText = '"This website uses cookies (so-called cookies) for functional purposes. Thanks to them, we can customize the site to your needs. You can accept cookies by clicking the "I accept" button. If you do not agree, click "I do not accept". In case of disagreement, the following message will reappear.';
     ChangeCookieAcceptY.innerText = "I accept";
     ChangeCookieAcceptN.innerText = "I do not accept";
+
+    ChangePricingHeader.innerText = "Start selling in our store";
+    ChangePricingParagraph.innerText = "Choose a monthly exhibitor package that will allow you to sell your products in our store.";
+    ChangePricingBox1.innerText = "Basic exhibitor package in our store";
+    ChangePricingBox2.innerHTML = "All you need." +"<br>" + "At a reasonable price.";
+    ChangePricingBox3.innerHTML = "Ok, we get it." + "<br>" + "You’re the boss now.";
+    ChangeBoxButton1.innerText = "Choose";
+    ChangeBoxButton2.innerText = "Choose";
+    ChangeBoxButton3.innerText = "Choose";
+    ChangeSliderText.innerText = "Months of subscription";
 }

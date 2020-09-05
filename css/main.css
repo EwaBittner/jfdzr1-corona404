@@ -100,18 +100,11 @@ li>a {
     background-size:cover;
 	outline: inherit;
   }
-  .Switcher:hover, .Switcher.active{
-    border-radius:50%;
-    box-shadow:0 0 .2em #666;
-    opacity:1;
-    transform:rotate(-360deg);
-    outline: inherit;
-    border: none;
-  }
-  
+
 
   .ENG{
     background-image: url("https://cdn.countryflags.com/thumbs/united-kingdom/flag-400.png");
+    margin-right: 5px;
   }
   
   .PL{
@@ -491,9 +484,9 @@ li>a {
         display: flex;
         justify-content: center;
         display: flex-end;
+        order: 1;
         color: #fff;
         z-index: 5;
-        margin-right: 15%;
     }
 
     .fa-bars:hover {
