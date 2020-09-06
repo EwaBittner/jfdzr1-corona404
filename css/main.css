@@ -76,6 +76,41 @@ li>a {
     display: none;
 }
 
+.LangSwitcher{
+    font-size:1em;
+    line-height:1;
+    margin:0;
+    padding:0;
+    
+  }
+  .Switcher{
+    box-sizing:content-box;
+    display:inline-block;
+    position:relative;
+    width:1em;
+    height:1em;
+    margin:0;
+    background:#fff;
+    border-radius:50%;
+    border:solid #eee;
+    overflow:hidden;
+    box-shadow:0;
+    transition: 1s;
+    background-position:center;
+    background-size:cover;
+	outline: inherit;
+  }
+
+
+  .ENG{
+    background-image: url("https://cdn.countryflags.com/thumbs/united-kingdom/flag-400.png");
+    margin-right: 5px;
+  }
+  
+  .PL{
+   background-image: url("https://cdn.countryflags.com/thumbs/poland/flag-400.png");
+  }
+
 
 
 /* section about */
@@ -449,9 +484,9 @@ li>a {
         display: flex;
         justify-content: center;
         display: flex-end;
+        order: 1;
         color: #fff;
         z-index: 5;
-        margin-right: 15%;
     }
 
     .fa-bars:hover {
@@ -516,5 +551,4 @@ li>a {
         transform: translateX(0);
         transition: 0.3s transform ease-in-out;
     }
-}
 }
