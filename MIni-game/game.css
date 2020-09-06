@@ -42,12 +42,40 @@ body{
     display: flex;
     width: 70%;
     height: 70%;
-    margin: 0 0 100px 0;
-    background-color: rgba(87, 87, 87, 0.205);
+    margin: 0;
+    background-color: #94e5ff;
     align-self: center;
     justify-content: center;
     position: relative;
+    overflow: hidden;
+    z-index: 102;
+    border: 1px solid red;
 }
+
+.player
+{
+    z-index: 101;
+}
+
+.score-screen{
+    font-size: 100px;
+    z-index: 100;
+    font-family: arial;
+    color: white;
+    user-select:none;
+    width:100%;
+    text-align:right;
+    margin-right: 10px;
+  }
+
+.product
+{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    z-index: 100;
+    background-image: url("1.png");
+} 
 
 .main-bottom{
     position: absolute;
@@ -178,6 +206,7 @@ body{
     top:40%;
     border: 3px solid white;
     border-radius: 10px;
+    z-index: 101;
 }
 
 .play-button:hover{
@@ -190,12 +219,13 @@ body{
 }
 
 .countdown{
-    position: relative;
+    position: absolute;
     font-size: 150px;
     top: 40%;
     display: none;
     color:white;
     text-shadow: gray 2px 2px;
+    z-index: 104;
 }
 
 /*======================================================*/
@@ -213,6 +243,7 @@ body{
     text-align: center;
     border-radius: 20px;
     user-select: none;
+    z-index: 104;
 }
 
 .box-left{
