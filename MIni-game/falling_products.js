@@ -102,12 +102,12 @@ function movedown() {
         else{
         if(timer==="2:00")
         {
-            speed = 1.5;
+            speed = 1.3;
         }
         else{
         if(timer==="1:00")
         {
-            speed = 2;
+            speed = 1.6;
         }}}
     
         if (timer==="0:00")
