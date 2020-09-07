@@ -353,7 +353,7 @@ li>a {
         font-size: 2em;
     }
     #slide-3 {
-        top: 30%;
+        top: 20%;
     }
 
     .store-icons {
@@ -375,6 +375,9 @@ li>a {
     }
     .store-icons {
         padding-top: 140px;
+    }
+    #slide-3 {
+        top: 25%;
     }
     
 } 
