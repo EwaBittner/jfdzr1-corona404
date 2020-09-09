@@ -16,8 +16,13 @@
         <button class="back-button" onclick="window.location.href='/index.html'"><i class="fas fa-arrow-circle-left button-icon"></i> Powrót do strony</button>
         <section class="game">
             <p class="timer">3:00</p>
+            <div class="score-screen">
+                <p>Score: 0</p>
+              </div>
             <p class="countdown">5</p>
-            <div class="player"><img class="cart" src="./cart.png"></div>
+            <div class="player" id="player">
+                <img class="cart" id="cart" src="./cart1.png">
+            </div>
             <button class="play-button">PLAY!</button>
         </section>
         <div class="end-game">
@@ -77,7 +82,9 @@
     <script src="./endgame.js"></script>
     <script src="./timer.js"></script>
    <script src="./player.js"></script>
+   <script src="./falling_products.js"></script>
    <script src="./game-start.js"></script>
+  
 
 </body>
 </html>

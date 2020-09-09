@@ -13,10 +13,11 @@ let startGame = playBtn.addEventListener('click',()=>{
         if (counter.textContent == 0) {
             player.style.display = 'block';
             timer2.style.display = "block"
-              
+            fallingObjects();
           clearInterval(startCountdown );
           counter.style.display ="none";
           timer();  
+         
         }
       }, 1000);
 })
