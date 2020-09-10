@@ -7,7 +7,7 @@ let startCountdown = null
 let startGame = playBtn.addEventListener('click', () => {
   playBtn.style.display = "none"
   counter.style.display = "block"
-  let startCountdown = setInterval(() => {
+  startCountdown = setInterval(() => {
 
     counter.textContent--
     if (counter.textContent == 0) {
