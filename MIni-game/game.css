@@ -318,6 +318,12 @@ body{
     outline: none;
 }
 
+.box-left-ranking{
+
+    text-align: left;
+    font-size: 30px;
+}
+
 @media (max-width: 1410px){
     .instruction__container{
         width: 70vw;
