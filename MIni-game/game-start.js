@@ -2,7 +2,7 @@ const playBtn = document.querySelector('.play-button')
 const player = document.querySelector(".cart")
 const timer2 = document.querySelector('.timer')
 const counter = document.querySelector('.countdown')
-
+let startCountdown = null
 
 let startGame = playBtn.addEventListener('click', () => {
   playBtn.style.display = "none"

@@ -1,9 +1,9 @@
 const endLifeLost = document.querySelector('.end-life-lost');
 const game1 = document.querySelector('.game');
 const btnStart = document.querySelector('#Start-again');
-const timer3 = document.querySelector('.timer');
+// const timer3 = document.querySelector('.timer');
 var lifeCounter = 3
-
+let startCountdown = null;
 
 function lifeLost() {
     lifeCounter--;
@@ -22,6 +22,9 @@ function lifeLost() {
         icon1.remove();
         endLifeLost.style.display = "flex";
         game1.style.display = "none";
+        onGameLost()
+        clearInterval(startCountdown);
+
 
     }
 }
@@ -29,8 +32,6 @@ function lifeLost() {
 let startAgain = btnStart.addEventListener('click', () => {
     endLifeLost.style.display = "none";
     game1.style.display = "flex";
-    timer3.innerHTML = '3.00';
-    // fallingObjects()
-
+    // timer.innerHTML = '3.00';
 
 })
