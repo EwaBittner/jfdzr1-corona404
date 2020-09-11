@@ -12,6 +12,7 @@ function timer() {
         let seconds = time % 60;
 
         if (minutes < 0 && seconds < 0) {
+            youWin.play()
             clearInterval(intervalID)
             endGame.style.display = "flex";
         }
