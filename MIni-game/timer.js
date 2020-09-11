@@ -30,16 +30,6 @@ function timer() {
 
         time--;
 
-        //  substractTime();
     }
 
-    timer.addEventListener('click', function addTime() {
-        time = time + 15;
-    })
-
-    addTime()
-
-    // timer.addEventListener('click', function substractTime(){
-    //     time = time - 15;
-    // })
 }
