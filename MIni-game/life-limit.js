@@ -23,9 +23,12 @@ function lifeLost() {
     } else
     if (lifeCounter == 0) {
         youLost.play()
+        gameMusic.stop()
         icon1.style.visibility = "hidden"
         endLifeLost.style.display = "flex";
         game1.style.display = "none";
+        gameMusic.pause()
+
         clearInterval(startCountdown);
         clearTimeout(id);
         clearInterval(id)
@@ -37,6 +40,7 @@ let startAgain = btnStart.addEventListener('click', () => {
     endLifeLost.style.display = "none";
     game1.style.display = "flex";
     lifeCounter += 3;
+    gameMusic.play()
     icon3.style.visibility = "visible"
     icon2.style.visibility = "visible"
     icon1.style.visibility = "visible"
