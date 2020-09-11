@@ -63,7 +63,7 @@ li>a {
     display: block;
     float: right;
     width: auto;
-    padding: 5px 10px 0 0;
+    padding: 5px 0 0 0;
     font-size: 20px;
     font-weight: 400;
     text-decoration: none;
@@ -472,7 +472,7 @@ ul li.active a {
     }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 790px) {
     body {
         overflow-x: hidden;
     }
@@ -585,7 +585,7 @@ ul li.active a {
 
     .site-menu a {
         display: flex;
-        padding: 10px 10px 0 0;
+        padding: 10px 0 0 0;
         box-sizing: border-box;
         text-decoration: none;
         float: left;
