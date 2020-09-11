@@ -28,10 +28,10 @@ function lifeLost() {
         endLifeLost.style.display = "flex";
         game1.style.display = "none";
         gameMusic.pause()
-
+        gameMusic.currentTime = 0;
         clearInterval(startCountdown);
         clearTimeout(id);
-        clearInterval(id)
+
 
     }
 }
@@ -41,14 +41,12 @@ let startAgain = btnStart.addEventListener('click', () => {
     game1.style.display = "flex";
     lifeCounter += 3;
     gameMusic.play()
+    gameMusic.currentTime = 0;
     icon3.style.visibility = "visible"
     icon2.style.visibility = "visible"
     icon1.style.visibility = "visible"
     fallingObjects();
     timer()
-
-
-
-
+    clearinterval(id);
 
 })
