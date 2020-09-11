@@ -325,6 +325,12 @@ body {
     outline: none;
 }
 
+.box-left-ranking {
+
+    text-align: left;
+    font-size: 30px;
+}
+
 .end-life-lost {
     display: none;
     width: 60%;
@@ -343,6 +349,7 @@ body {
 
 @media (max-width: 1410px) {
     .instruction__container {
+
         width: 70vw;
         height: 60vh;
     }
