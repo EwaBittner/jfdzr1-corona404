@@ -15,11 +15,14 @@ function lifeLost() {
 
     if (lifeCounter == 2) {
         icon3.style.visibility = "hidden"
+
     } else
     if (lifeCounter == 1) {
         icon2.style.visibility = "hidden"
+
     } else
     if (lifeCounter == 0) {
+        youLost.play()
         icon1.style.visibility = "hidden"
         endLifeLost.style.display = "flex";
         game1.style.display = "none";
