@@ -576,7 +576,7 @@ ul li.active a {
         padding: 10px 5px 0 0;
         color: #333;
         flex-basis: 100%;
-  }
+    }
     
     .menu>li>a:hover {
         transform: translateY(100%);
@@ -601,6 +601,7 @@ ul li.active a {
         transform: translateX(0%);
         transition: transform 0.5s ease-in;
     }
+}
 
 body::-webkit-scrollbar {
     width: 0.5rem;
