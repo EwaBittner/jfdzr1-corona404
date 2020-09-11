@@ -23,13 +23,14 @@
   <link rel="stylesheet" href="./css/sign.css">
   <link rel="stylesheet" href="./css/extra.css">
   <link rel="stylesheet" href="./css/ciacho.css">
+  <link rel="stylesheet" href="./css/pricing.css">
 
   <title>Market404</title>
 </head>
 
 <body>
   <div class="cookie-container">
-    <p>	Ta strona internetowa używa plików cookies (tzw. ciasteczek) w celach funkcjonalnych. Dzięki nim możemy indywidualnie dostosować stronę do Twoich potrzeb. 
+    <p class="cokie-container-p">	Ta strona internetowa używa plików cookies (tzw. ciasteczek) w celach funkcjonalnych. Dzięki nim możemy indywidualnie dostosować stronę do Twoich potrzeb. 
       Możesz zaakceptować pliki cookies klikając przycisk "Akceptuję". Jeżeli nie zgadzasz się kliknij "Nie Akceptuję". W przypadku braku zgody poniższy komunikat będzie ponownie się pojawiał.</p>
     <button class="acpt-cookie acpt-cookie-yes">Akceptuję</button>
     <button class="acpt-cookie acpt-cookie-no">Nie Akceptuję</button>
@@ -47,12 +48,18 @@
       </div>
       <nav class="menu site-menu">
         <ul id="top-menu">
-          <li><a href="#product-section">Produkt</a></li>
-          <li><a href="#Additional-Info">Dodatkowo</a></li>
-          <li><a href="#About-Us">O nas</a></li>
-          <li><a href="#Sign-In">Zapisz się</a></li>
+          <li class="Product-li"><a class="Product-li-a" href="#product-section">Produkt</a></li>
+          <li class="Add-li"><a class="Add-li-a" href="#Additional-Info">Dodatkowo</a></li>
+          <li class="Aboutus-li"><a class="About-us-li-a" href="#About-Us">O nas</a></li>
+          <li class="Signin-li"><a class="Signin-li-a" href="#Sign-In">Zapisz się</a></li>
         </ul>
       </nav>
+
+      <div class="LangSwitcher">
+        <button class="Switcher ENG"></button>
+        <button class="Switcher PL"></button>
+      </div>
+
     </div>
   </header>
   <section class="section-about">
@@ -70,25 +77,25 @@
         <div class="carousel-item active">
           <img src="./images/slajd 1.png" class="d-block w-100" alt="online shopping">
           <div id="slide-1" class="carousel-caption">
-            <h1>Postaw na polską jakość</h1>
-            <p>Wspieraj Polski lokalny rynek</p>
-            <button id="btn-carousel" class="btn btn-custom"> <a href="#Sign-In">Zapisz się</a></button>
+            <h1 class="carousel-slide1-h1">Postaw na polską jakość</h1>
+            <p class="carousel-slide1-p">Wspieraj Polski lokalny rynek</p>
+            <button id="btn-carousel" class="btn btn-custom"> <a class="btn-carousel-slide1-a" href="#Sign-In">Zapisz się</a></button>
           </div>
         </div>
         <div class="carousel-item">
           <img src="./images/slajd 2.png" class="d-block w-100" alt="shopping-cart">
           <div id="slide-2"  class="carousel-caption">
-            <h1>Wygodne zakupy</h1>
-            <p>Zostań w domu i ciesz się zakupami online</p>
-            <button id="btn-carousel" class="btn btn-custom"> <a href="#Sign-In">Zapisz się</a></button>
+            <h1 class="carousel-slide2-h1">Wygodne zakupy</h1>
+            <p class="carousel-slide2-p">Zostań w domu i ciesz się zakupami online</p>
+            <button id="btn-carousel" class="btn btn-custom"> <a class="btn-carousel-slide2-a" href="#Sign-In">Zapisz się</a></button>
           </div>
         </div>
         <div class="carousel-item">
           <img src="./images/slajd 3.png" class="d-block w-100" alt="mobile phone">
           <div id="slide-3" class="carousel-caption">
             <div>
-            <h1>Pobierz naszą aplikację</h1>
-            <p>Pobierz mobilną aplikację i badź na bieżąco</p>
+            <h1 class="carousel-slide3-h1">Pobierz naszą aplikację</h1>
+            <p class="carousel-slide3-p">Pobierz mobilną aplikację i badź na bieżąco</p>
           </div>
             <div class="store-icons">
               <div class="first">
@@ -124,63 +131,63 @@
 
   <section class="product-info" id="Product-Info">
     <!-- identyfikacja wizualna produktu, spis funkcji -->
-    <h1 class="product-info__header" ><i id="product-section"></i>Nasz sklep oferuje<br><i class="fas fa-angle-double-down product-info__arrow"></i></h1>
+    <h1 class="product-info__header" ><i id="product-section"></i><p class="product-info__header-p">Nasz sklep oferuje<p></p><br><i class="fas fa-angle-double-down product-info__arrow"></i></h1>
     <div class="product-info__container">
       <div class="product-info__box">
         <i class="fas fa-apple-alt product-info__icon"></i>
-        <p class="product-info__paragraph">Produkty polskiego<br>pochodzenia</p>
+        <p class="product-info__paragraph p1">Produkty polskiego<br>pochodzenia</p>
       </div>
 
       <div class="product-info__box"> 
         <i class="fas fa-tshirt product-info__icon product-info__icon-plant"></i>
-        <p class="product-info__paragraph">Najwyższa jakość<span class="product-info__span"></span> produktów</p>
+        <p class="product-info__paragraph p2">Najwyższa jakość<span class="product-info__span"></span> produktów</p>
       </div>
 
       <div class="product-info__box">
         <i class="fas fa-hand-holding-usd product-info__icon product-info__icon--white"></i>
-        <p class="product-info__paragraph">Najlepsze ceny na <span class="product-info__span"></span> rynku</p>
+        <p class="product-info__paragraph p3">Najlepsze ceny na <span class="product-info__span"></span> rynku</p>
       </div>
 
       <div class="product-info__box">
         <i class="fas fa-truck product-info__icon"></i>
-        <p class="product-info__paragraph">Darmowa dostawa od 200zł</p>
+        <p class="product-info__paragraph p4">Darmowa dostawa od 200zł</p>
       </div>
     </div>
   </section>
   <section id="Additional-Info" class="extra-section">
     <!-- Dodatkowe informacje o produkcje -->
     <h2 class="extra-header">Produkty najlepszej jakości</h2>
-    <h1>W JEDNYM MIEJSCU</h1>
-    <p>*Najedź na ikonę i dowiedz się więcej.</p>
+    <h1 class="extra-headerh1">W JEDNYM MIEJSCU</h1>
+    <p class="extra-section-p">*Najedź na ikonę i dowiedz się więcej.</p>
     <div class="extra-container">
       <div class="extra-col-1">
       <div class="extra-card">
         <div class="extra-card-inner">
           <div class="extra-card-front">
-            <img src="./images/Quality icon.png" class="extra-icon"><p>Najlepsza jakość</p>
+            <img src="./images/Quality icon.png" class="extra-icon"><p class="extra-card-front-p1">Najlepsza jakość</p>
           </div>
           <div class="extra-card-back">
-            <p>Sprawdzeni producenci i wyselekcjonowane produkty, poddane rygorystycznym testom. </p>
+            <p class="extra-card-back-p1">Sprawdzeni producenci i wyselekcjonowane produkty, poddane rygorystycznym testom. </p>
           </div>
         </div>
       </div>
       <div class="extra-card">
         <div class="extra-card-inner">
           <div class="extra-card-front">
-            <img src="./images/delivery icon.png" class="extra-icon"><p>Dostawa w 24h</p>
+            <img src="./images/delivery icon.png" class="extra-icon"><p class="extra-card-front-p2">Dostawa w 24h</p>
           </div>
           <div class="extra-card-back">
-            <p>Wszystkie zamówienia, złożone do godziny 14:00 realizujemy w ciągu 24h.</p>
+            <p class="extra-card-back-p2">Wszystkie zamówienia, złożone do godziny 14:00 realizujemy w ciągu 24h.</p>
           </div>
         </div>
       </div>
       <div class="extra-card">
         <div class="extra-card-inner">
           <div class="extra-card-front">
-            <img src="./images/promotion icon.png" class="extra-icon"><p>Rabat na pierwsze<br>zakupy</p>
+            <img src="./images/promotion icon.png" class="extra-icon"><p class="extra-card-front-p3">Rabat na pierwsze<br>zakupy</p>
           </div>
           <div class="extra-card-back">
-            <p>Oferujemy rabat w zależności od wyników gry. Zapisz się i sprawdź!</p>
+            <p class="extra-card-back-p3">Oferujemy rabat w zależności od wyników gry. Zapisz się i sprawdź!</p>
           </div>
         </div>
       </div>
@@ -193,37 +200,70 @@
       <div class="extra-card">
         <div class="extra-card-inner">
           <div class="extra-card-front">
-            <img src="./images/search icon.png" class="extra-icon"><p>Najszybsze wyszukiwanie</p>
+            <img src="./images/search icon.png" class="extra-icon"><p class="extra-card-front-p4">Najszybsze wyszukiwanie</p>
           </div>
           <div class="extra-card-back">
-            <p>Silnik dostosowany by przedstawiać najtrafniejsze rezultaty w najkrótszym czasie.</p>
+            <p class="extra-card-back-p4">Silnik dostosowany by przedstawiać najtrafniejsze rezultaty w najkrótszym czasie.</p>
           </div>
         </div>
       </div>
       <div class="extra-card">
         <div class="extra-card-inner">
           <div class="extra-card-front">
-            <img src="./images/return icon.png" class="extra-icon"><p>Darmowe zwroty</p>
+            <img src="./images/return icon.png" class="extra-icon"><p class="extra-card-front-p5">Darmowe zwroty</p>
           </div>
           <div class="extra-card-back">
-            <p>W ciągu 14 dni masz prawo zwrócić towar, a my pokryjemy wysyłkę!</p>
+            <p class="extra-card-back-p5">W ciągu 14 dni masz prawo zwrócić towar, a my pokryjemy wysyłkę!</p>
           </div>
         </div>
       </div>
       <div class="extra-card">
         <div class="extra-card-inner">
           <div class="extra-card-front">
-            <img src="./images/protect mask icon.png" class="extra-icon"><p>Bezkontaktowa dostawa</p>
+            <img src="./images/protect mask icon.png" class="extra-icon"><p class="extra-card-front-p6">Bezkontaktowa dostawa</p>
           </div>
           <div class="extra-card-back">
-            <p>Idąc naprzeciw oczekiwaniom oferujemy bezkontaktową dostawę.</p>
+            <p class="extra-card-back-p6">Idąc naprzeciw oczekiwaniom oferujemy bezkontaktową dostawę.</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  
+
   </section>
+
+  <section class="pricing" id="pricing">
+      <h1 class="pricing__header">Zacznij sprzedawać<br> w naszym sklepie</h1>
+      <p class=" pricing__paragraph">Wybierz miesięczny pakiet wystawcy, który pozwoli Tobie sprzedawać swoje produkty w naszym sklepie.</p>
+        <div class="pricing__container">
+          <div class="pricing__box box-skew">
+            <h2 class="box__title">Basic</h2>
+            <p class="box__description box__description_p1">Podstawowy pakiet wystawcy w naszym sklepie</p>
+            <p class="box__price">$<span class="priceBasic">20</span></p>
+            <button class="box__button box__button1" formmethod="post">Wybierz</button>
+          </div>
+          <div class="pricing__box box--featured"> 
+            <span class="box__bestseller">BESTSELLER</span>
+            <h2 class="box__title">Pro</h2>
+            <p class="box__description box__description_p2">Wszystko czego potrzebujesz. <br> Za rozsądną cenę.</p>
+            <p class="box__price">$<span class="pricePRO">50</span></p>
+            <button class="box__button box__button2" formmethod="post">Wybierz</button>
+          </div>
+          <div class="pricing__box box-skew">
+            <h2 class="box__title">VIP</h2>
+            <p class="box__description box__description_p3">Ok, łapiemy. <br> You’re the boss now.</p>
+            <p class="box__price">$<span class="priceVIP">90</span></p>
+            <button class="box__button box__button3" formmethod="post">Wybierz</button>
+          </div>
+        </div>
+      </form>
+        <div class="slidecontainer">
+          <p class="sliderdays">2</p>
+          <p class="sliderText">Miesiące subskrypcji</p>
+          <input type="range" min="1" max="12" value="2" class="slider" id="myRange">
+        </div>
+  </section>
+
   <section class="aboutus" id="About-Us">
     <h1 class="aboutus__header">NASZ TEAM</h1>
     <div class="aboutus__container">
@@ -287,10 +327,10 @@
     <!-- Zapisz się na premierę -->
     <div class="sign-in-container">
       <div class="sign-in-container-txt">
-        <h1 class="Sign-Info"> ZAPISZ SIĘ</h1>
+        <h1 class="Sign-Info firsth1"> ZAPISZ SIĘ</h1>
         <h1 class="Sign-Info Sign-Color">DO DARMOWEGO</h1>
-        <h1 class="Sign-Info"> NEWSLETTERA</h1>
-        <p>Z myślą o Was przygotowaliśmy coś niezwykłego: <br><b>Zagraj w grę i sam wywalcz wysokość rabatu.</b> </p>
+        <h1 class="Sign-Info secondh1"> NEWSLETTERA</h1>
+        <p class="Sign-Info-p1">Z myślą o Was przygotowaliśmy coś niezwykłego: <br><b>Zagraj w grę i sam wywalcz wysokość rabatu.</b> </p>
       </div>
       <div class="sign-in-form">
         <form class="form-container">
@@ -299,15 +339,15 @@
           <div class="check">
           <input class="sign-check" type="checkbox" required name="terms" class="chkbox">
           <p class="sign-agree">Wyrażam zgodę, na zapis do newslettera, a tym samym na przesyłanie mi informacji o najnowszych wpisach na blogu, a także informacji marketingowych dotyczących produktów promocji i 
-            usług dostępnych na stronie <b>www.corona404.pl </b>Jestem śwadomy/a, że w każdej chwili mogę wypisać się z tego newslettera.</p></div>
+            usług dostępnych na stronie <b>www.corona404.pl </b>Jestem śwadomy/a, że w każdej chwili mogę wypisać się z tego newslettera.</div>
           <input class="send-btn" type="submit" value="Zapisz się" id="submitButton">
           
         </form>
       </div>
     </div>
     <div class="play-logo" style="display: none;">
-      <h1 class="Sign-Info"> Dziękujemy</h1>
-        <h1 class="Sign-Info Sign-Color">Teraz Zagraj</h1>
+        <h1 class="Sign-Info play-logoh1"> Dziękujemy</h1>
+        <h1 class="Sign-Info Sign-Color play-logo-Sign-Color">Teraz Zagraj</h1>
         <h1 class="Sign-Info last-txt"> I wygraj rabat</h1>
     <a class="hidden-link" href="./MIni-game/game.html">PLAY GAME</a>
   </div>
@@ -345,6 +385,7 @@
   <script src="./JS/burger-menu.js"></script>
   <script src="./JS/active-menu.js"></script>
   <script src="./JS/formname.js"></script>
+  <script src="./JS/multilanguage.js"></script>
   
 
 
