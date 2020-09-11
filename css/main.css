@@ -35,8 +35,8 @@ html {
 }
 
 .logo-corona {
-    width: 100px;
-    height: auto;
+    width: auto;
+    height: 50px;
     padding: 0;
     margin-left: 5%;
 }
@@ -63,7 +63,7 @@ li>a {
     display: block;
     float: right;
     width: auto;
-    padding: 5px 10px 0 0;
+    padding: 5px 0 0 0;
     font-size: 20px;
     font-weight: 400;
     text-decoration: none;
@@ -72,8 +72,10 @@ li>a {
     margin-right: 10px;
 }
 
-.fa-bars {
-    display: none;
+ul li.active a {
+    border-bottom: 3px solid;
+    border-bottom-color: rgb(230, 45, 45);
+    transition: border-bottom-color 0.5s;
 }
 
 .LangSwitcher{
@@ -470,7 +472,11 @@ li>a {
     }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 790px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .menu {
         width: 100%;
         display: flex;
@@ -479,19 +485,62 @@ li>a {
         top: 0;
     }
 
-    .fa-bars {
-        box-sizing: border-box;
+    .menu-btn {
+        position: relative;
         display: flex;
         justify-content: center;
-        display: flex-end;
-        order: 1;
-        color: #fff;
-        z-index: 5;
+        align-items: center;
+        width: 35px;
+        height: 30px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        z-index: 200;
+        margin-right: 10%;
     }
 
-    .fa-bars:hover {
-        color: rgb(230, 45, 45);
-        transition: color 0.5s;
+    .menu-btn__burger {
+        width: 35px;
+        height: 5px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(255, 101, 47, .2);
+        transition: all .5s ease-in-out;
+        cursor: pointer;
+    }
+
+    .menu-btn__burger::before,
+    .menu-btn__burger::after {
+        content: '';
+        position: absolute;
+        width: 35px;
+        height: 5px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(255, 101, 47, .2); 
+        transition: all .5s ease-in-out;
+    }
+
+    .menu-btn__burger::before {
+        transform: translateY(-16px);
+    }
+
+    .menu-btn__burger::after {
+        transform: translateY(16px);
+    }
+
+    /* ANIMATION */
+    .menu-btn.menu-open .menu-btn__burger {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .menu-btn.menu-open .menu-btn__burger::before {
+        transform: rotate(45deg) translate(35px, -35px);
+    }
+
+    .menu-btn.menu-open .menu-btn__burger::after {
+        transform: rotate(-45deg) translate(35px, 35px);
     }
 
     .site-menu {
@@ -509,6 +558,7 @@ li>a {
         -moz-transform: translateX(100%);
         -o-transform: translateX(100%);
         transform: translateX(100%);
+        transition: transform 0.5s ease-in;
     }
 
     .site-menu ul {
@@ -535,7 +585,7 @@ li>a {
 
     .site-menu a {
         display: flex;
-        padding: 10px 10px 0 0;
+        padding: 10px 0 0 0;
         box-sizing: border-box;
         text-decoration: none;
         float: left;
@@ -543,12 +593,23 @@ li>a {
         width: auto;
     }
 
-    .fa-bars:hover ~ .site-menu, .site-menu:hover {
-        -ms-transform: translateX(0);
-        -webkit-transform: translateX(0);
-        -moz-transform: translateX(0);
-        -o-transform: translateX(0);
-        transform: translateX(0);
-        transition: 0.3s transform ease-in-out;
+    .menu-btn.menu-open ~ .site-menu, .site-menu:hover {
+        -ms-transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -o-transform: translateX(0%);
+        transform: translateX(0%);
+        transition: transform 0.5s ease-in;
     }
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #333;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #fff;
 }
