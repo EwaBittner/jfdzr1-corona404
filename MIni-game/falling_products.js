@@ -30,6 +30,7 @@ function fallingObjects() {
                 product.remove();
                 updateScore1()
                 movedown()
+                collectItem.play()
             } else {
                 if (product.style.backgroundImage === 'url("1_flag.png")' && productPosition.left < playerPosition.left + playerPosition.width &&
                     productPosition.left + productPosition.width > playerPosition.left &&
@@ -39,6 +40,7 @@ function fallingObjects() {
                     product.remove();
                     updateScore2()
                     movedown()
+                    collectItem.play()
                 } else {
                     if (product.style.backgroundImage === 'url("2_flag.png")' && productPosition.left < playerPosition.left + playerPosition.width &&
                         productPosition.left + productPosition.width > playerPosition.left &&
@@ -48,6 +50,7 @@ function fallingObjects() {
                         product.remove();
                         updateScore3()
                         movedown()
+                        collectItem.play()
                     } else {
                         if (product.style.backgroundImage === 'url("4.png")' && productPosition.left < playerPosition.left + playerPosition.width &&
                             productPosition.left + productPosition.width > playerPosition.left &&
@@ -57,6 +60,7 @@ function fallingObjects() {
                             product.remove();
                             updateScore4()
                             movedown()
+                            collectItem.play()
                         } else {
                             if (product.style.backgroundImage === 'url("3points.png")' && productPosition.left < playerPosition.left + playerPosition.width &&
                                 productPosition.left + productPosition.width > playerPosition.left &&
@@ -66,6 +70,7 @@ function fallingObjects() {
                                 product.remove();
                                 updateScore5()
                                 movedown()
+                                reward.play()
                             } else {
                                 if (product.style.backgroundImage === 'url("pulapka.png")' && productPosition.left < playerPosition.left + playerPosition.width &&
                                     productPosition.left + productPosition.width > playerPosition.left &&
@@ -76,9 +81,7 @@ function fallingObjects() {
                                     updateScore6()
                                     movedown()
                                     lifeLost()
-
-
-
+                                    bomb.play();
 
                                 } else {
                                     if (top === game.clientHeight) {
