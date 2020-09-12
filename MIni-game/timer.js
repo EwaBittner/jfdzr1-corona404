@@ -6,6 +6,7 @@ function timer() {
     const intervalID = setInterval(updateTime, 1000);
 
     const endGame = document.querySelector('.end-game');
+    const game = document.querySelector('.game');
 
     function updateTime() {
         const minutes = Math.floor(time / 60);
@@ -27,6 +28,7 @@ function timer() {
             timer.innerHTML = `${minutes}:${seconds}`;
         } else {
             timer.innerHTML = '0:00';
+            game.style.display = "none";
         }
 
         time--;
