@@ -179,6 +179,10 @@ body {
     font-weight: 600;
 }
 
+.media-link{
+    color: #fff;
+}
+
 .back-button {
     display: flex;
     position: absolute;
