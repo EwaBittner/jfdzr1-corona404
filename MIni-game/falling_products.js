@@ -78,7 +78,6 @@ function fallingObjects() {
                                     productPosition.height + productPosition.top > playerPosition.top) {
                                     clearInterval(id)
                                     product.remove();
-                                    updateScore6()
                                     movedown()
                                     lifeLost()
                                     bomb.play();
@@ -154,12 +153,4 @@ function fallingObjects() {
         document.querySelector(".score").innerHTML = score;
         document.querySelector(".score-screen").innerHTML = "Score: " + score;
     }
-
-    function updateScore6() {
-        score = 0;
-        document.querySelector(".score").innerHTML = score;
-        document.querySelector(".score-screen").innerHTML = "Score: " + score;
-
-    }
-
 }
