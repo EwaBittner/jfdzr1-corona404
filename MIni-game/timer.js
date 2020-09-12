@@ -12,6 +12,7 @@ function timer() {
         let seconds = time % 60;
 
         if (minutes < 0 && seconds < 0) {
+            youWin.play()
             clearInterval(intervalID)
             endGame.style.display = "flex";
         }
@@ -30,16 +31,6 @@ function timer() {
 
         time--;
 
-        //  substractTime();
     }
 
-    timer.addEventListener('click', function addTime() {
-        time = time + 15;
-    })
-
-    addTime()
-
-    // timer.addEventListener('click', function substractTime(){
-    //     time = time - 15;
-    // })
 }
