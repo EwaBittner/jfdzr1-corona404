@@ -26,38 +26,44 @@ body {
 }
 
 .timer {
+    position: absolute;
     width: 200px;
     height: 56px;
     font-size: 3rem;
     font-weight: 500;
-    background-color: rgba(46, 46, 46, 0.952);
+    background-color: rgba(31, 31, 31, 0.301);
     color: #fff;
     border-radius: 30px;
     user-select: none;
-    margin-top: 10px;
+    margin: 10px auto;
     display: none;
 }
 
 .life-icon-1,
 .life-icon-2,
 .life-icon-3 {
-    width: 5%;
-    height: 10%;
-    margin-top: 10px;
+    width: 60px;
+    height: 65px;
+    margin: 10px 0 0 0;
+}
+
+.life-icon-1{
+    margin-left: 10px ;
 }
 
 .game {
+    position: relative;
     display: flex;
     width: 70%;
     height: 70%;
     margin: 0;
-    background-color: #94e5ff;
+    background-color: rgb(137, 214, 228);
+    border-radius: 15px;
     align-self: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
     z-index: 102;
-    border: 1px solid red;
 }
 
 .player {
@@ -65,14 +71,14 @@ body {
 }
 
 .score-screen {
-    font-size: 100px;
+    font-size: 54px;
     z-index: 100;
     font-family: arial;
-    color: white;
+    color: rgb(42, 42, 42);
     user-select: none;
     width: 100%;
     text-align: right;
-    margin-right: 10px;
+    margin: 10px 10px 0 0;
 }
 
 .product {
