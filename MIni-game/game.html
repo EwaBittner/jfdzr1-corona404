@@ -11,6 +11,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./game.css">
     <link rel="stylesheet" href="./player.css">
+
     <title>Mini-game</title>
 </head>
 
@@ -41,7 +42,7 @@
                 <img src="./Game Images/crown.png" alt="crown" class="crown-img">
                 <p>KONIEC GRY</p>
             </div>
-            <<<<<<< HEAD=======<div class="box-left-ranking" style="display: none;">
+            <div class="box-left-ranking" style="display: none;">
                 <p>1. Tomek - 100pkt</p>
                 <p>2. Ewa - 100pkt</p>
                 <p>3. Kuba - 100pkt</p>
@@ -50,16 +51,21 @@
                 <p class="ranking-score"></p>
                 <p>7. KamilR - 0pkt</p>
         </div>
-        >>>>>>> 9c18de1142862d4c0d902fd6d05fc18b7495b81b
         <div class="box-right">
             <h1 class="end">Gratulacje <span class="name" id="name"></span><br> Ukończyłeś grę</h1>
-            <p>Z wynikiem : <span class="score">215 pkt</span></p>
+            <p>Z wynikiem : <span class="score">0 pkt</span></p>
             <p>Uzyskujesz rabat : <span class="discount">10%</span></p>
+            </div>
 
-            <h2>Kliknij aby odebrać <br> swój kod rabatowy</h2>
-            <button id="getCode">ODBIERZ KOD</button>
-            <button class="ranking">RANKING</button>
-        </div>
+            <div class="box-right">
+                <h1 class="end">Gratulacje <span class="name" id="name"></span><br> Ukończyłeś grę</h1>
+                <p>Z wynikiem : <span class="score">215 pkt</span></p>
+                <p>Uzyskujesz rabat : <span class="discount">10%</span></p>
+
+                <h2>Kliknij aby odebrać <br> swój kod rabatowy</h2>
+                <button id="getCode">ODBIERZ KOD</button>
+                <button class="ranking">RANKING</button>
+            </div>
         </div>
         <div class="end-life-lost">
             <div class="box-left">
@@ -84,19 +90,19 @@
                 <p class="box-text">Aby się poruszać używaj strzałek w lewo i w prawo</p>
             </div>
             <div class="instruction__box">
-                <h3 class="box-title"><i class="fas fa-trophy icon-trophy"></i></h3>
+                <h3 class="box-title"><i class="far fa-laugh-beam icon-happy"></i></h3>
                 <p class="box-expl">Punkty</p>
-                <p class="box-text">Aby zdobyć punkty zbieraj do koszyka produkty z Polski</p>
+                <p class="box-text">Aby zdobyć punkty zbieraj produkty do koszyka <br> + Rzeczy z flagą dają więcej punktów</p>
             </div>
             <div class="instruction__box">
                 <h3 class="box-title"><i class="fas fa-skull-crossbones icon-skull"></i></h3>
                 <p class="box-expl">Pułapki</p>
-                <p class="box-text">Uważaj na spadające pułapki i przeszkody</p>
+                <p class="box-text">Uważaj na spadające przeszkody, jeśli bomba trafi w Ciebie 3 razy, przegrasz</p>
             </div>
             <div class="instruction__box">
-                <h3 class="box-title"><i class="far fa-laugh-beam icon-happy"></i></h3>
+                <h3 class="box-title"><i class="fas fa-trophy icon-trophy"></i></h3>
                 <p class="box-expl">Nagroda</p>
-                <p class="box-text">Uzyskaj jak najlepszy wynik żeby otrzymać rabat na zakupy</p>
+                <p class="box-text">Uzyskaj jak najlepszy wynik żeby otrzymać rabat na zakupy oraz zapisać się w naszym rankingu</p>
             </div>
         </div>
     </section>
@@ -120,6 +126,7 @@
     <script src="./life-limit.js"></script>
     <script src="./ranking.js"></script>
     <script src="./moving-background.js"></script>
+    <script src="./audio.js"></script>
 
 
 </body>
