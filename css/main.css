@@ -603,14 +603,3 @@ ul li.active a {
     }
 }
 
-body::-webkit-scrollbar {
-    width: 0.5rem;
-}
-
-body::-webkit-scrollbar-track {
-    background: #333;
-}
-
-body::-webkit-scrollbar-thumb {
-    background: #fff;
-}
