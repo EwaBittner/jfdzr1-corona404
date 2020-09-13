@@ -15,7 +15,7 @@
     <title>Mini-game</title>
 </head>
 
-<body>
+<body onload="smallElement();mediumElement();bigElement()">
 
     <main class="main">
         <button class="back-button" onclick="window.location.href='/index.html'"><i
@@ -29,6 +29,9 @@
                 <p>Score: 0</p>
             </div>
             <p class="countdown">5</p>
+            <div id="small"></div>
+            <div id="medium"></div>
+            <div id="big"></div>
             <div class="player" id="player">
                 <img class="cart" id="cart" src="./cart1.png">
             </div>
@@ -116,7 +119,9 @@
     <script src="./game-start.js"></script>
     <script src="./life-limit.js"></script>
     <script src="./ranking.js"></script>
+    <script src="./moving-background.js"></script>
     <script src="./audio.js"></script>
+
 
 </body>
 
