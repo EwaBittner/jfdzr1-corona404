@@ -17,23 +17,23 @@ function lifeLost() {
         icon3.style.visibility = "hidden"
 
     } else
-    if (lifeCounter == 1) {
-        icon2.style.visibility = "hidden"
+        if (lifeCounter == 1) {
+            icon2.style.visibility = "hidden"
 
-    } else
-    if (lifeCounter == 0) {
-        youLost.play()
-        gameMusic.stop()
-        icon1.style.visibility = "hidden"
-        endLifeLost.style.display = "flex";
-        game1.style.display = "none";
-        gameMusic.pause()
-        gameMusic.currentTime = 0;
-        clearInterval(startCountdown);
-        clearTimeout(id);
+        } else
+            if (lifeCounter == 0) {
+                youLost.play()
+                gameMusic.stop()
+                icon1.style.visibility = "hidden"
+                endLifeLost.style.display = "flex";
+                game1.style.display = "none";
+                gameMusic.pause()
+                gameMusic.currentTime = 0;
+                clearInterval(startCountdown);
+                clearTimeout(id);
 
 
-    }
+            }
 }
 
 let startAgain = btnStart.addEventListener('click', () => {
