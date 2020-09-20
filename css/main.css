@@ -56,7 +56,7 @@ nav ul {
 ul li {
     list-style-type: none;
     display: inline-block;
-    margin-right: 20px; 
+    margin-right: 20px;
 }
 
 li>a {
@@ -78,40 +78,41 @@ ul li.active a {
     transition: border-bottom-color 0.5s;
 }
 
-.LangSwitcher{
-    font-size:1em;
-    line-height:1;
-    margin:0;
-    padding:0;
-    
-  }
-  .Switcher{
-    box-sizing:content-box;
-    display:inline-block;
-    position:relative;
-    width:1em;
-    height:1em;
-    margin:0;
-    background:#fff;
-    border-radius:50%;
-    border:solid #eee;
-    overflow:hidden;
-    box-shadow:0;
+.LangSwitcher {
+    font-size: 1em;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+
+}
+
+.Switcher {
+    box-sizing: content-box;
+    display: inline-block;
+    position: relative;
+    width: 1em;
+    height: 1em;
+    margin: 0;
+    background: #fff;
+    border-radius: 50%;
+    border: solid #eee;
+    overflow: hidden;
+    box-shadow: 0;
     transition: 1s;
-    background-position:center;
-    background-size:cover;
-	outline: inherit;
-  }
+    background-position: center;
+    background-size: cover;
+    outline: inherit;
+}
 
 
-  .ENG{
+.ENG {
     background-image: url("https://cdn.countryflags.com/thumbs/united-kingdom/flag-400.png");
     margin-right: 5px;
-  }
-  
-  .PL{
-   background-image: url("https://cdn.countryflags.com/thumbs/poland/flag-400.png");
-  }
+}
+
+.PL {
+    background-image: url("https://cdn.countryflags.com/thumbs/poland/flag-400.png");
+}
 
 
 
@@ -119,15 +120,15 @@ ul li.active a {
 
 
 
-.carousel-item  {
+.carousel-item {
     padding-top: 80px;
-} 
+}
 
 .carousel-caption h1,
 .carousel-caption p {
     font-family: 'Montserrat', serif;
-  
-} 
+
+}
 
 
 
@@ -136,29 +137,29 @@ ul li.active a {
     left: 12%;
     top: 40%;
     width: 40%;
-    margin:0;
+    margin: 0;
 }
 
 #slide-1 h1,
 #slide-1 p,
 #slide-2 h1,
-#slide-2 p  {
-   text-align: left;
+#slide-2 p {
+    text-align: left;
 }
 
 #slide-1 button,
-#slide-2 button  {
+#slide-2 button {
     float: left;
 }
 
 #slide-3 {
-  display: flex;
-  flex-direction: column;
- align-items: left;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
     left: 50%;
     top: 40%;
     width: 40%;
-    margin:0;
+    margin: 0;
 }
 
 #slide-3 h1,
@@ -166,11 +167,12 @@ ul li.active a {
 #slide-3 .store-icons {
     text-align: left;
 }
+
 #slide-3 button {
     float: center;
 }
 
-.btn  {
+.btn {
     height: 55px;
     padding: 0;
     margin-top: 20px;
@@ -196,26 +198,28 @@ ul li.active a {
     font-size: 20px;
     height: 55px;
     color: white;
-} 
+}
 
 .store-icons {
     display: flex;
     flex-direction: row;
     /* justify-content: space-between; */
-    
+
 }
+
 .first {
     width: 100%;
     height: 100%;
     padding-top: 20px;
-   
-    
+
+
 }
+
 .second {
     width: 50%;
     height: 100%;
     padding-top: 20px;
-   
+
 }
 
 
@@ -225,215 +229,248 @@ ul li.active a {
     height: 50%;
 
     padding-top: 20px;
-   
-    
-}
-.second img {
-    width: 100%;
-    height:100%;
-    padding-top: 20px;
-   
+
+
 }
 
- @media (max-width: 350px) {
-    .carousel-caption{
+.second img {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+
+}
+
+@media (max-width: 350px) {
+    .carousel-caption {
         padding: 0;
     }
+
     .carousel-caption h1 {
         font-size: 0.8em;
     }
+
     .carousel-caption p {
         font-size: 0.5em;
     }
-    
-    .btn  {
+
+    .btn {
         height: 24px;
         width: 70px;
-        
-         }
+
+    }
+
     .btn a {
         font-size: 0.6em;
         height: 24px;
         line-height: 24px;
-       
-        }
-        .first img {
-            width: 30%;
-            padding-top: 2px;
-           
-            
-        }
-        .second img {
-            display: none;
-           
-        }
-    
+
+    }
+
+    .first img {
+        width: 30%;
+        padding-top: 2px;
+
+
+    }
+
+    .second img {
+        display: none;
+
+    }
+
 }
 
 @media (min-width: 351px) and (max-width:421px) {
-    .carousel-caption{
+    .carousel-caption {
         padding: 0;
     }
+
     .carousel-caption h1 {
         font-size: 0.9em;
     }
+
     .carousel-caption p {
         font-size: 0.6em;
     }
-    
-    .btn  {
+
+    .btn {
         height: 30px;
         width: 80px;
-       }
+    }
+
     .btn a {
         font-size: 0.7em;
         height: 30px;
         line-height: 30px;
-     }
-     .first img {
+    }
+
+    .first img {
         width: 30%;
         padding-top: 2px;
-       
-        
+
+
     }
+
     .second img {
         display: none;
-       
+
     }
 
-    
+
 }
 
-@media (min-width: 422px) and (max-width: 576px)  {
-    .carousel-caption{
+@media (min-width: 422px) and (max-width: 576px) {
+    .carousel-caption {
         padding: 0;
     }
+
     .carousel-caption h1 {
         font-size: 1.2em;
     }
+
     .carousel-caption p {
         font-size: 0.8em;
     }
-    
-    .btn  {
+
+    .btn {
         height: 35px;
         width: 110px;
-       }
-       .btn a {
-        font-size: 1em;
-        height: 40px;
-        } 
-        
-        .first img {
-            width: 45%;
-            height: 100%;
-            padding-top: 2px;
-           
-            
-        }
-        .second img {
-            display: none;
-           
-        }
-}
+    }
 
-@media (min-width: 577px) and (max-width: 768px)  {
-    .carousel-caption{
-        padding: 0;
-    }
-    .carousel-caption h1 {
-        font-size: 1.5em;
-    }
-    .carousel-caption p {
-        font-size: 0.9em;
-    }
-    #slide-3 {
-        top: 20%;
-    }
-    
-    .btn  {
-        height: 40px;
-        width: 120px;
-       }
     .btn a {
         font-size: 1em;
         height: 40px;
-        
-    } 
+    }
+
+    .first img {
+        width: 45%;
+        height: 100%;
+        padding-top: 2px;
+
+
+    }
+
+    .second img {
+        display: none;
+
+    }
 }
 
-@media (min-width: 769px) and (max-width: 992px)  {
-    .carousel-caption{
+@media (min-width: 577px) and (max-width: 768px) {
+    .carousel-caption {
         padding: 0;
     }
+
+    .carousel-caption h1 {
+        font-size: 1.5em;
+    }
+
+    .carousel-caption p {
+        font-size: 0.9em;
+    }
+
+    #slide-3 {
+        top: 25%;
+    }
+
+    .btn {
+        height: 40px;
+        width: 120px;
+    }
+
+    .btn a {
+        font-size: 1em;
+        height: 40px;
+
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .carousel-caption {
+        padding: 0;
+    }
+
     .carousel-caption h1 {
         font-size: 1.7em;
     }
+
     .carousel-caption p {
         font-size: 1.1em;
     }
+
     #slide-3 {
         top: 30%;
     }
-  }
+}
 
-@media (min-width: 993px) and (max-width: 1199px)  {
-    .carousel-caption{
+@media (min-width: 993px) and (max-width: 1199px) {
+    .carousel-caption {
         padding: 0;
     }
+
     .carousel-caption h1 {
         font-size: 2.5em;
     }
+
     .carousel-caption p {
         font-size: 1.7em;
     }
+
     #slide-3 {
         top: 20%;
     }
-    
-} 
-@media (min-width: 1200px) and (max-width: 1500px)  {
-    .carousel-caption{
+
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .carousel-caption {
         padding: 0;
     }
+
     .carousel-caption h1 {
         font-size: 3em;
     }
+
     .carousel-caption p {
         font-size: 2em;
     }
+
     #slide-3 {
         top: 18%;
     }
 
     .store-icons {
         padding-top: 50px;
-      
+
     }
-    
+
 }
 
 @media (min-width: 1501px) {
-    .carousel-caption{
+    .carousel-caption {
         padding: 0;
     }
+
     .carousel-caption h1 {
         font-size: 3em;
     }
+
     .carousel-caption p {
         font-size: 2em;
     }
+
     .store-icons {
         padding-top: 140px;
     }
+
     #slide-3 {
         top: 20%;
     }
-    
-} 
-    
 
-    
+}
+
+
+
 
 
 
@@ -534,7 +571,7 @@ ul li.active a {
         height: 5px;
         background: #fff;
         border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(255, 101, 47, .2); 
+        box-shadow: 0 2px 4px rgba(255, 101, 47, .2);
         transition: all .5s ease-in-out;
     }
 
@@ -595,7 +632,7 @@ ul li.active a {
         color: #333;
         flex-basis: 100%;
     }
-    
+
     .menu>li>a:hover {
         transform: translateY(100%);
         display: flex;
@@ -611,7 +648,8 @@ ul li.active a {
         width: auto;
     }
 
-    .menu-btn.menu-open ~ .site-menu, .site-menu:hover {
+    .menu-btn.menu-open~.site-menu,
+    .site-menu:hover {
         -ms-transform: translateX(0%);
         -webkit-transform: translateX(0%);
         -moz-transform: translateX(0%);
