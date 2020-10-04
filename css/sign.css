@@ -47,7 +47,6 @@
 
  input[type=email], input[type=text]{
     width: 100%;
-    padding: 12px 20px;
     margin: 8px 0;
     border:1px black solid;
     border-radius: 5px;
@@ -78,7 +77,6 @@
   .sign-agree {
 
     font-size: 12px;
-    margin-top: 10px;
   }
 
   input[type=email]:hover, input[type=text]:hover{
@@ -89,17 +87,19 @@
 
   .check{
     display: flex;
-    align-items:flex-start;
-    text-align: left;
-    margin: 10px;;
+    justify-content: flex-start;
+    text-align: center;
+    margin-top: 20px;
+    width:100%;
   }
 
-  .chkbox{
-    margin-top: 12px;
-    margin-right: 10px;
-  }
-
-
+  label {
+    color: indigo;
+    font-weight: bold;
+    width: 100px;
+    font-size: 20px;
+    text-align: center;
+    }
 
   .play-logo{
     text-align: center;
@@ -166,8 +166,5 @@
       font-size: 25px;
     }
 
-    input[type=checkbox]{
   
-      width: 200%;
-    }
 }
