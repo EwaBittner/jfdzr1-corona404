@@ -333,15 +333,16 @@
         <p class="Sign-Info-p1">Z myślą o Was przygotowaliśmy coś niezwykłego: <br><b>Zagraj w grę i sam wywalcz wysokość rabatu.</b> </p>
       </div>
       <div class="sign-in-form">
-        <form class="form-container">
-          <input class="sign-name" type="text" id="first-name" name="first-name" placeholder="Imię.." required>
-          <input class="sign-mail" type="email" id="email" name="email" placeholder="E-Mail" required>
+        <form class="form-container" onsubmit="return false">
+          <label for="first-name">Imię</label>
+          <input class="sign-name" type="text" id="first-name" name="first-name" placeholder="Tu wpisz imię..." label="first-name"required>
+          <label for="email">E-Mail</label>
+          <input class="sign-mail" type="email" id="email" name="email" placeholder="Tu wpisz adres E-Mail..." required>
           <div class="check">
           <input class="sign-check" type="checkbox" required name="terms" class="chkbox">
           <p class="sign-agree">Wyrażam zgodę, na zapis do newslettera, a tym samym na przesyłanie mi informacji o najnowszych wpisach na blogu, a także informacji marketingowych dotyczących produktów promocji i 
             usług dostępnych na stronie <b>www.corona404.pl </b>Jestem śwadomy/a, że w każdej chwili mogę wypisać się z tego newslettera.</div>
           <input class="send-btn" type="submit" value="Zapisz się" id="submitButton">
-          
         </form>
       </div>
     </div>
